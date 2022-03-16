@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useDisclosure } from "@chakra-ui/react";
 import { Flex, Square, Image, Text, Link, Box } from "@chakra-ui/react";
 import mainLogo from "../assets/PGStudioLogo.png";
-import { DownloadIcon, HamburgerIcon } from "@chakra-ui/icons";
+import { DownloadIcon, HamburgerIcon, LinkIcon } from "@chakra-ui/icons";
 import { extendTheme } from "@chakra-ui/react";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
 import {
@@ -28,13 +28,12 @@ const NavBar = () => {
   return (
     <Flex
       bgColor="#101010"
-      justifyContent={["space-between","space-between","center"]}
+      justifyContent={["space-between", "space-between", "center"]}
       px="1rem"
       gap={["2rem", "3rem", "7rem"]}
-      marginBottom= "-1rem"
-      
+      marginBottom="-1rem"
     >
-      <Image src={mainLogo} w="6rem" h="80%"/>
+      <Image src={mainLogo} w="6rem" h="80%" />
       <Flex
         color="white"
         alignItems="center"
@@ -44,53 +43,120 @@ const NavBar = () => {
         fontSize="1rem"
         display={["none", "none", "flex"]}
       >
-        <Text
+        <Link
           cursor="pointer"
           padding="3px"
-          as={Link}
-          _hover={{ textDecoration: "none", color: "#3d648f" }}
+          _hover={{ textDecoration: "none", _after:{transform:"scaleX(1)"} }}
           className="font-link"
+          position="relative"
+          _after={{
+            content: "''",
+            width: "100%",
+            display: "inline-block",
+            height: "3px",
+            bgColor: "#3d648f",
+            position: "absolute",
+            transform:"scaleX(0)",
+            left:"0px",
+            bottom:"-1px",
+            transition: "transform 0.3s ease 0s"
+          }}
         >
-          Home
-        </Text>
-        <Text
+          Home 
+        </Link>
+        <Link
           cursor="pointer"
-          as={Link}
-          _hover={{ textDecoration: "none", color: "#3d648f" }}
+          _hover={{ textDecoration: "none", _after:{transform:"scaleX(1)"}}}
+          className="font-link"
+          position="relative"
+          _after={{
+            content: "''",
+            width: "100%",
+            display: "inline-block",
+            height: "3px",
+            bgColor: "#3d648f",
+            position: "absolute",
+            transform:"scaleX(0)",
+            left:"0px",
+            bottom:"-2px",
+            transition: "transform 0.3s ease 0s"
+          }}
         >
           About
-        </Text>
-        <Text
+        </Link>
+        <Link
           cursor="pointer"
-          as={Link}
-          _hover={{ textDecoration: "none", color: "#3d648f" }}
+          _hover={{ textDecoration: "none", _after:{transform:"scaleX(1)"} }}
+          className="font-link"
+          position="relative"
+          _after={{
+            content: "''",
+            width: "100%",
+            display: "inline-block",
+            height: "3px",
+            bgColor: "#3d648f",
+            position: "absolute",
+            transform:"scaleX(0)",
+            left:"0px",
+            bottom:"-2px",
+            transition: "transform 0.3s ease 0s"
+          }}
         >
           Services
-        </Text>
-        <Text
+        </Link>
+        <Link
           cursor="pointer"
-          as={Link}
-          _hover={{ textDecoration: "none", color: "#3d648f" }}
+          _hover={{ textDecoration: "none", _after:{transform:"scaleX(1)"}}}
+          className="font-link"
+          position="relative"
+          _after={{
+            content: "''",
+            width: "100%",
+            display: "inline-block",
+            height: "3px",
+            bgColor: "#3d648f",
+            position: "absolute",
+            transform:"scaleX(0)",
+            left:"0px",
+            bottom:"-2px",
+            transition: "transform 0.3s ease 0s"
+          }}
         >
           Works
-        </Text>
-        <Text
+        </Link>
+        <Link
           cursor="pointer"
           as={Link}
-          _hover={{ textDecoration: "none", color: "#3d648f" }}
+          _hover={{ textDecoration: "none", _after:{transform:"scaleX(1)"} }}
+          className="font-link"
+          position="relative"
+          _after={{
+            content: "''",
+            width: "100%",
+            display: "inline-block",
+            height: "3px",
+            bgColor: "#3d648f",
+            position: "absolute",
+            transform:"scaleX(0)",
+            left:"0px",
+            bottom:"-2px",
+            transition: "transform 0.3s ease 0s"
+          }}
         >
           Contact
-        </Text>
-        <Text
+        </Link>
+        <Link
           bgColor="#3d648f"
           cursor="pointer"
           padding=".5rem"
           _hover={{}}
           minWidth="8.5rem"
           pl="15px"
+          minW={"fit-content"}
+          className="font-link"
         >
           My Resume <DownloadIcon />
-        </Text>
+        </Link>
       </Flex>
       <Box justifySelf="flex-end" alignSelf="center">
         <HamburgerIcon

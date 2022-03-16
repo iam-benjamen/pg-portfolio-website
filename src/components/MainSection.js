@@ -1,16 +1,36 @@
 import { Box, Image, VStack, Heading, Text } from "@chakra-ui/react";
 import mainPicture2 from "../assets/mainProject2.png";
-import { useState } from "react";
+import { useRef, useEffect } from "react";
+import Typed from "typed.js";
 
 const MainSection = () => {
-  const titles = ["UX Designer", "Architect", "Graphics Designer", "Drummer"];
-  const [first, setFirst] = useState(titles[0]);
+  const el = useRef(null);
+  const typed = useRef(null);
+
+  useEffect(() => {
+    const options = {
+      strings: [
+        "Product Designer.",
+        "Graphics Designer.",
+        "Architect.",
+        "Content Creator.",
+      ],
+      typeSpeed: 40,
+      backSpeed: 50,
+    };
+
+    typed.current = new Typed(el.current, options);
+
+    return () => {
+      typed.current.destroy();
+    };
+  }, []);
 
   return (
-    <Box bgColor="#101010" height="100vh" mt={"1rem"}>
+    <Box bgColor="#101010" height="100vh">
       <Box
         display="flex"
-        flexDirection={["column", "column", "row"]}
+        flexDirection={["column-reverse", "column-reverse", "row"]}
         justifyContent="center"
       >
         <Box>
@@ -23,23 +43,36 @@ const MainSection = () => {
             ]}
           />
         </Box>
-        <VStack px={"1rem"} maxWidth="25rem" justifyContent={"center"} ml="-3rem">
-          <Heading color="white" lineHeight={0.8} alignSelf="start" bgGradient="linear(to-l, #7928CA, #FF0080)"
-            bgClip="text">
-            <Text fontSize="5xl">Adediran</Text>
-            <Text fontSize="4xl">Ilerioluwa</Text>
-          </Heading>
-          <Text className="font-link" alignSelf="start" color="white">
-            I am a {first}
-          </Text>
-          <Text
+        <VStack
+          px={"1rem"}
+          maxWidth="25rem"
+          justifyContent={"center"}
+          ml={["1rem", "1rem", "-3rem"]}
+        >
+          <Heading
             color="white"
-            pr={"0.5rem"}
+            lineHeight={0.8}
+            alignSelf="start"
+            bgGradient="linear(to-l, #FFFFFF, #3d648f)"
+            bgClip="text"
           >
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
-            delectus commodi veritatis neque adipisci repellat nobis debitis
-            natus sint laboriosam expedita ducimus, sapiente perferendis!
-            Nostrum ea excepturi est? Doloribus, eos!
+            <Text fontFamily={"Montserrat"} fontSize="5xl">Adediran</Text>
+            <Text fontFamily={"Montserrat"} fontSize="4xl">Ilerioluwa</Text>
+          </Heading>
+          <Text
+            className="font-link"
+            fontWeight={"bold"}
+            fontSize="2xl"
+            alignSelf="start"
+            color="white"
+            pt={"1.5rem"}
+          >
+            I Am A <span ref={el} />
+          </Text>
+          <Text color="white" pr={"0.5rem"} textStyle="Quote">
+            The public is more familiar with bad design than good design. It is,
+            in effect, conditioned to prefer bad design, because that is what it
+            lives with. The new becomes threatening, the old reassuring.
           </Text>
         </VStack>
       </Box>
