@@ -44,6 +44,7 @@ const NavBar = () => {
         display={["none", "none", "flex"]}
       >
         <Link
+          href="#home"
           cursor="pointer"
           padding="3px"
           _hover={{ textDecoration: "none", _after:{transform:"scaleX(1)"} }}
@@ -65,6 +66,7 @@ const NavBar = () => {
           Home 
         </Link>
         <Link
+          href= "#about"
           cursor="pointer"
           _hover={{ textDecoration: "none", _after:{transform:"scaleX(1)"}}}
           className="font-link"
@@ -85,6 +87,7 @@ const NavBar = () => {
           About
         </Link>
         <Link
+          href="#services"
           cursor="pointer"
           _hover={{ textDecoration: "none", _after:{transform:"scaleX(1)"} }}
           className="font-link"
@@ -105,6 +108,7 @@ const NavBar = () => {
           Services
         </Link>
         <Link
+          href="#works"
           cursor="pointer"
           _hover={{ textDecoration: "none", _after:{transform:"scaleX(1)"}}}
           className="font-link"
@@ -125,8 +129,9 @@ const NavBar = () => {
           Works
         </Link>
         <Link
+          onClick={{outlineColor:"transparent"}}
+          href="#contact"
           cursor="pointer"
-          as={Link}
           _hover={{ textDecoration: "none", _after:{transform:"scaleX(1)"} }}
           className="font-link"
           position="relative"
@@ -190,3 +195,4 @@ const NavBar = () => {
 };
 
 export default NavBar;
+

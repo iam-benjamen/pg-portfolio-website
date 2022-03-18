@@ -7,3 +7,8 @@ body {
 .font-link {
   font-family: 'Roboto', serif;
 }
+
+
+.slick-slide.slick-active.slick-center.slick-current{
+  background-color: black !important;
+}

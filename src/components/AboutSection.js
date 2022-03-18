@@ -1,7 +1,7 @@
 import { Box, Text, Heading } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
-
+import { ArrowForwardIcon } from "@chakra-ui/icons";
 const breakpoints = createBreakpoints({
   sm: "400px",
   md: "1000px",
@@ -21,8 +21,7 @@ const AboutSection = () => {
       alignItems={{ base: "center", md: "center", lg: "flex-start" }}
       gap={{ base: "0rem", md: "3rem", lg: "10rem" }}
       mt="-1px"
-      pt={"3rem"}
-      pb="3rem"
+      py="5rem"
     >
       <Box
         display={"flex"}
@@ -70,21 +69,49 @@ const AboutSection = () => {
             <Text
               color={"white"}
               fontSize={"1.2rem"}
-              lineHeight={1.5}
+              lineHeight={1.2}
               position={"absolute"}
-              left="4rem"
-              bottom="1.3rem"
+              left="3.5rem"
+              bottom="1.5rem"
             >
               Years Of <br /> Experience
             </Text>
           </Heading>
         </Box>
       </Box>
-      <Box pt={"2rem"}>
-        <Heading fontFamily={"Montserrat"}>
-          Any Type of Query <br /> & Discussion.
-        </Heading>
-        <Text pt={"1rem"}>Let's talk with me</Text>
+      <Box
+        pt={"2rem"}
+        display="flex"
+        flexDir={"column"}
+        justifyContent="space-between"
+        height={"18rem"}
+      >
+        <Box>
+          <Heading fontFamily={"Montserrat"}>
+            Any Type of Query <br /> & Discussion.
+          </Heading>
+          <Text pt={"1rem"}>Let's talk with me</Text>
+        </Box>
+        <Box display={"flex"} justifyContent="space-between">
+          <Text
+            color="#3d648f"
+            fontSize={"1.5rem"}
+            textDecoration={"underline"}
+          >
+            Send Me A Message
+          </Text>
+          <Box
+            _after={{
+              content: '""',
+              color: "white",
+              width: "3px",
+              h: "3px",
+              display: "inline-block",
+            }}
+          >
+            <ArrowForwardIcon color={"#3d648f"} w="2rem" h="2rem"/>
+          </Box>
+        </Box>
       </Box>
     </Box>
   );

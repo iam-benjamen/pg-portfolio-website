@@ -24,7 +24,7 @@ const theme = extendTheme({ breakpoints });
 const EnquirySection = () => {
   return (
     <Box
-      bgColor={"#101010"}
+      bgColor={"#141414"}
       display="flex"
       justifyContent={"center"}
       gap="7rem"
@@ -32,7 +32,7 @@ const EnquirySection = () => {
       height="max-content"
       alignItems={"center"}
       pb="5rem"
-      pt="3rem"
+      pt="5rem"
       mt={"-1rem"}
     >
       <VStack alignItems={"start"} gap="2rem">
