@@ -10,7 +10,7 @@ function App() {
       <NavBar/>
       <MainSection />
       <AboutSection/>
-      <ServiceSection/>
+      {/* <ServiceSection/> */}
       <EnquirySection/>
     </div>
   );

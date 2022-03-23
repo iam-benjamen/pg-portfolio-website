@@ -26,7 +26,7 @@ const AboutSection = () => {
       <Box
         display={"flex"}
         flexDirection="column"
-        gap="1rem"
+        gap=".5rem"
         maxW={{ base: "80%", md: "80%", lg: "32%" }}
       >
         <Text
@@ -41,42 +41,36 @@ const AboutSection = () => {
             bgColor: "#3d648f",
             position: "absolute",
             top: "14px",
-            left: "5.5rem",
+            left: "5.3rem",
           }}
         >
           About me
         </Text>
-        <Text fontSize={"1.5rem"} fontWeight="bold">
+        <Text fontSize={["1.2rem", "1.2rem", "1.5rem"]} fontWeight="bold">
           Design is not just what it looks like and feels like. Design is how it
           works.
         </Text>
-        <Text color={"whiteAlpha.700"}>
-          The public is more familiar with bad design than good design. It is,
-          in effect, conditioned to prefer bad design, because that is what it
-          lives with. But we are here to change the narrative by creating
-          outstanding, highly engaging and thought-provoking contents through
-          designs. It's going to be a lot of meaningful and fun-filled contents
-          here.
+        <Text color={"whiteAlpha.700"} textAlign="justify">
+          The public is more familiar with bad design than good design. But we
+          are here to change the narrative by creating outstanding, highly
+          engaging and thought-provoking contents through designs. It's going to
+          be a lot of meaningful and fun-filled contents here.
         </Text>
-        <Box>
+        <Box display={"flex"} alignItems="center" gap={".5rem"}> 
           <Heading
-            fontFamily={""}
-            position={"relative"}
-            fontSize="5rem"
+            fontFamily={"Montserrat"}
+            fontSize={["4rem","4rem","5rem"]}
             color={"#3d648f"}
           >
-            5
-            <Text
-              color={"white"}
-              fontSize={"1.2rem"}
-              lineHeight={1.2}
-              position={"absolute"}
-              left="3.5rem"
-              bottom="1.5rem"
-            >
-              Years Of <br /> Experience
-            </Text>
+            05
           </Heading>
+          <Text
+            color={"white"}
+            fontSize={"1rem","1rem","1.2rem"}
+            lineHeight={1.2}
+          >
+            Years Of <br /> Experience
+          </Text>
         </Box>
       </Box>
       <Box
@@ -92,7 +86,7 @@ const AboutSection = () => {
           </Heading>
           <Text pt={"1rem"}>Let's talk with me</Text>
         </Box>
-        <Box display={"flex"} justifyContent="space-between">
+        <Box display={"flex"} gap="1rem">
           <Text
             color="#3d648f"
             fontSize={"1.5rem"}
@@ -101,15 +95,8 @@ const AboutSection = () => {
             Send Me A Message
           </Text>
           <Box
-            _after={{
-              content: '""',
-              color: "white",
-              width: "3px",
-              h: "3px",
-              display: "inline-block",
-            }}
           >
-            <ArrowForwardIcon color={"#3d648f"} w="2rem" h="2rem"/>
+            <ArrowForwardIcon color={"#3d648f"} w="2rem" h="2rem" />
           </Box>
         </Box>
       </Box>

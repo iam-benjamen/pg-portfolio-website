@@ -12,8 +12,8 @@ const MainSection = () => {
       strings: [
         "Product Designer.",
         "Graphics Designer.",
-        "Architect.",
         "Content Creator.",
+        "Architectural Designer.",
       ],
       typeSpeed: 40,
       backSpeed: 50,
@@ -27,55 +27,56 @@ const MainSection = () => {
   }, []);
 
   return (
-    <Box bgColor="#101010" height="100vh">
-      <Box
-        display="flex"
-        flexDirection={["column-reverse", "column-reverse", "row"]}
-        justifyContent="center"
-      >
-        <Box>
-          <Image
-            src={mainPicture2}
-            width={[
-              "-webkit-fill-available",
-              "-webkit-fill-available",
-              "37rem",
-            ]}
-          />
-        </Box>
-        <VStack
-          px={"1rem"}
-          maxWidth="25rem"
-          justifyContent={"center"}
-          ml={["1rem", "1rem", "-3rem"]}
-        >
-          <Heading
-            color="white"
-            lineHeight={0.8}
-            alignSelf="start"
-            bgGradient="linear(to-l, #FFFFFF, #3d648f)"
-            bgClip="text"
-          >
-            <Text fontFamily={"Montserrat"} fontSize="5xl">Adediran</Text>
-            <Text fontFamily={"Montserrat"} fontSize="4xl">Ilerioluwa</Text>
-          </Heading>
-          <Text
-            className="font-link"
-            fontWeight={"bold"}
-            fontSize="2xl"
-            alignSelf="start"
-            color="white"
-            pt={"1.5rem"}
-          >
-            I Am A <span ref={el} />
-          </Text>
-          <Text color="white" pr={"0.5rem"} textStyle="Quote">
-            The public is more familiar with bad design than good design. It is,
-            in effect, conditioned to prefer bad design, because that is what it
-            lives with. The new becomes threatening, the old reassuring.
-          </Text>
-        </VStack>
+    <Box
+      display="flex"
+      flexDirection={["column-reverse", "column-reverse", "row"]}
+      justifyContent="center"
+      bgColor="#101010"
+      height="100vh"
+      alignItems={"center"}
+    >
+      <Box>
+        <Image
+          src={mainPicture2}
+          width={["-webkit-fill-available", "-webkit-fill-available", "37rem"]}
+        />
       </Box>
+      <VStack
+        px={"1rem"}
+        maxWidth="25rem"
+        justifyContent={"center"}
+        ml={["1rem", "1rem", "-3rem"]}
+        pt={["2rem", "2rem", "0rem"]}
+      >
+        <Heading
+          color="white"
+          lineHeight={0.8}
+          alignSelf="start"
+          bgGradient="linear(to-l, #FFFFFF, #3d648f)"
+          bgClip="text"
+        >
+          <Text fontFamily={"Montserrat"} fontSize={["3rem", "3rem", "4rem"]}>
+            Adediran
+          </Text>
+          <Text fontFamily={"Montserrat"} fontSize={["2rem", "2rem", "3rem"]}>
+            Ilerioluwa
+          </Text>
+        </Heading>
+        <Text
+          className="font-link"
+          fontWeight={"bold"}
+          fontSize="2xl"
+          alignSelf="start"
+          color="white"
+        >
+          <span ref={el} />
+        </Text>
+        <Text color="white" pr={"0.5rem"} textStyle="Quote">
+          The public is more familiar with bad design than good design. It is,
+          in effect,conditioned to prefer bad design, because that is what it
+          lives with.
+        </Text>
+      </VStack>
     </Box>
   );
 };

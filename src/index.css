@@ -12,3 +12,16 @@ body {
 .slick-slide.slick-active.slick-center.slick-current{
   background-color: black !important;
 }
+
+.slick-dots li button:before{
+  color:white !important;
+  /* opacity: 0.8 !important; */
+}
+
+.slick-dots{
+  bottom: -3rem !important;
+}
+
+.slick-slide{
+  overflow: hidden;
+}

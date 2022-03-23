@@ -9,11 +9,17 @@ import {
   VStack,
   Button,
   HStack,
+  Image,
 } from "@chakra-ui/react";
 import { CheckIcon, EmailIcon, EditIcon } from "@chakra-ui/icons";
 import { BsTelephone, FaPhone, FaCoffee, FaLinkedin } from "react-icons/fa";
 import { extendTheme } from "@chakra-ui/react";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
+import testIcon from "../assets/testing.svg";
+import handshake from "../assets/handshake-solid.svg"
+import call from "../assets/whatsapp-brands.svg"
+import message from "../assets/message-solid.svg" 
+
 const breakpoints = createBreakpoints({
   sm: "400px",
   md: "1000px",
@@ -52,47 +58,47 @@ const EnquirySection = () => {
         >
           Talk or Meet With Me
         </Heading>
-        <HStack gap="1rem" pl={"1rem"}>
+        <HStack gap="1rem">
           <Box>
-            <FaPhone size={"2rem"} color="#3d648f" />
+            <Image src={call} w="2rem"/>
           </Box>
-          <Box>
+          <Box pt={".5rem"}>
             <Text color="whiteAlpha.700">Call Me Now</Text>
-            <Heading fontSize={["1.2rem", "1.5rem", "1.5rem"]} color={"white"}>
+            <Heading fontSize={["1.5rem", "1.5rem", "1.5rem"]} color={"white"}>
               +2349030661028
             </Heading>
           </Box>
         </HStack>
         <HStack gap="1rem">
           <Box>
-            <EmailIcon w="2.5rem" h="1.5rem" color="#3d648f" />
+            <Image src={message} w="2rem"/>
           </Box>
-          <Box>
+          <Box pt={".5rem"}>
             <Text color="whiteAlpha.700">Chat With Me</Text>
-            <Heading fontSize={["1.2rem", "1.5rem", "1.5rem"]} color={"white"}>
+            <Heading fontSize={["1.5rem", "1.5rem", "1.5rem"]} color={"white"}>
               pgstudio@gmail.com
             </Heading>
           </Box>
         </HStack>
         <HStack gap="1rem">
           <Box>
-            <FaCoffee size={"2rem"} color="#3d648f" />
+            <Image src={handshake} w="2rem"/>
           </Box>
-          <Box>
+          <Box pt={".5rem"}>
             <Text color="whiteAlpha.700">Get Me Here</Text>
-            <Heading fontSize={["1.2rem", "1.5rem", "1.5rem"]} color={"white"}>
+            <Heading fontSize={["1.5rem", "1.5rem", "1.5rem"]} color={"white"}>
               Abuja, Nigeria.
             </Heading>
           </Box>
         </HStack>
         <HStack gap="1rem">
           <Box>
-            <FaLinkedin size={"2rem"} color="#3d648f" />
+            <Image src={testIcon} w="2rem"/>
           </Box>
-          <Box>
+          <Box pt={".5rem"}>
             <Text color="whiteAlpha.700">Check My Profile</Text>
             <Heading fontSize={["1.2rem", "1.5rem", "1.5rem"]} color={"white"}>
-              pg.linkedin.com
+              linkedin.com/in/pg
             </Heading>
           </Box>
         </HStack>
@@ -101,7 +107,11 @@ const EnquirySection = () => {
         <Text color={"#3d648f"} textDecoration="underline">
           Send Me A Message
         </Text>
-        <Heading fontSize={["1.5rem", "2rem", "2rem"]} color={"white"} pb="1rem">
+        <Heading
+          fontSize={["1.5rem", "2rem", "2rem"]}
+          color={"white"}
+          pb="1rem"
+        >
           Let Me Know Here
         </Heading>
         <form>
