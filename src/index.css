@@ -25,3 +25,9 @@ body {
 .slick-slide{
   overflow: hidden;
 }
+.slick-next {
+  right: -5px !important;
+}
+.slick-prev {
+  left: -20px !important;
+}

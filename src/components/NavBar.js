@@ -1,18 +1,11 @@
 import { useState } from "react";
 import { useDisclosure } from "@chakra-ui/react";
-import { Flex, Square, Image, Text, Link, Box } from "@chakra-ui/react";
+import { Flex, Square, Image, Text, Box, Link } from "@chakra-ui/react";
 import mainLogo from "../assets/PGStudioLogo.png";
 import { DownloadIcon, HamburgerIcon, LinkIcon } from "@chakra-ui/icons";
 import { extendTheme } from "@chakra-ui/react";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
-import {
-  Drawer,
-  DrawerBody,
-  DrawerHeader,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
-} from "@chakra-ui/react";
+import { Link as mylink, animateScroll as scroll } from "react-scroll";
 
 const breakpoints = createBreakpoints({
   sm: "400px",
@@ -22,9 +15,6 @@ const breakpoints = createBreakpoints({
 const theme = extendTheme({ breakpoints });
 
 const NavBar = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const [placement, setPlacement] = useState("right");
-
   return (
     <Flex
       bgColor="#101010"
@@ -44,10 +34,12 @@ const NavBar = () => {
         display={["none", "none", "flex"]}
       >
         <Link
-          href="#home"
           cursor="pointer"
           padding="3px"
-          _hover={{ textDecoration: "none", _after:{transform:"scaleX(1)"} }}
+          _hover={{
+            textDecoration: "none",
+            _after: { transform: "scaleX(1)" },
+          }}
           className="font-link"
           position="relative"
           _after={{
@@ -57,18 +49,22 @@ const NavBar = () => {
             height: "3px",
             bgColor: "#3d648f",
             position: "absolute",
-            transform:"scaleX(0)",
-            left:"0px",
-            bottom:"-1px",
-            transition: "transform 0.3s ease 0s"
+            transform: "scaleX(0)",
+            left: "0px",
+            bottom: "-1px",
+            transition: "transform 0.3s ease 0s",
           }}
         >
-          Home 
+          Home
         </Link>
         <Link
-          href= "#about"
+          as={mylink}
+          to="about-section"
           cursor="pointer"
-          _hover={{ textDecoration: "none", _after:{transform:"scaleX(1)"}}}
+          _hover={{
+            textDecoration: "none",
+            _after: { transform: "scaleX(1)" },
+          }}
           className="font-link"
           position="relative"
           _after={{
@@ -78,18 +74,21 @@ const NavBar = () => {
             height: "3px",
             bgColor: "#3d648f",
             position: "absolute",
-            transform:"scaleX(0)",
-            left:"0px",
-            bottom:"-2px",
-            transition: "transform 0.3s ease 0s"
+            transform: "scaleX(0)",
+            left: "0px",
+            bottom: "-2px",
+            transition: "transform 0.3s ease 0s",
           }}
         >
           About
         </Link>
         <Link
-          href="#services"
+          to="about-section"
           cursor="pointer"
-          _hover={{ textDecoration: "none", _after:{transform:"scaleX(1)"} }}
+          _hover={{
+            textDecoration: "none",
+            _after: { transform: "scaleX(1)" },
+          }}
           className="font-link"
           position="relative"
           _after={{
@@ -99,18 +98,21 @@ const NavBar = () => {
             height: "3px",
             bgColor: "#3d648f",
             position: "absolute",
-            transform:"scaleX(0)",
-            left:"0px",
-            bottom:"-2px",
-            transition: "transform 0.3s ease 0s"
+            transform: "scaleX(0)",
+            left: "0px",
+            bottom: "-2px",
+            transition: "transform 0.3s ease 0s",
           }}
         >
           Services
         </Link>
         <Link
-          href="#works"
+          to="works"
           cursor="pointer"
-          _hover={{ textDecoration: "none", _after:{transform:"scaleX(1)"}}}
+          _hover={{
+            textDecoration: "none",
+            _after: { transform: "scaleX(1)" },
+          }}
           className="font-link"
           position="relative"
           _after={{
@@ -120,19 +122,21 @@ const NavBar = () => {
             height: "3px",
             bgColor: "#3d648f",
             position: "absolute",
-            transform:"scaleX(0)",
-            left:"0px",
-            bottom:"-2px",
-            transition: "transform 0.3s ease 0s"
+            transform: "scaleX(0)",
+            left: "0px",
+            bottom: "-2px",
+            transition: "transform 0.3s ease 0s",
           }}
         >
           Works
         </Link>
         <Link
-          onClick={{outlineColor:"transparent"}}
-          href="#contact"
+          to="about-section"
           cursor="pointer"
-          _hover={{ textDecoration: "none", _after:{transform:"scaleX(1)"} }}
+          _hover={{
+            textDecoration: "none",
+            _after: { transform: "scaleX(1)" },
+          }}
           className="font-link"
           position="relative"
           _after={{
@@ -142,10 +146,10 @@ const NavBar = () => {
             height: "3px",
             bgColor: "#3d648f",
             position: "absolute",
-            transform:"scaleX(0)",
-            left:"0px",
-            bottom:"-2px",
-            transition: "transform 0.3s ease 0s"
+            transform: "scaleX(0)",
+            left: "0px",
+            bottom: "-2px",
+            transition: "transform 0.3s ease 0s",
           }}
         >
           Contact
@@ -170,29 +174,10 @@ const NavBar = () => {
           color="white"
           cursor="pointer"
           display={["block", "block", "none"]}
-          onClick={onOpen}
         />
       </Box>
-      <Drawer
-        placement={placement}
-        onClose={onClose}
-        isOpen={isOpen}
-        bgColor="#101010"
-      >
-        <DrawerOverlay />
-        <DrawerContent>
-          <DrawerCloseButton />
-          <DrawerHeader borderBottomWidth="1px">Basic Drawer</DrawerHeader>
-          <DrawerBody>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-          </DrawerBody>
-        </DrawerContent>
-      </Drawer>
     </Flex>
   );
 };
 
 export default NavBar;
-

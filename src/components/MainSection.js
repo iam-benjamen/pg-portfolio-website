@@ -32,8 +32,9 @@ const MainSection = () => {
       flexDirection={["column-reverse", "column-reverse", "row"]}
       justifyContent="center"
       bgColor="#101010"
-      height="100vh"
+      height={"100vh"}
       alignItems={"center"}
+      pb="2rem"
     >
       <Box>
         <Image
@@ -45,7 +46,7 @@ const MainSection = () => {
         px={"1rem"}
         maxWidth="25rem"
         justifyContent={"center"}
-        ml={["1rem", "1rem", "-3rem"]}
+        ml={["1rem", "1rem", "-6rem"]}
         pt={["2rem", "2rem", "0rem"]}
       >
         <Heading
