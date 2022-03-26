@@ -1,6 +1,10 @@
 import { Box, Text, Heading, Image } from "@chakra-ui/react";
 import Slider from "react-slick";
 import Design from "../assets/design.png";
+import Graphics from "../assets/graphic-design.svg";
+import Architecture from "../assets/architecture.svg"
+import Visual from "../assets/visual-design.svg"
+import Content from "../assets/content.svg"
 
 const ServiceSection = () => {
   const settings = {
@@ -9,7 +13,7 @@ const ServiceSection = () => {
     speed: 500,
     slidesToScroll: 1,
     centerMode: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     pauseOnDotsHover: true,
     pauseOnHover: true,
@@ -41,7 +45,7 @@ const ServiceSection = () => {
   };
   return (
     <Box
-      bgColor={"#101010"}
+      bgColor={"#141414"}
       height="70vh"
       display={"flex"}
       flexDir={"column"}
@@ -69,7 +73,9 @@ const ServiceSection = () => {
           h={"20rem"}
           justifyContent="center"
           px={["0rem", "1rem", "1.5rem"]}
+          _hover={{cursor:"pointer"}}
         >
+          <Image src={Graphics}/>
           <Heading
             textAlign={"center"}
             color={"white"}
@@ -78,7 +84,7 @@ const ServiceSection = () => {
           >
             Graphics Design
           </Heading>
-          <Text color={"white"} textAlign="center" w={"80%"}>
+          <Text color={"white"} textAlign="center" w={"85%"}>
             Design is not just what it looks like and feels like. Design is how
             it works. Good design is good business. Get Noticed!
           </Text>
@@ -92,11 +98,13 @@ const ServiceSection = () => {
           h={"20rem"}
           justifyContent="center"
           px={["0rem", "1rem", "2rem"]}
+          _hover={{cursor:"pointer"}}
         >
+          <Image src={Architecture}/>
           <Heading textAlign={"center"} color={"white"} fontSize="1.5rem">
-            Architectural <br /> Design
+            Architectural <br/> Design
           </Heading>
-          <Text color={"white"} textAlign="center" w={"80%"}>
+          <Text color={"white"} textAlign="center" w={"85%"}>
             Architecture is an expression of values the way we build is a
             reflection of the way we live. Let's create value for your building
             projects.
@@ -111,11 +119,13 @@ const ServiceSection = () => {
           h={"20rem"}
           justifyContent="center"
           px={["0rem", "1rem", "1.5rem"]}
+          _hover={{cursor:"pointer"}}
         >
+          <Image src={Visual}/>
           <Heading textAlign={"center"} color={"white"} fontSize="1.5rem">
             Visual Design
           </Heading>
-          <Text color={"white"} textAlign="center" w={"80%"}>
+          <Text color={"white"} textAlign="center" w={"85%"}>
             Attractive Visuals creates effective communication of ideas, higher
             visibility, and enhanced credibility for your brand
           </Text>
@@ -129,11 +139,13 @@ const ServiceSection = () => {
           h={"20rem"}
           justifyContent="center"
           px={["0rem", "1rem", "1.5rem"]}
+          _hover={{cursor:"pointer"}}
         >
+          <Image src={Content}/>
           <Heading textAlign={"center"} color={"white"} fontSize="1.5rem">
             Content Creation
           </Heading>
-          <Text color={"white"} textAlign="center" w={"80%"}>
+          <Text color={"white"} textAlign="center" w={"85%"}>
             Every great design begins with an even better story. Design in the
             absence of content is not design, it's decoration.
           </Text>

@@ -13,7 +13,7 @@ const AboutSection = () => {
   return (
     <Box
       height={"max-content"}
-      bgColor="#141414"
+      bgColor="#101010"
       color={"white"}
       display="flex"
       justifyContent="center"

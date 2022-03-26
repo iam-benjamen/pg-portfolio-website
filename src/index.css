@@ -10,7 +10,9 @@ body {
 
 
 .slick-slide.slick-active.slick-center.slick-current{
-  background-color: black !important;
+  background-color: #101010!important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: scale(1.1);
 }
 
 .slick-dots li button:before{

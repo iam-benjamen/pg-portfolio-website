@@ -31,10 +31,10 @@ const MainSection = () => {
       display="flex"
       flexDirection={["column-reverse", "column-reverse", "row"]}
       justifyContent="center"
-      bgColor="#101010"
+      bgColor="#141414"
       height={"100vh"}
       alignItems={"center"}
-      pb="2rem"
+      pb="5rem"
     >
       <Box>
         <Image

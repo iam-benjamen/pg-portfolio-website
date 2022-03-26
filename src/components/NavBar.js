@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { useDisclosure } from "@chakra-ui/react";
 import { Flex, Square, Image, Text, Box, Link } from "@chakra-ui/react";
 import mainLogo from "../assets/PGStudioLogo.png";
 import { DownloadIcon, HamburgerIcon, LinkIcon } from "@chakra-ui/icons";
@@ -17,7 +15,7 @@ const theme = extendTheme({ breakpoints });
 const NavBar = () => {
   return (
     <Flex
-      bgColor="#101010"
+      bgColor="#141414"
       justifyContent={["space-between", "space-between", "center"]}
       px="1rem"
       gap={["2rem", "3rem", "7rem"]}
