@@ -35,8 +35,10 @@ body {
   overflow: hidden;
 }
 .slick-next {
+  display: none !important;
   right: -15px !important;
 }
 .slick-prev {
+  display: none !important;
   left: -15px !important;
 }
