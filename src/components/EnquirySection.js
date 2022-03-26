@@ -47,6 +47,7 @@ const EnquirySection = () => {
           textDecoration="underline"
           mb="-2rem"
           fontStyle="underline"
+          fontFamily={"Roboto"}
         >
           Get In Touch
         </Text>
@@ -54,7 +55,7 @@ const EnquirySection = () => {
           fontSize={["1.5rem", "2rem", "2rem"]}
           color={"white"}
           mt="0.4rem"
-          className="font-link"
+          fontFamily={"Roboto"}
         >
           Talk or Meet With Me
         </Heading>
@@ -63,8 +64,8 @@ const EnquirySection = () => {
             <Image src={call} w="2rem"/>
           </Box>
           <Box pt={".5rem"}>
-            <Text color="whiteAlpha.700">Call Me Now</Text>
-            <Heading fontSize={["1.5rem", "1.5rem", "1.5rem"]} color={"white"}>
+            <Text fontFamily={"Roboto"} color="whiteAlpha.700">Call Me Now</Text>
+            <Heading fontFamily={"Roboto"} fontSize={["1.5rem", "1.5rem", "1.5rem"]} color={"white"}>
               +2349030661028
             </Heading>
           </Box>
@@ -74,8 +75,8 @@ const EnquirySection = () => {
             <Image src={message} w="2rem"/>
           </Box>
           <Box pt={".5rem"}>
-            <Text color="whiteAlpha.700">Chat With Me</Text>
-            <Heading fontSize={["1.5rem", "1.5rem", "1.5rem"]} color={"white"}>
+            <Text fontFamily={"Roboto"} color="whiteAlpha.700">Chat With Me</Text>
+            <Heading fontFamily={"Roboto"} fontSize={["1.5rem", "1.5rem", "1.5rem"]} color={"white"}>
               pgstudio@gmail.com
             </Heading>
           </Box>
@@ -85,8 +86,8 @@ const EnquirySection = () => {
             <Image src={handshake} w="2rem"/>
           </Box>
           <Box pt={".5rem"}>
-            <Text color="whiteAlpha.700">Get Me Here</Text>
-            <Heading fontSize={["1.5rem", "1.5rem", "1.5rem"]} color={"white"}>
+            <Text fontFamily={"Roboto"} color="whiteAlpha.700">Get Me Here</Text>
+            <Heading fontFamily={"Roboto"} fontSize={["1.5rem", "1.5rem", "1.5rem"]} color={"white"}>
               Abuja, Nigeria.
             </Heading>
           </Box>
@@ -96,21 +97,22 @@ const EnquirySection = () => {
             <Image src={testIcon} w="2rem"/>
           </Box>
           <Box pt={".5rem"}>
-            <Text color="whiteAlpha.700">Check My Profile</Text>
-            <Heading fontSize={["1.2rem", "1.5rem", "1.5rem"]} color={"white"}>
+            <Text fontFamily={"Roboto"} color="whiteAlpha.700">Check My Profile</Text>
+            <Heading fontFamily={"Roboto"} fontSize={["1.2rem", "1.5rem", "1.5rem"]} color={"white"}>
               linkedin.com/in/pg
             </Heading>
           </Box>
         </HStack>
       </VStack>
       <VStack alignItems={"flex-start"}>
-        <Text color={"#3d648f"} textDecoration="underline">
+        <Text fontFamily={"Roboto"} color={"#3d648f"} textDecoration="underline">
           Send Me A Message
         </Text>
         <Heading
           fontSize={["1.5rem", "2rem", "2rem"]}
           color={"white"}
           pb="1rem"
+          fontFamily={"Roboto"}
         >
           Let Me Know Here
         </Heading>

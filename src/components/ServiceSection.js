@@ -54,16 +54,17 @@ const ServiceSection = () => {
       mt="-1px"
       pt={"5rem"}
       pb="35rem"
-      id="service"
+      zIndex={-80}
+      className="font-link"
     >
-      <Text textAlign={"center"} color={"#3d648f"} textDecor="underline">
+      <Text fontFamily={"Roboto"} className="font-link" textAlign={"center"} color={"#3d648f"} textDecor="underline">
         Services
       </Text>
-      <Heading textAlign={"center"} color={"white"} pb="2rem">
+      <Heading fontFamily={"Roboto"} textAlign={"center"} color={"white"} pb="2rem">
         What We Do?
       </Heading>
 
-      <Slider {...settings}>
+      <Slider {...settings} zIndex={-23}>
         <Box
           // bgColor={"#3d648f"}
           display={"flex !important"}
@@ -81,10 +82,11 @@ const ServiceSection = () => {
             color={"white"}
             fontSize="1.5rem"
             w="90%"
+            fontFamily={"Roboto"}
           >
             Graphics Design
           </Heading>
-          <Text color={"white"} textAlign="center" w={"85%"}>
+          <Text fontFamily={"Roboto"} color={"white"} textAlign="center" w={"83%"}>
             Design is not just what it looks like and feels like. Design is how
             it works. Good design is good business. Get Noticed!
           </Text>
@@ -101,10 +103,10 @@ const ServiceSection = () => {
           _hover={{cursor:"pointer"}}
         >
           <Image src={Architecture}/>
-          <Heading textAlign={"center"} color={"white"} fontSize="1.5rem">
+          <Heading fontFamily={"Roboto"} textAlign={"center"} color={"white"} fontSize="1.5rem">
             Architectural <br/> Design
           </Heading>
-          <Text color={"white"} textAlign="center" w={"85%"}>
+          <Text fontFamily={"Roboto"} color={"white"} textAlign="center" w={"83%"}>
             Architecture is an expression of values the way we build is a
             reflection of the way we live. Let's create value for your building
             projects.
@@ -122,10 +124,10 @@ const ServiceSection = () => {
           _hover={{cursor:"pointer"}}
         >
           <Image src={Visual}/>
-          <Heading textAlign={"center"} color={"white"} fontSize="1.5rem">
+          <Heading fontFamily={"Roboto"} textAlign={"center"} color={"white"} fontSize="1.5rem">
             Visual Design
           </Heading>
-          <Text color={"white"} textAlign="center" w={"85%"}>
+          <Text fontFamily={"Roboto"} color={"white"} textAlign="center" w={"83%"}>
             Attractive Visuals creates effective communication of ideas, higher
             visibility, and enhanced credibility for your brand
           </Text>
@@ -142,10 +144,10 @@ const ServiceSection = () => {
           _hover={{cursor:"pointer"}}
         >
           <Image src={Content}/>
-          <Heading textAlign={"center"} color={"white"} fontSize="1.5rem">
+          <Heading fontFamily={"Roboto"} textAlign={"center"} color={"white"} fontSize="1.5rem">
             Content Creation
           </Heading>
-          <Text color={"white"} textAlign="center" w={"85%"}>
+          <Text fontFamily={"Roboto"} color={"white"} textAlign="center" w={"83%"}>
             Every great design begins with an even better story. Design in the
             absence of content is not design, it's decoration.
           </Text>

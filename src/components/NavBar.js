@@ -19,7 +19,9 @@ const NavBar = () => {
       justifyContent={["space-between", "space-between", "center"]}
       px="1rem"
       gap={["2rem", "3rem", "7rem"]}
-      marginBottom="-1rem"
+      // position={"sticky"}
+      // w="100%"
+      // z-zIndex={999}
     >
       <Image src={mainLogo} w="6rem" h="80%" />
       <Flex
