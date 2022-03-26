@@ -34,11 +34,20 @@ body {
 .slick-slide{
   overflow: hidden;
 }
+
+@media screen and (max-width : 585px) {
+  .slick-next {
+    display: none !important;
+  }
+  .slick-prev {
+    display: none !important;
+  }
+}
+
 .slick-next {
-  display: none !important;
+ 
   right: -15px !important;
 }
 .slick-prev {
-  display: none !important;
   left: -15px !important;
 }

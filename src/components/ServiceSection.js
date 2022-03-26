@@ -13,7 +13,7 @@ const ServiceSection = () => {
     speed: 500,
     slidesToScroll: 1,
     centerMode: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     pauseOnDotsHover: true,
     pauseOnHover: true,
@@ -60,7 +60,7 @@ const ServiceSection = () => {
       <Text fontFamily={"Roboto"} className="font-link" textAlign={"center"} color={"#3d648f"} textDecor="underline">
         Services
       </Text>
-      <Heading fontFamily={"Roboto"} textAlign={"center"} color={"white"} pb="2rem">
+      <Heading fontFamily={"Roboto"} textAlign={"center"} color={"white"} pb="1rem">
         What We Do?
       </Heading>
 
