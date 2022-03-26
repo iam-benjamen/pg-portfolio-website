@@ -15,6 +15,12 @@ body {
   transform: scale(1.1);
   border: 1px solid #3d648f;
 }
+.slick-slide.slick-active.slick-current{
+  background-color: #101010!important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-right: 2px solid #3d648f;
+  border-left: 2px solid #3d648f;
+}
 
 .slick-dots li button:before{
   color:white !important;
@@ -29,8 +35,8 @@ body {
   overflow: hidden;
 }
 .slick-next {
-  right: -5px !important;
+  right: -15px !important;
 }
 .slick-prev {
-  left: -20px !important;
+  left: -15px !important;
 }
