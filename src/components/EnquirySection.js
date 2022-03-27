@@ -15,10 +15,10 @@ import { CheckIcon, EmailIcon, EditIcon } from "@chakra-ui/icons";
 import { BsTelephone, FaPhone, FaCoffee, FaLinkedin } from "react-icons/fa";
 import { extendTheme } from "@chakra-ui/react";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
-import testIcon from "../assets/testing.svg";
-import handshake from "../assets/handshake-solid.svg"
-import call from "../assets/whatsapp-brands.svg"
-import message from "../assets/message-solid.svg" 
+import testIcon from "../assets/linkedin-svg.svg";
+import handshake from "../assets/business-meeting.svg"
+import call from "../assets/phone-call.svg"
+import message from "../assets/chat-Icon.svg" 
 
 const breakpoints = createBreakpoints({
   sm: "400px",
@@ -61,18 +61,18 @@ const EnquirySection = () => {
         </Heading>
         <HStack gap="1rem">
           <Box>
-            <Image src={call} w="2rem"/>
+            <Image src={call} w="2.5rem"/>
           </Box>
           <Box pt={".5rem"}>
             <Text fontFamily={"Roboto"} color="whiteAlpha.700">Call Me Now</Text>
             <Heading fontFamily={"Roboto"} fontSize={["1.5rem", "1.5rem", "1.5rem"]} color={"white"}>
-              +2349030661028
+              +234 903 066 1028.
             </Heading>
           </Box>
         </HStack>
         <HStack gap="1rem">
           <Box>
-            <Image src={message} w="2rem"/>
+            <Image src={message} w="2.5rem"/>
           </Box>
           <Box pt={".5rem"}>
             <Text fontFamily={"Roboto"} color="whiteAlpha.700">Chat With Me</Text>
@@ -83,7 +83,7 @@ const EnquirySection = () => {
         </HStack>
         <HStack gap="1rem">
           <Box>
-            <Image src={handshake} w="2rem"/>
+            <Image src={handshake} w="2.5rem"/>
           </Box>
           <Box pt={".5rem"}>
             <Text fontFamily={"Roboto"} color="whiteAlpha.700">Get Me Here</Text>
@@ -94,7 +94,7 @@ const EnquirySection = () => {
         </HStack>
         <HStack gap="1rem">
           <Box>
-            <Image src={testIcon} w="2rem"/>
+            <Image src={testIcon} w="2.5rem"/>
           </Box>
           <Box pt={".5rem"}>
             <Text fontFamily={"Roboto"} color="whiteAlpha.700">Check My Profile</Text>

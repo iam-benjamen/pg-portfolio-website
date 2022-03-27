@@ -1,7 +1,7 @@
-import { Box, Text, Heading } from "@chakra-ui/react";
+import { Box, Text, Heading, Image, Link } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
+import Arrow from "../assets/right-arrow.svg"
 const breakpoints = createBreakpoints({
   sm: "400px",
   md: "1000px",
@@ -86,17 +86,18 @@ const AboutSection = () => {
           </Heading>
           <Text pt={"1rem"}>Let's talk with me</Text>
         </Box>
-        <Box display={"flex"} gap="1rem">
+        <Box display={"flex"} gap="1rem" cursor={"pointer"} _hover={{gap:"1.3rem"}}>
           <Text
             color="#3d648f"
             fontSize={"1.5rem"}
-            textDecoration={"underline"}
+            fontFamily="Montserrat"
+            pt="7px"
           >
-            Send Me A Message
+            Send me a message
           </Text>
-          <Box
+          <Box as={Link}
           >
-            <ArrowForwardIcon color={"#3d648f"} w="2rem" h="2rem" />
+            <Image src={Arrow} width={"3rem"}/>
           </Box>
         </Box>
       </Box>
