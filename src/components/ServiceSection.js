@@ -49,18 +49,19 @@ const ServiceSection = () => {
       height="70vh"
       display={"flex"}
       flexDir={"column"}
-      gap="1rem"
+      gap="0.5rem"
       px={["1rem", "5rem", "10rem"]}
       mt="-1px"
       pt={"5rem"}
       pb="35rem"
       zIndex={-80}
       className="font-link"
+      id="service-section"
     >
-      <Text fontFamily={"Roboto"} className="font-link" textAlign={"center"} color={"#3d648f"} textDecor="underline">
+      <Text fontFamily={"Poppins"} className="font-link" textAlign={"center"} color={"#3d648f"} textDecor="underline">
         Services
       </Text>
-      <Heading fontFamily={"Roboto"} textAlign={"center"} color={"white"} pb="1rem">
+      <Heading fontFamily={"Poppins"} textAlign={"center"} color={"white"} pb="1rem">
         What We Do?
       </Heading>
 
@@ -82,11 +83,11 @@ const ServiceSection = () => {
             color={"white"}
             fontSize="1.5rem"
             w="90%"
-            fontFamily={"Roboto"}
+            fontFamily={"Poppins"}
           >
             Graphics Design
           </Heading>
-          <Text fontFamily={"Roboto"} color={"white"} textAlign="center" w={"83%"}>
+          <Text fontFamily={"Poppins"} color={"white"} textAlign="center" w={"83%"}>
             Design is not just what it looks like and feels like. Design is how
             it works. Good design is good business. Get Noticed!
           </Text>
@@ -103,10 +104,10 @@ const ServiceSection = () => {
           _hover={{cursor:"pointer"}}
         >
           <Image src={Architecture}/>
-          <Heading fontFamily={"Roboto"} textAlign={"center"} color={"white"} fontSize="1.5rem">
+          <Heading fontFamily={"Poppins"} textAlign={"center"} color={"white"} fontSize="1.5rem">
             Architectural <br/> Design
           </Heading>
-          <Text fontFamily={"Roboto"} color={"white"} textAlign="center" w={"83%"}>
+          <Text fontFamily={"Poppins"} color={"white"} textAlign="center" w={"83%"}>
             Architecture is an expression of values the way we build is a
             reflection of the way we live. Let's create value for your building
             projects.
@@ -124,10 +125,10 @@ const ServiceSection = () => {
           _hover={{cursor:"pointer"}}
         >
           <Image src={Visual}/>
-          <Heading fontFamily={"Roboto"} textAlign={"center"} color={"white"} fontSize="1.5rem">
+          <Heading fontFamily={"Poppins"} textAlign={"center"} color={"white"} fontSize="1.5rem">
             Visual Design
           </Heading>
-          <Text fontFamily={"Roboto"} color={"white"} textAlign="center" w={"83%"}>
+          <Text fontFamily={"Poppins"} color={"white"} textAlign="center" w={"83%"}>
             Attractive Visuals creates effective communication of ideas, higher
             visibility, and enhanced credibility for your brand
           </Text>
@@ -144,10 +145,10 @@ const ServiceSection = () => {
           _hover={{cursor:"pointer"}}
         >
           <Image src={Content}/>
-          <Heading fontFamily={"Roboto"} textAlign={"center"} color={"white"} fontSize="1.5rem">
+          <Heading fontFamily={"Poppins"} textAlign={"center"} color={"white"} fontSize="1.5rem">
             Content Creation
           </Heading>
-          <Text fontFamily={"Roboto"} color={"white"} textAlign="center" w={"83%"}>
+          <Text fontFamily={"Poppins"} color={"white"} textAlign="center" w={"83%"}>
             Every great design begins with an even better story. Design in the
             absence of content is not design, it's decoration.
           </Text>

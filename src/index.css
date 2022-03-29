@@ -12,14 +12,13 @@ body {
 .slick-slide.slick-active.slick-center.slick-current{
   background-color: #101010!important;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  transform: scale(1.2);
+  transform: scale(1.1);
   border: 1px solid #3d648f;
 }
 .slick-slide.slick-active.slick-current{
   background-color: #101010!important;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-right: 2px solid #3d648f;
-  border-left: 2px solid #3d648f;
+  border: 2px solid #3d648f;
 }
 
 .slick-dots li button:before{

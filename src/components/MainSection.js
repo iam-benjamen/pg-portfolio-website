@@ -1,5 +1,6 @@
 import { Box, Image, VStack, Heading, Text } from "@chakra-ui/react";
 import mainPicture2 from "../assets/mainProject2.png";
+import quote from "../assets/quote.svg"
 import { useRef, useEffect } from "react";
 import Typed from "typed.js";
 
@@ -30,11 +31,12 @@ const MainSection = () => {
 
   return (
     <Box
+      id="home"
       display="flex"
       flexDirection={["column-reverse", "column-reverse", "row"]}
       justifyContent="center"
       bgColor="#141414"
-      height={"100vh"}
+      height={["100vh","max-content","max-content"]}
       alignItems={"center"}
       pt="5rem"
     >

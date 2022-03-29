@@ -28,8 +28,10 @@ const breakpoints = createBreakpoints({
 const theme = extendTheme({ breakpoints });
 
 const EnquirySection = () => {
+
   return (
     <Box
+      id="enquiry-section"
       bgColor={"#141414"}
       display="flex"
       justifyContent={"center"}
@@ -47,72 +49,72 @@ const EnquirySection = () => {
           textDecoration="underline"
           mb="-2rem"
           fontStyle="underline"
-          fontFamily={"Roboto"}
+          fontFamily={"Poppins"}
         >
           Get In Touch
         </Text>
         <Heading
-          fontSize={["1.5rem", "2rem", "2rem"]}
+          fontSize={["1.5rem", "1.8rem", "2.3rem"]}
           color={"white"}
           mt="0.4rem"
-          fontFamily={"Roboto"}
+          fontFamily={"Poppins"}
         >
           Talk or Meet With Me
         </Heading>
-        <HStack gap="1rem">
+        <HStack gap=".5rem">
           <Box>
             <Image src={call} w="2.5rem"/>
           </Box>
           <Box pt={".5rem"}>
-            <Text fontFamily={"Roboto"} color="whiteAlpha.700">Call Me Now</Text>
-            <Heading fontFamily={"Roboto"} fontSize={["1.5rem", "1.5rem", "1.5rem"]} color={"white"}>
-              +234 903 066 1028.
+            <Text fontFamily={"Poppins"} color="whiteAlpha.700">Call Me Now</Text>
+            <Heading fontFamily={"Poppins"} fontSize={["1.5rem", "1.5rem", "1.5rem"]} color={"white"}>
+              (+234) 903 066 1028.
             </Heading>
           </Box>
         </HStack>
-        <HStack gap="1rem">
+        <HStack gap=".5rem">
           <Box>
             <Image src={message} w="2.5rem"/>
           </Box>
           <Box pt={".5rem"}>
-            <Text fontFamily={"Roboto"} color="whiteAlpha.700">Chat With Me</Text>
-            <Heading fontFamily={"Roboto"} fontSize={["1.5rem", "1.5rem", "1.5rem"]} color={"white"}>
+            <Text fontFamily={"Poppins"} color="whiteAlpha.700">Chat With Me</Text>
+            <Heading fontFamily={"Poppins"} fontSize={["1.5rem", "1.5rem", "1.5rem"]} color={"white"}>
               pgstudio@gmail.com
             </Heading>
           </Box>
         </HStack>
-        <HStack gap="1rem">
+        <HStack gap=".5rem">
           <Box>
             <Image src={handshake} w="2.5rem"/>
           </Box>
           <Box pt={".5rem"}>
-            <Text fontFamily={"Roboto"} color="whiteAlpha.700">Get Me Here</Text>
-            <Heading fontFamily={"Roboto"} fontSize={["1.5rem", "1.5rem", "1.5rem"]} color={"white"}>
+            <Text fontFamily={"Poppins"} color="whiteAlpha.700">Get Me Here</Text>
+            <Heading fontFamily={"Poppins"} fontSize={["1.5rem", "1.5rem", "1.5rem"]} color={"white"}>
               Abuja, Nigeria.
             </Heading>
           </Box>
         </HStack>
-        <HStack gap="1rem">
+        <HStack gap=".5rem">
           <Box>
             <Image src={testIcon} w="2.5rem"/>
           </Box>
           <Box pt={".5rem"}>
-            <Text fontFamily={"Roboto"} color="whiteAlpha.700">Check My Profile</Text>
-            <Heading fontFamily={"Roboto"} fontSize={["1.2rem", "1.5rem", "1.5rem"]} color={"white"}>
+            <Text fontFamily={"Poppins"} color="whiteAlpha.700">Check My Profile</Text>
+            <Heading fontFamily={"Poppins"} fontSize={["1.2rem", "1.5rem", "1.5rem"]} color={"white"}>
               linkedin.com/in/pg
             </Heading>
           </Box>
         </HStack>
       </VStack>
       <VStack alignItems={"flex-start"}>
-        <Text fontFamily={"Roboto"} color={"#3d648f"} textDecoration="underline">
+        <Text fontFamily={"Poppins"} color={"#3d648f"} textDecoration="underline">
           Send Me A Message
         </Text>
         <Heading
-          fontSize={["1.5rem", "2rem", "2rem"]}
+          fontSize={["1.5rem", "1.8rem", "2.3rem"]}
           color={"white"}
           pb="1rem"
-          fontFamily={"Roboto"}
+          fontFamily={"Poppins"}
         >
           Let Me Know Here
         </Heading>
@@ -186,10 +188,10 @@ const EnquirySection = () => {
             width={"max-content"}
             bgColor="#3d648f"
             color="white"
-            paddingX={"3rem"}
+            paddingX={"2.5rem"}
             paddingY="1rem"
             padding
-            borderRadius="0rem"
+            borderRadius="3px"
             cursor={"pointer"}
             type="submit"
             value={"Get A Quote"}

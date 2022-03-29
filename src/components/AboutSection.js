@@ -1,14 +1,10 @@
-import { Box, Text, Heading, Image, Link } from "@chakra-ui/react";
+import { Box, Text, Heading, Image } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
 import Arrow from "../assets/right-arrow.svg"
-const breakpoints = createBreakpoints({
-  sm: "400px",
-  md: "1000px",
-  lg: "1500px",
-});
+import { Link as mylink, animateScroll as scroll } from "react-scroll";
 
-const theme = extendTheme({ breakpoints });
+
 const AboutSection = () => {
   return (
     <Box
@@ -21,7 +17,8 @@ const AboutSection = () => {
       alignItems={{ base: "center", md: "center", lg: "flex-start" }}
       gap={{ base: "0rem", md: "3rem", lg: "10rem" }}
       mt="-1px"
-      py="1rem"
+      py="2rem"
+      id="about-section"
     >
       <Box
         display={"flex"}
@@ -87,16 +84,16 @@ const AboutSection = () => {
           </Heading>
           <Text pt={"1rem"}>Let's talk with me</Text>
         </Box>
-        <Box display={"flex"} gap="1rem" cursor={"pointer"} _hover={{gap:"1.3rem"}}>
+        <Box as={mylink} to="enquiry-section" smooth={true} display={"flex"} gap="2rem" cursor={"pointer"} _hover={{gap:"3rem", transitionDuration:".5s"}}>
           <Text
-            color="#3d648f"
+            color="white"
             fontSize={"1.5rem"}
             fontFamily="Montserrat"
-            pt="7px"
+            pt="5px"
           >
             Send me a message
           </Text>
-          <Box as={Link}
+          <Box
           >
             <Image src={Arrow} width={"3rem"}/>
           </Box>

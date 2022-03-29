@@ -3,7 +3,6 @@ import mainLogo from "../assets/PGStudioLogo.png";
 import { DownloadIcon, HamburgerIcon, LinkIcon } from "@chakra-ui/icons";
 import { Link as mylink, animateScroll as scroll } from "react-scroll";
 
-
 const NavBar = () => {
   return (
     <Flex
@@ -13,7 +12,7 @@ const NavBar = () => {
       gap={["2rem", "3rem", "7rem"]}
       position={"fixed"}
       w="100%"
-      z-zIndex={999}
+      zIndex={999}
     >
       <Image src={mainLogo} w="6rem" h="80%" />
       <Flex
@@ -26,6 +25,9 @@ const NavBar = () => {
         display={["none", "none", "flex"]}
       >
         <Link
+          as={mylink}
+          smooth={true}
+          to="home"
           cursor="pointer"
           padding="3px"
           _hover={{
@@ -51,6 +53,7 @@ const NavBar = () => {
         </Link>
         <Link
           as={mylink}
+          smooth={true}
           to="about-section"
           cursor="pointer"
           _hover={{
@@ -75,7 +78,9 @@ const NavBar = () => {
           About
         </Link>
         <Link
-          to="about-section"
+          as={mylink}
+          smooth={true}
+          to="service-section"
           cursor="pointer"
           _hover={{
             textDecoration: "none",
@@ -99,6 +104,8 @@ const NavBar = () => {
           Services
         </Link>
         <Link
+          as={mylink}
+          smooth={true}
           to="works"
           cursor="pointer"
           _hover={{
@@ -123,7 +130,9 @@ const NavBar = () => {
           Works
         </Link>
         <Link
-          to="about-section"
+          as={mylink}
+          smooth={true}
+          to="enquiry-section"
           cursor="pointer"
           _hover={{
             textDecoration: "none",
@@ -144,20 +153,25 @@ const NavBar = () => {
             transition: "transform 0.3s ease 0s",
           }}
         >
-          Contact
+          Hire Me
         </Link>
         <Link
-          bgColor="#3d648f"
+          bgColor="white"
+          color="#3d648f"
           cursor="pointer"
           padding=".5rem"
-          _hover={{}}
+          _hover={{
+            bgColor: "#3d648f",
+            color: "white",
+            transitionDuration: ".8s",
+          }}
           minWidth="8.5rem"
           pl="15px"
           minW={"fit-content"}
           className="font-link"
           borderRadius={"3px"}
         >
-          My Resume <DownloadIcon />
+          Download Resume <DownloadIcon />
         </Link>
       </Flex>
       <Box justifySelf="flex-end" alignSelf="center">
