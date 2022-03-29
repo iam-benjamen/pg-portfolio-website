@@ -63,7 +63,7 @@ const AboutSection = () => {
           </Heading>
           <Text
             color={"white"}
-            fontSize={"1rem","1rem","1.2rem"}
+            fontSize={"1rem","1rem","1.5rem"}
             lineHeight={1.2}
             pb="5px"
           >

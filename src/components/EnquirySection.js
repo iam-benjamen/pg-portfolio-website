@@ -35,7 +35,7 @@ const EnquirySection = () => {
       bgColor={"#141414"}
       display="flex"
       justifyContent={"center"}
-      gap="7rem"
+      gap={["3rem","5rem","7rem"]}
       flexDirection={{ base: "column", md: "column", lg: "row" }}
       height="max-content"
       alignItems={"center"}
@@ -100,13 +100,13 @@ const EnquirySection = () => {
           </Box>
           <Box pt={".5rem"}>
             <Text fontFamily={"Poppins"} color="whiteAlpha.700">Check My Profile</Text>
-            <Heading fontFamily={"Poppins"} fontSize={["1.2rem", "1.5rem", "1.5rem"]} color={"white"}>
+            <Heading fontFamily={"Poppins"} fontSize={["1.4rem", "1.5rem", "1.5rem"]} color={"white"}>
               linkedin.com/in/pg
             </Heading>
           </Box>
         </HStack>
       </VStack>
-      <VStack alignItems={"flex-start"}>
+      <VStack alignItems={"flex-start"} width="90%">
         <Text fontFamily={"Poppins"} color={"#3d648f"} textDecoration="underline">
           Send Me A Message
         </Text>
