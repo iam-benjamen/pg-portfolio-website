@@ -3,7 +3,15 @@ import MainSection from "./components/MainSection";
 import EnquirySection from "./components/EnquirySection";
 import AboutSection from "./components/AboutSection";
 import ServiceSection from "./components/ServiceSection";
-import ServiceSectionSWiper from "./components/ServiceSectionSwiper";
+import { extendTheme } from "@chakra-ui/react";
+import { createBreakpoints } from "@chakra-ui/theme-tools";
+
+const breakpoints = createBreakpoints({
+  sm: "400px",
+  md: "1000px",
+  lg: "1500px",
+});
+const theme = extendTheme({ breakpoints });
 
 function App() {
   return (
@@ -12,7 +20,6 @@ function App() {
       <MainSection id="nav-bar" />
       <AboutSection id="about-section" />
       <ServiceSection id="service-section" />
-      {/* <ServiceSectionSWiper/> */}
       <EnquirySection id="enquiry-section" />
     </div>
   );

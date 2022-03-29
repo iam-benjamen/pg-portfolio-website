@@ -3,6 +3,8 @@ import mainPicture2 from "../assets/mainProject2.png";
 import { useRef, useEffect } from "react";
 import Typed from "typed.js";
 
+
+
 const MainSection = () => {
   const el = useRef(null);
   const typed = useRef(null);
@@ -34,11 +36,12 @@ const MainSection = () => {
       bgColor="#141414"
       height={"100vh"}
       alignItems={"center"}
-      pb="5rem"
+      pt="5rem"
     >
       <Box>
         <Image
           src={mainPicture2}
+
           width={["-webkit-fill-available", "-webkit-fill-available", "37rem"]}
         />
       </Box>
@@ -56,10 +59,10 @@ const MainSection = () => {
           bgGradient="linear(to-l, #FFFFFF, #3d648f)"
           bgClip="text"
         >
-          <Text fontFamily={"Montserrat"} fontSize={["3rem", "3rem", "4rem"]}>
+          <Text fontFamily={"Poppins"} fontSize={["3rem", "3rem", "4rem"]}>
             Adediran
           </Text>
-          <Text fontFamily={"Montserrat"} fontSize={["2rem", "2rem", "3rem"]}>
+          <Text fontFamily={"Poppins"} fontSize={["2rem", "2rem", "3rem"]}>
             Ilerioluwa
           </Text>
         </Heading>

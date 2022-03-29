@@ -1,16 +1,8 @@
 import { Flex, Square, Image, Text, Box, Link } from "@chakra-ui/react";
 import mainLogo from "../assets/PGStudioLogo.png";
 import { DownloadIcon, HamburgerIcon, LinkIcon } from "@chakra-ui/icons";
-import { extendTheme } from "@chakra-ui/react";
-import { createBreakpoints } from "@chakra-ui/theme-tools";
 import { Link as mylink, animateScroll as scroll } from "react-scroll";
 
-const breakpoints = createBreakpoints({
-  sm: "400px",
-  md: "1000px",
-  lg: "1500px",
-});
-const theme = extendTheme({ breakpoints });
 
 const NavBar = () => {
   return (
@@ -19,9 +11,9 @@ const NavBar = () => {
       justifyContent={["space-between", "space-between", "center"]}
       px="1rem"
       gap={["2rem", "3rem", "7rem"]}
-      // position={"sticky"}
-      // w="100%"
-      // z-zIndex={999}
+      position={"fixed"}
+      w="100%"
+      z-zIndex={999}
     >
       <Image src={mainLogo} w="6rem" h="80%" />
       <Flex
@@ -163,6 +155,7 @@ const NavBar = () => {
           pl="15px"
           minW={"fit-content"}
           className="font-link"
+          borderRadius={"3px"}
         >
           My Resume <DownloadIcon />
         </Link>

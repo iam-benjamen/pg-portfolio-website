@@ -21,7 +21,7 @@ const AboutSection = () => {
       alignItems={{ base: "center", md: "center", lg: "flex-start" }}
       gap={{ base: "0rem", md: "3rem", lg: "10rem" }}
       mt="-1px"
-      py="5rem"
+      py="1rem"
     >
       <Box
         display={"flex"}
@@ -41,13 +41,13 @@ const AboutSection = () => {
             bgColor: "#3d648f",
             position: "absolute",
             top: "14px",
-            left: "5.3rem",
+            left: "6rem",
           }}
         >
           About me
         </Text>
-        <Text fontSize={["1.2rem", "1.2rem", "1.5rem"]} fontWeight="bold">
-          Design is not just what it looks like and feels like. Design is how it
+        <Text fontSize="1.9rem" fontWeight="bold">
+          Design is not just what it looks like and feels like.<br/> Design is how it
           works.
         </Text>
         <Text color={"whiteAlpha.700"} textAlign="justify">
@@ -58,7 +58,7 @@ const AboutSection = () => {
         </Text>
         <Box display={"flex"} alignItems="center" gap={".5rem"}> 
           <Heading
-            fontFamily={"Montserrat"}
+            fontFamily={"Poppins"}
             fontSize={["4rem","4rem","5rem"]}
             color={"#3d648f"}
           >
@@ -68,6 +68,7 @@ const AboutSection = () => {
             color={"white"}
             fontSize={"1rem","1rem","1.2rem"}
             lineHeight={1.2}
+            pb="5px"
           >
             Years Of <br /> Experience
           </Text>
@@ -81,7 +82,7 @@ const AboutSection = () => {
         height={"18rem"}
       >
         <Box>
-          <Heading fontFamily={"Montserrat"}>
+          <Heading fontFamily={"Poppins"}>
             Any Type of Query <br /> & Discussion.
           </Heading>
           <Text pt={"1rem"}>Let's talk with me</Text>
