@@ -106,7 +106,7 @@ const EnquirySection = () => {
           </Box>
         </HStack>
       </VStack>
-      <VStack alignItems={"flex-start"} width="90%">
+      <VStack alignItems={"flex-start"} width={["90%","50%","40%"]}>
         <Text fontFamily={"Poppins"} color={"#3d648f"} textDecoration="underline">
           Send Me A Message
         </Text>

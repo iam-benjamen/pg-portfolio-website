@@ -1,6 +1,28 @@
-import { Flex, Square, Image, Text, Box, Link } from "@chakra-ui/react";
+import {
+  Flex,
+  Square,
+  Image,
+  Text,
+  Box,
+  Link,
+  Button,
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  PopoverHeader,
+  PopoverBody,
+  PopoverFooter,
+  PopoverArrow,
+  PopoverCloseButton,
+  PopoverAnchor,
+} from "@chakra-ui/react";
 import mainLogo from "../assets/PGStudioLogo.png";
-import { DownloadIcon, HamburgerIcon, LinkIcon } from "@chakra-ui/icons";
+import {
+  DownloadIcon,
+  HamburgerIcon,
+  LinkIcon,
+  ExternalLinkIcon,
+} from "@chakra-ui/icons";
 import { Link as mylink, animateScroll as scroll } from "react-scroll";
 
 const NavBar = () => {
@@ -152,27 +174,74 @@ const NavBar = () => {
             bottom: "-2px",
             transition: "transform 0.3s ease 0s",
           }}
+          width="max-content"
         >
           Hire Me
         </Link>
-        <Link
-          bgColor="white"
-          color="#3d648f"
-          cursor="pointer"
-          padding=".5rem"
-          _hover={{
-            bgColor: "#3d648f",
-            color: "white",
-            transitionDuration: ".8s",
-          }}
-          minWidth="8.5rem"
-          pl="15px"
-          minW={"fit-content"}
-          className="font-link"
-          borderRadius={"3px"}
-        >
-          Download Resume <DownloadIcon />
-        </Link>
+        <Popover>
+          <PopoverTrigger>
+            <Button
+              bgColor="white"
+              color="#3d648f"
+              cursor="pointer"
+              padding=".5rem"
+              _hover={{
+                bgColor: "#3d648f",
+                color: "white",
+                transitionDuration: ".8s",
+              }}
+              minWidth="8.5rem"
+              pl="15px"
+              minW={"fit-content"}
+              className="font-link"
+              borderRadius={"3px"}
+              fontStyle="none"
+            >
+              Download Resume
+            </Button>
+          </PopoverTrigger>
+          <PopoverContent bgColor="#141414">
+            <PopoverArrow />
+            <PopoverCloseButton />
+            <PopoverHeader fontFamily={"Poppins"}>
+              I have two Resumes available!
+            </PopoverHeader>
+            <PopoverBody display={"flex"} flexDirection="row" gap="1rem">
+              <Button
+                w="max-content"
+                bgColor="#3d648f"
+                fontFamily={"Poppins"}
+                _hover={{
+                  bgColor: "#3d648f",
+                  color: "white",
+                  transitionDuration: ".8s",
+                  textDecor:"none"
+                }}
+                as={Link}
+                href="https://drive.google.com/file/d/1jxOwaUdQ_ZaaYn2k2D_huU59JZoHIVo4/view?usp=sharing"
+                isExternal
+              >
+                Architecture <ExternalLinkIcon mx="2px" />
+              </Button>
+              <Button
+                w="max-content"
+                _hover={{
+                  bgColor: "#3d648f",
+                  color: "white",
+                  transitionDuration: ".8s",
+                  textDecor:"none"
+                }}
+                bgColor="#3d648f"
+                fontFamily={"Poppins"}
+                as={Link}
+                href="https://drive.google.com/file/d/1sho2qI1bDzVqoe-osncRMB47-CR2eeUA/view?usp=sharing"
+                isExternal
+              >
+                Creative Design <ExternalLinkIcon mx="2px" />
+              </Button>
+            </PopoverBody>
+          </PopoverContent>
+        </Popover>
       </Flex>
       <Box justifySelf="flex-end" alignSelf="center">
         <HamburgerIcon

@@ -146,7 +146,7 @@ const ServiceSection = () => {
         >
           <Image src={Content}/>
           <Heading fontFamily={"Poppins"} textAlign={"center"} color={"white"} fontSize="1.5rem">
-            Content Creation
+            Content Writing
           </Heading>
           <Text fontFamily={"Poppins"} color={"white"} textAlign="center" w={"83%"}>
             Every great design begins with an even better story. Design in the

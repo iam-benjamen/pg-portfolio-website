@@ -17,7 +17,7 @@ const AboutSection = () => {
       alignItems={{ base: "center", md: "center", lg: "flex-start" }}
       gap={{ base: "0rem", md: "3rem", lg: "10rem" }}
       mt="-1px"
-      py="2rem"
+      py="3rem"
       id="about-section"
     >
       <Box
