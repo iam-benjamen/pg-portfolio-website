@@ -84,7 +84,7 @@ const AboutSection = () => {
           </Heading>
           <Text pt={"1rem"}>Let's talk with me</Text>
         </Box>
-        <Box as={mylink} to="enquiry-section" smooth={true} display={"flex"} gap="2rem" cursor={"pointer"} _hover={{gap:"3rem", transitionDuration:".5s"}}>
+        <Box as={mylink} offset={-20} to="enquiry-section" smooth={true} display={"flex"} gap="2rem" cursor={"pointer"} _hover={{gap:"3rem", transitionDuration:".5s"}}>
           <Text
             color="white"
             fontSize={"1.5rem"}

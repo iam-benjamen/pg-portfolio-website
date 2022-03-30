@@ -77,6 +77,7 @@ const NavBar = () => {
           as={mylink}
           smooth={true}
           to="about-section"
+          offset={-60}
           cursor="pointer"
           _hover={{
             textDecoration: "none",
@@ -103,6 +104,7 @@ const NavBar = () => {
           as={mylink}
           smooth={true}
           to="service-section"
+          offset={-20}
           cursor="pointer"
           _hover={{
             textDecoration: "none",

@@ -46,14 +46,13 @@ const ServiceSection = () => {
   return (
     <Box
       bgColor={"#141414"}
-      height="70vh"
+      height="max-content"
       display={"flex"}
       flexDir={"column"}
       gap="0.5rem"
-      px={["1rem", "5rem", "10rem"]}
+      px={["1rem", "5rem", "8rem"]}
       mt="-1px"
       pt={"5rem"}
-      pb="35rem"
       zIndex={-80}
       className="font-link"
       id="service-section"
