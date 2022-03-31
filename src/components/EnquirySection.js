@@ -11,8 +11,9 @@ import {
   Button,
   HStack,
   Image,
+  Textarea
 } from "@chakra-ui/react";
-import { CheckIcon, EmailIcon, EditIcon } from "@chakra-ui/icons";
+import { CheckIcon, EmailIcon, EditIcon,  } from "@chakra-ui/icons";
 import { BsTelephone, FaPhone, FaCoffee, FaLinkedin } from "react-icons/fa";
 import { extendTheme } from "@chakra-ui/react";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
@@ -51,7 +52,7 @@ const EnquirySection = () => {
       pt="5rem"
       mt={"-1rem"}
     >
-      <VStack alignItems={"start"} gap="2rem" pt="1rem">
+      <VStack alignItems={"start"} gap="1.5rem" pt="1rem">
         <Text
           color={"#3d648f"}
           textDecoration="underline"
@@ -163,8 +164,6 @@ const EnquirySection = () => {
           <InputGroup
             outline={"none"}
             bgColor="#1c1c1c"
-            pb={"2rem"}
-            pt={"1rem"}
             mb="1rem"
             width={["100%", "100%", "30rem"]}
           >
@@ -176,8 +175,10 @@ const EnquirySection = () => {
               paddingLeft={"1rem"}
               required
               name="name"
+              height={"5rem"}
             />
             <InputRightElement
+              top={"1rem"}
               pt={"8px"}
               pr={"8px"}
               children={<EditIcon color="#3d648f" />}
@@ -187,8 +188,6 @@ const EnquirySection = () => {
           <InputGroup
             outline={"none"}
             bgColor="#1c1c1c"
-            pb={"2rem"}
-            pt={"1rem"}
             mb="1rem"
           >
             <Input
@@ -200,8 +199,10 @@ const EnquirySection = () => {
               type="email"
               required
               name="email"
+              height={"5rem"}
             />
             <InputRightElement
+              top={"1rem"}
               pt={"8px"}
               pr={"8px"}
               children={<EmailIcon color={"#3d648f"} />}
@@ -210,11 +211,9 @@ const EnquirySection = () => {
           <InputGroup
             outline={"none"}
             bgColor="#1c1c1c"
-            pb={"5rem"}
-            pt={"1rem"}
             mb="1rem"
           >
-            <Input
+            <Textarea
               variant={"unstyled"}
               placeholder="Tell me details about project"
               _placeholder={{ color: "whiteAlpha.700" }}
@@ -222,6 +221,7 @@ const EnquirySection = () => {
               paddingLeft={"1rem"}
               required
               name="message"
+              pr="2rem"
             />
             <InputRightElement
               pt={"8px"}
