@@ -162,7 +162,6 @@ const EnquirySection = () => {
           method="POST"
           data-netlify="true"
           action="/success=true"
-          onSubmit={ function(e){ e.preventDefault()}}
         >
           <InputGroup
             outline={"none"}
