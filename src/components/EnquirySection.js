@@ -236,6 +236,9 @@ const EnquirySection = () => {
             type="submit"
             value={"Get A Quote"}
             variant="unstyled"
+            onClick={(e) => {
+              e.preventDefault();
+            }}
           />
         </form>
         <Box>
