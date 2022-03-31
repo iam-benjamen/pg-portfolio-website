@@ -162,6 +162,7 @@ const EnquirySection = () => {
           method="POST"
           data-netlify="true"
           action="/success=true"
+          onSubmit={prevent.default()}
         >
           <InputGroup
             outline={"none"}
@@ -178,6 +179,7 @@ const EnquirySection = () => {
               color="white"
               paddingLeft={"1rem"}
               required
+              name="name"
             />
             <InputRightElement
               pt={"8px"}
@@ -201,6 +203,7 @@ const EnquirySection = () => {
               paddingLeft={"1rem"}
               type="email"
               required
+              name="email"
             />
             <InputRightElement
               pt={"8px"}
@@ -222,6 +225,7 @@ const EnquirySection = () => {
               color="white"
               paddingLeft={"1rem"}
               required
+              name="message"
             />
             <InputRightElement
               pt={"8px"}
