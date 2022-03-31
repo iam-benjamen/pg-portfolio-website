@@ -243,8 +243,9 @@ const EnquirySection = () => {
             variant="unstyled"
           />
         </form>
+        <Box>{success && <Text style={{ color: "green" }}>Thanks for your message! </Text>}</Box>
       </VStack>
-      <Box>{success && <Text style={{ color: "green" }}>Thanks for your message! </Text>}</Box>
+      
     </Box>
   );
 };
