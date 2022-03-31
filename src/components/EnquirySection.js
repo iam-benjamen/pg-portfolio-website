@@ -118,7 +118,7 @@ const EnquirySection = () => {
         >
           Let Me Know Here
         </Heading>
-        <form name="contact" method="POST" netlify>
+        <form name="contact" netlify>
           <InputGroup
             outline={"none"}
             bgColor="#1c1c1c"
