@@ -244,7 +244,7 @@ const EnquirySection = () => {
           />
         </form>
       </VStack>
-      {success && <Text style={{ color: "green" }}>Thanks for your message! </Text>}
+      <Box>{success && <Text style={{ color: "green" }}>Thanks for your message! </Text>}</Box>
     </Box>
   );
 };
