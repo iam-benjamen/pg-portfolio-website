@@ -160,9 +160,6 @@ const EnquirySection = () => {
           method="POST"
           data-netlify="true"
           action="/success=true"
-          onSubmit={(e) => {
-            e.preventDefault();
-          }}
         >
           <InputGroup
             outline={"none"}
@@ -236,9 +233,6 @@ const EnquirySection = () => {
             type="submit"
             value={"Get A Quote"}
             variant="unstyled"
-            onClick={(e) => {
-              e.preventDefault();
-            }}
           />
         </form>
         <Box>
