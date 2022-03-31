@@ -1,5 +1,5 @@
 import { Box, Image, VStack, Heading, Text } from "@chakra-ui/react";
-import mainPicture2 from "../assets/mainProject2.png";
+import mainPicture2 from "../assets/mainProject2 (1).png";
 import quote from "../assets/quote.svg"
 import { useRef, useEffect } from "react";
 import Typed from "typed.js";

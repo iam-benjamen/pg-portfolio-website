@@ -47,7 +47,7 @@ const AboutSection = () => {
           Design is not just what it looks like and feels like.<br/> Design is how it
           works.
         </Text>
-        <Text color={"whiteAlpha.700"} textAlign="justify">
+        <Text color={"whiteAlpha.700"} textDecor="underline">
           The public is more familiar with bad design than good design. But we
           are here to change the narrative by creating outstanding, highly
           engaging and thought-provoking contents through designs. It's going to

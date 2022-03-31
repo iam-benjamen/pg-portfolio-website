@@ -11,9 +11,9 @@ import {
   Button,
   HStack,
   Image,
-  Textarea
+  Textarea,
 } from "@chakra-ui/react";
-import { CheckIcon, EmailIcon, EditIcon,  } from "@chakra-ui/icons";
+import { CheckIcon, EmailIcon, EditIcon } from "@chakra-ui/icons";
 import { BsTelephone, FaPhone, FaCoffee, FaLinkedin } from "react-icons/fa";
 import { extendTheme } from "@chakra-ui/react";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
@@ -52,7 +52,7 @@ const EnquirySection = () => {
       pt="5rem"
       mt={"-1rem"}
     >
-      <VStack alignItems={"start"} gap="1.5rem" pt="1rem">
+      <VStack alignItems={"start"} gap="1.2rem" pt="1rem">
         <Text
           color={"#3d648f"}
           textDecoration="underline"
@@ -79,7 +79,7 @@ const EnquirySection = () => {
               Call Me Now
             </Text>
             <Text
-              fontFamily={"Poppins"}
+              fontFamily={"Montserrat"}
               fontSize={["1.5rem", "1.5rem", "1.5rem"]}
               color={"white"}
             >
@@ -96,11 +96,11 @@ const EnquirySection = () => {
               Chat With Me
             </Text>
             <Text
-              fontFamily={"Poppins"}
+              fontFamily={"Montserrat"}
               fontSize={["1.5rem", "1.5rem", "1.5rem"]}
               color={"white"}
             >
-              pgstudio@gmail.com
+              pgstudios@gmail.com
             </Text>
           </Box>
         </HStack>
@@ -113,7 +113,7 @@ const EnquirySection = () => {
               Get Me Here
             </Text>
             <Text
-              fontFamily={"Poppins"}
+              fontFamily={"Montserrat"}
               fontSize={["1.5rem", "1.5rem", "1.5rem"]}
               color={"white"}
             >
@@ -130,11 +130,11 @@ const EnquirySection = () => {
               Check My Profile
             </Text>
             <Text
-              fontFamily={"Poppins"}
-              fontSize={["1.4rem", "1.5rem", "1.5rem"]}
+              fontFamily={"Montserrat"}
+              fontSize={["1.5rem", "1.5rem", "1.5rem"]}
               color={"white"}
             >
-              linkedin.com/in/pg
+              linkedin.com/in/pgstudios
             </Text>
           </Box>
         </HStack>
@@ -160,6 +160,9 @@ const EnquirySection = () => {
           method="POST"
           data-netlify="true"
           action="/success=true"
+          onSubmit={(e) => {
+            e.preventDefault();
+          }}
         >
           <InputGroup
             outline={"none"}
@@ -185,11 +188,7 @@ const EnquirySection = () => {
             />
           </InputGroup>
           <input type="hidden" name="form-name" value="contact" />
-          <InputGroup
-            outline={"none"}
-            bgColor="#1c1c1c"
-            mb="1rem"
-          >
+          <InputGroup outline={"none"} bgColor="#1c1c1c" mb="1rem">
             <Input
               variant={"unstyled"}
               placeholder="Enter your email"
@@ -208,11 +207,7 @@ const EnquirySection = () => {
               children={<EmailIcon color={"#3d648f"} />}
             />
           </InputGroup>
-          <InputGroup
-            outline={"none"}
-            bgColor="#1c1c1c"
-            mb="1rem"
-          >
+          <InputGroup outline={"none"} bgColor="#1c1c1c" mb="1rem">
             <Textarea
               variant={"unstyled"}
               placeholder="Tell me details about project"
@@ -243,9 +238,12 @@ const EnquirySection = () => {
             variant="unstyled"
           />
         </form>
-        <Box>{success && <Text style={{ color: "green" }}>Thanks for your message! </Text>}</Box>
+        <Box>
+          {success && (
+            <Text style={{ color: "green" }}>Thanks for your message! </Text>
+          )}
+        </Box>
       </VStack>
-      
     </Box>
   );
 };
