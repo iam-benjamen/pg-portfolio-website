@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import {
   Box,
   Text,
@@ -16,9 +17,9 @@ import { BsTelephone, FaPhone, FaCoffee, FaLinkedin } from "react-icons/fa";
 import { extendTheme } from "@chakra-ui/react";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
 import testIcon from "../assets/linkedin-svg.svg";
-import handshake from "../assets/business-meeting.svg"
-import call from "../assets/phone-call.svg"
-import message from "../assets/chat-Icon.svg" 
+import handshake from "../assets/business-meeting.svg";
+import call from "../assets/phone-call.svg";
+import message from "../assets/chat-Icon.svg";
 
 const breakpoints = createBreakpoints({
   sm: "400px",
@@ -28,6 +29,13 @@ const breakpoints = createBreakpoints({
 const theme = extendTheme({ breakpoints });
 
 const EnquirySection = () => {
+  const [success, setSuccess] = useState(false);
+
+  useEffect(() => {
+    if (window.location.search.includes("success=true")) {
+      setSuccess(true);
+    }
+  }, []);
 
   return (
     <Box
@@ -35,7 +43,7 @@ const EnquirySection = () => {
       bgColor={"#141414"}
       display="flex"
       justifyContent={"center"}
-      gap={["3rem","5rem","7rem"]}
+      gap={["3rem", "5rem", "7rem"]}
       flexDirection={{ base: "column", md: "column", lg: "row" }}
       height="max-content"
       alignItems={"center"}
@@ -63,51 +71,79 @@ const EnquirySection = () => {
         </Heading>
         <HStack gap=".5rem">
           <Box>
-            <Image src={call} w="2.5rem"/>
+            <Image src={call} w="2.5rem" />
           </Box>
           <Box pt={".5rem"}>
-            <Text fontFamily={"Poppins"} color="whiteAlpha.700">Call Me Now</Text>
-            <Text fontFamily={"Poppins"} fontSize={["1.5rem", "1.5rem", "1.5rem"]} color={"white"}>
+            <Text fontFamily={"Poppins"} color="whiteAlpha.700">
+              Call Me Now
+            </Text>
+            <Text
+              fontFamily={"Poppins"}
+              fontSize={["1.5rem", "1.5rem", "1.5rem"]}
+              color={"white"}
+            >
               (+234) 903 066 1028.
             </Text>
           </Box>
         </HStack>
         <HStack gap=".5rem">
           <Box>
-            <Image src={message} w="2.5rem"/>
+            <Image src={message} w="2.5rem" />
           </Box>
           <Box pt={".5rem"}>
-            <Text fontFamily={"Poppins"} color="whiteAlpha.700">Chat With Me</Text>
-            <Text fontFamily={"Poppins"} fontSize={["1.5rem", "1.5rem", "1.5rem"]} color={"white"}>
+            <Text fontFamily={"Poppins"} color="whiteAlpha.700">
+              Chat With Me
+            </Text>
+            <Text
+              fontFamily={"Poppins"}
+              fontSize={["1.5rem", "1.5rem", "1.5rem"]}
+              color={"white"}
+            >
               pgstudio@gmail.com
             </Text>
           </Box>
         </HStack>
         <HStack gap=".5rem">
           <Box>
-            <Image src={handshake} w="2.5rem"/>
+            <Image src={handshake} w="2.5rem" />
           </Box>
           <Box pt={".5rem"}>
-            <Text fontFamily={"Poppins"} color="whiteAlpha.700">Get Me Here</Text>
-            <Text fontFamily={"Poppins"} fontSize={["1.5rem", "1.5rem", "1.5rem"]} color={"white"}>
+            <Text fontFamily={"Poppins"} color="whiteAlpha.700">
+              Get Me Here
+            </Text>
+            <Text
+              fontFamily={"Poppins"}
+              fontSize={["1.5rem", "1.5rem", "1.5rem"]}
+              color={"white"}
+            >
               Abuja, Nigeria.
             </Text>
           </Box>
         </HStack>
         <HStack gap=".5rem">
           <Box>
-            <Image src={testIcon} w="2.5rem"/>
+            <Image src={testIcon} w="2.5rem" />
           </Box>
           <Box pt={".5rem"}>
-            <Text fontFamily={"Poppins"} color="whiteAlpha.700">Check My Profile</Text>
-            <Text fontFamily={"Poppins"} fontSize={["1.4rem", "1.5rem", "1.5rem"]} color={"white"}>
+            <Text fontFamily={"Poppins"} color="whiteAlpha.700">
+              Check My Profile
+            </Text>
+            <Text
+              fontFamily={"Poppins"}
+              fontSize={["1.4rem", "1.5rem", "1.5rem"]}
+              color={"white"}
+            >
               linkedin.com/in/pg
             </Text>
           </Box>
         </HStack>
       </VStack>
       <VStack alignItems={"flex-start"} mx="1rem">
-        <Text fontFamily={"Poppins"} color={"#3d648f"} textDecoration="underline">
+        <Text
+          fontFamily={"Poppins"}
+          color={"#3d648f"}
+          textDecoration="underline"
+        >
           Send Me A Message
         </Text>
         <Heading
@@ -118,7 +154,15 @@ const EnquirySection = () => {
         >
           Let Me Know Here
         </Heading>
-        <form name="contact" netlify>
+        {success && (
+          <p style={{ color: "green" }}>Thanks for your message! </p>
+        )}
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          action="/success=true"
+        >
           <InputGroup
             outline={"none"}
             bgColor="#1c1c1c"
@@ -141,6 +185,7 @@ const EnquirySection = () => {
               children={<EditIcon color="#3d648f" />}
             />
           </InputGroup>
+          <input type="hidden" name="form-name" value="contact" />
           <InputGroup
             outline={"none"}
             bgColor="#1c1c1c"
