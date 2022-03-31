@@ -154,9 +154,6 @@ const EnquirySection = () => {
         >
           Let Me Know Here
         </Heading>
-        {success && (
-          <p style={{ color: "green" }}>Thanks for your message! </p>
-        )}
         <form
           name="contact"
           method="POST"
@@ -247,6 +244,7 @@ const EnquirySection = () => {
           />
         </form>
       </VStack>
+      {success && <Text style={{ color: "green" }}>Thanks for your message! </Text>}
     </Box>
   );
 };
