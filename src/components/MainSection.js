@@ -15,11 +15,13 @@ const MainSection = () => {
       strings: [
         "Product Designer.",
         "Graphics Designer.",
-        "Content Creator.",
+        "Content Writer.",
         "Architectural Designer.",
       ],
       typeSpeed: 40,
       backSpeed: 50,
+      loop:true,
+      loopCount: Infinity,
     };
 
     typed.current = new Typed(el.current, options);
@@ -73,7 +75,7 @@ const MainSection = () => {
           fontWeight={"bold"}
           fontSize="2xl"
           alignSelf="start"
-          color="white"
+          color="InactiveBorder"
         >
           <span ref={el} />
         </Text>

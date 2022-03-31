@@ -43,7 +43,7 @@ const EnquirySection = () => {
       pt="5rem"
       mt={"-1rem"}
     >
-      <VStack alignItems={"start"} gap="2rem">
+      <VStack alignItems={"start"} gap="2rem" pt="1rem">
         <Text
           color={"#3d648f"}
           textDecoration="underline"
@@ -54,7 +54,7 @@ const EnquirySection = () => {
           Get In Touch
         </Text>
         <Heading
-          fontSize={["1.5rem", "1.8rem", "2.3rem"]}
+          fontSize={["1.5rem", "1.8rem", "2rem"]}
           color={"white"}
           mt="0.4rem"
           fontFamily={"Poppins"}
@@ -67,9 +67,9 @@ const EnquirySection = () => {
           </Box>
           <Box pt={".5rem"}>
             <Text fontFamily={"Poppins"} color="whiteAlpha.700">Call Me Now</Text>
-            <Heading fontFamily={"Poppins"} fontSize={["1.5rem", "1.5rem", "1.5rem"]} color={"white"}>
+            <Text fontFamily={"Poppins"} fontSize={["1.5rem", "1.5rem", "1.5rem"]} color={"white"}>
               (+234) 903 066 1028.
-            </Heading>
+            </Text>
           </Box>
         </HStack>
         <HStack gap=".5rem">
@@ -78,9 +78,9 @@ const EnquirySection = () => {
           </Box>
           <Box pt={".5rem"}>
             <Text fontFamily={"Poppins"} color="whiteAlpha.700">Chat With Me</Text>
-            <Heading fontFamily={"Poppins"} fontSize={["1.5rem", "1.5rem", "1.5rem"]} color={"white"}>
+            <Text fontFamily={"Poppins"} fontSize={["1.5rem", "1.5rem", "1.5rem"]} color={"white"}>
               pgstudio@gmail.com
-            </Heading>
+            </Text>
           </Box>
         </HStack>
         <HStack gap=".5rem">
@@ -89,9 +89,9 @@ const EnquirySection = () => {
           </Box>
           <Box pt={".5rem"}>
             <Text fontFamily={"Poppins"} color="whiteAlpha.700">Get Me Here</Text>
-            <Heading fontFamily={"Poppins"} fontSize={["1.5rem", "1.5rem", "1.5rem"]} color={"white"}>
+            <Text fontFamily={"Poppins"} fontSize={["1.5rem", "1.5rem", "1.5rem"]} color={"white"}>
               Abuja, Nigeria.
-            </Heading>
+            </Text>
           </Box>
         </HStack>
         <HStack gap=".5rem">
@@ -100,25 +100,25 @@ const EnquirySection = () => {
           </Box>
           <Box pt={".5rem"}>
             <Text fontFamily={"Poppins"} color="whiteAlpha.700">Check My Profile</Text>
-            <Heading fontFamily={"Poppins"} fontSize={["1.4rem", "1.5rem", "1.5rem"]} color={"white"}>
+            <Text fontFamily={"Poppins"} fontSize={["1.4rem", "1.5rem", "1.5rem"]} color={"white"}>
               linkedin.com/in/pg
-            </Heading>
+            </Text>
           </Box>
         </HStack>
       </VStack>
-      <VStack alignItems={"flex-start"}>
+      <VStack alignItems={"flex-start"} mx="1rem">
         <Text fontFamily={"Poppins"} color={"#3d648f"} textDecoration="underline">
           Send Me A Message
         </Text>
         <Heading
-          fontSize={["1.5rem", "1.8rem", "2.3rem"]}
+          fontSize={["1.5rem", "1.8rem", "2rem"]}
           color={"white"}
           pb="1rem"
           fontFamily={"Poppins"}
         >
           Let Me Know Here
         </Heading>
-        <form>
+        <form name="contact" method="POST" netlify>
           <InputGroup
             outline={"none"}
             bgColor="#1c1c1c"
