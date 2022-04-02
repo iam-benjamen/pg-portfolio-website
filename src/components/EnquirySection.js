@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useToast } from '@chakra-ui/react'
 import {
   Box,
   Text,
@@ -31,13 +32,21 @@ const theme = extendTheme({ breakpoints });
 
 const EnquirySection = () => {
   const [success, setSuccess] = useState(false);
-
+  const toast = useToast()
   useEffect(() => {
     if (window.location.search.includes("success=true")) {
+      toast({
+        title: 'Account created.',
+        description: "We've created your account for you.",
+        status: 'success',
+        duration: 5000,
+        isClosable: true,
+      })
       setSuccess(true);
     }
   }, []);
-
+  
+  
   return (
     <Box
       id="enquiry-section"
@@ -235,11 +244,6 @@ const EnquirySection = () => {
             variant="unstyled"
           />
         </form>
-        <Box>
-          {success && (
-            <Text style={{ color: "green" }}>Thanks for your message! </Text>
-          )}
-        </Box>
       </VStack>
     </Box>
   );

@@ -206,7 +206,7 @@ const NavBar = () => {
             <PopoverArrow />
             <PopoverCloseButton />
             <PopoverHeader fontFamily={"Poppins"}>
-              I have two Resumes available!
+              I have two Resumes available.
             </PopoverHeader>
             <PopoverBody display={"flex"} flexDirection="row" gap="1rem">
               <Button
@@ -222,6 +222,7 @@ const NavBar = () => {
                 as={Link}
                 href="https://drive.google.com/file/d/1jxOwaUdQ_ZaaYn2k2D_huU59JZoHIVo4/view?usp=sharing"
                 isExternal
+                fontSize={".8rem"}
               >
                 Architecture <ExternalLinkIcon mx="2px" />
               </Button>
@@ -238,6 +239,7 @@ const NavBar = () => {
                 as={Link}
                 href="https://drive.google.com/file/d/1sho2qI1bDzVqoe-osncRMB47-CR2eeUA/view?usp=sharing"
                 isExternal
+                fontSize={".8rem"}
               >
                 Creative Design <ExternalLinkIcon mx="2px" />
               </Button>

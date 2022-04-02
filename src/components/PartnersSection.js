@@ -14,7 +14,7 @@ const PartnersSection = () => {
       h="max-content"
       bgColor={"#101010"}
     >
-      <Image src={arranged} w={["100%","100%","70%"]} margin="auto" mt="-1px"/>
+      <Image src={arranged} w={["100%","100%","80%"]} margin="auto" mt="-1px"/>
       {/* <Box
         display={"flex"}
         flexDir="row"
