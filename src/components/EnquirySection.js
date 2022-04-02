@@ -35,13 +35,6 @@ const EnquirySection = () => {
   const toast = useToast();
   useEffect(() => {
     if (window.location.search.includes("success=true")) {
-      toast({
-        title: "Account created.",
-        description: "We've created your account for you.",
-        status: "success",
-        duration: 5000,
-        isClosable: true,
-      });
       setSuccess(true);
     }
   }, []);
@@ -49,20 +42,21 @@ const EnquirySection = () => {
   const handleClick = () => {
     if (window.location.search.includes("success=true")) {
       toast({
-        title: "Account created.",
-        description: "We've created your account for you.",
+        title: "Success!",
+        description: "We've received your message and will respond shortly",
         status: "success",
         duration: 5000,
         isClosable: true,
       });
     } else{
-      toast({
-        title: "Error!.",
-        description: "We've created your account for you.",
-        status: "success",
-        duration: 5000,
-        isClosable: true,
-      });
+      // toast({
+      //   title: "Error!.",
+      //   description: "We didn't get your message!, please resend",
+      //   status: "error",
+      //   duration: 5000,
+      //   isClosable: true,
+      // });
+      console.log("some error")
     }
   };
   return (
@@ -260,7 +254,7 @@ const EnquirySection = () => {
             type="submit"
             value={"Get A Quote"}
             variant="unstyled"
-            onClick={handleClick()}
+            onClick={handleClick}
           />
         </form>
       </VStack>
