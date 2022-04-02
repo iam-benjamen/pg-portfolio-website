@@ -40,14 +40,17 @@ const EnquirySection = () => {
   }, []);
 
   const handleClick = () => {
-    if (window.location.search.includes("success=true")) {
-      toast({
-        title: "Success!",
-        description: "We've received your message and will respond shortly",
-        status: "success",
-        duration: 5000,
-        isClosable: true,
-      });
+    if (window.location.href.indexOf("success = true") > -1) {
+      setTimeout(
+        toast({
+          title: "Success!",
+          description: "We've received your message and will respond shortly",
+          status: "success",
+          duration: 10000,
+          isClosable: true,
+        }), 5000
+      )
+      
     } else{
       // toast({
       //   title: "Error!.",
