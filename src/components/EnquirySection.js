@@ -40,27 +40,31 @@ const EnquirySection = () => {
   }, []);
 
   const handleClick = () => {
-    if (window.location.href.indexOf("success = true") > -1) {
-      setTimeout(
-        toast({
-          title: "Success!",
-          description: "We've received your message and will respond shortly",
-          status: "success",
-          duration: 10000,
-          isClosable: true,
-        }), 5000
-      )
-      
-    } else{
-      // toast({
-      //   title: "Error!.",
-      //   description: "We didn't get your message!, please resend",
-      //   status: "error",
-      //   duration: 5000,
-      //   isClosable: true,
-      // });
-      console.log("some error")
-    }
+    toast({
+      title: "Success!",
+      description: "We've received your message and will respond shortly",
+      status: "success",
+      duration: 10000,
+      isClosable: true,
+    });
+    // if (window.location.href.indexOf("success = true") > -1) {
+    //   toast({
+    //     title: "Success!",
+    //     description: "We've received your message and will respond shortly",
+    //     status: "success",
+    //     duration: 10000,
+    //     isClosable: true,
+    //   });
+    // } else {
+    //   // toast({
+    //   //   title: "Error!.",
+    //   //   description: "We didn't get your message!, please resend",
+    //   //   status: "error",
+    //   //   duration: 5000,
+    //   //   isClosable: true,
+    //   // });
+    //   console.log("some error");
+    // }
   };
   return (
     <Box
@@ -183,7 +187,8 @@ const EnquirySection = () => {
           name="contact"
           method="POST"
           data-netlify="true"
-          action="/success=true"
+          action="/success"
+          onSubmit={handleClick}
         >
           <InputGroup
             outline={"none"}
@@ -257,7 +262,6 @@ const EnquirySection = () => {
             type="submit"
             value={"Get A Quote"}
             variant="unstyled"
-            onClick={handleClick}
           />
         </form>
       </VStack>
