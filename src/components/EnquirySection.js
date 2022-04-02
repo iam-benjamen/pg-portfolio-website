@@ -187,7 +187,7 @@ const EnquirySection = () => {
           name="contact"
           method="POST"
           data-netlify="true"
-          action="/success"
+          action="/"
           onSubmit={handleClick}
         >
           <InputGroup
