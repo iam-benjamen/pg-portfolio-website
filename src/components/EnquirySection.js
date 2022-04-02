@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useToast } from '@chakra-ui/react'
+import { useToast } from "@chakra-ui/react";
 import {
   Box,
   Text,
@@ -32,21 +32,39 @@ const theme = extendTheme({ breakpoints });
 
 const EnquirySection = () => {
   const [success, setSuccess] = useState(false);
-  const toast = useToast()
+  const toast = useToast();
   useEffect(() => {
     if (window.location.search.includes("success=true")) {
       toast({
-        title: 'Account created.',
+        title: "Account created.",
         description: "We've created your account for you.",
-        status: 'success',
+        status: "success",
         duration: 5000,
         isClosable: true,
-      })
+      });
       setSuccess(true);
     }
   }, []);
-  
-  
+
+  const handleClick = () => {
+    if (window.location.search.includes("success=true")) {
+      toast({
+        title: "Account created.",
+        description: "We've created your account for you.",
+        status: "success",
+        duration: 5000,
+        isClosable: true,
+      });
+    } else{
+      toast({
+        title: "Error!.",
+        description: "We've created your account for you.",
+        status: "success",
+        duration: 5000,
+        isClosable: true,
+      });
+    }
+  };
   return (
     <Box
       id="enquiry-section"
@@ -242,6 +260,7 @@ const EnquirySection = () => {
             type="submit"
             value={"Get A Quote"}
             variant="unstyled"
+            onClick={handleClick()}
           />
         </form>
       </VStack>
