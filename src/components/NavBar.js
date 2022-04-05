@@ -16,7 +16,7 @@ import {
   PopoverCloseButton,
   PopoverAnchor,
 } from "@chakra-ui/react";
-import mainLogo from "../assets/PGStudioLogo.png";
+import mainLogo from "../assets/PGStudio Logo.jpg";
 import {
   DownloadIcon,
   HamburgerIcon,
@@ -36,7 +36,7 @@ const NavBar = () => {
       w="100%"
       zIndex={999}
     >
-      <Image src={mainLogo} w="6rem" h="80%" />
+      <Image src={mainLogo} w={["3rem","3rem","4rem"]} h="80%" pt={"5px"}/>
       <Flex
         color="white"
         alignItems="center"

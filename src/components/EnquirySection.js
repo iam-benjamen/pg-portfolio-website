@@ -4,7 +4,7 @@ import {
   Box,
   Text,
   Heading,
-  Flex,
+  Flex, 
   Input,
   InputRightElement,
   InputGroup,

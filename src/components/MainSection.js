@@ -13,9 +13,9 @@ const MainSection = () => {
   useEffect(() => {
     const options = {
       strings: [
-        "Product Designer.",
+        "Visual Designer.",
         "Graphics Designer.",
-        "Content Writer.",
+        "Content Creator.",
         "Architectural Designer.",
       ],
       typeSpeed: 40,
