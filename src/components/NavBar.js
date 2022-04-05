@@ -27,7 +27,7 @@ import {
 import { Link as mylink, animateScroll as scroll } from "react-scroll";
 
 const NavBar = () => {
-  const sideNav = document.getElementById("mySidenav");
+  let sideNav = document.getElementById("mySidenav");
   function openNav() {
     sideNav.style.width = "50%";
     sideNav.style.height = "100%";
@@ -289,7 +289,6 @@ const NavBar = () => {
         transition="0.5s"
       >
         <Link
-          as={mylink}
           to={null}
           alignSelf={"start"}
           className="closebtn"
