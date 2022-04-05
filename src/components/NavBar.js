@@ -27,12 +27,14 @@ import {
 import { Link as mylink, animateScroll as scroll } from "react-scroll";
 
 const NavBar = () => {
-  let sideNav = document.getElementById("mySidenav");
+  
   function openNav() {
+    let sideNav = document.getElementById("mySidenav");
     sideNav.style.width = "50%";
     sideNav.style.height = "100%";
   }
   function closeNav() {
+    let sideNav = document.getElementById("mySidenav");
     sideNav.style.width = 0;
     sideNav.style.height = 0;
   }
