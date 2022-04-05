@@ -22,10 +22,21 @@ import {
   HamburgerIcon,
   LinkIcon,
   ExternalLinkIcon,
+  CloseIcon,
 } from "@chakra-ui/icons";
 import { Link as mylink, animateScroll as scroll } from "react-scroll";
 
 const NavBar = () => {
+  const sideNav = document.getElementById("mySidenav");
+  function openNav() {
+    sideNav.style.width = "50%";
+    sideNav.style.height = "100%";
+  }
+  function closeNav() {
+    sideNav.style.width = 0;
+    sideNav.style.height = 0;
+  }
+  
   return (
     <Flex
       bgColor="#141414"
@@ -34,9 +45,9 @@ const NavBar = () => {
       gap={["2rem", "3rem", "7rem"]}
       position={"fixed"}
       w="100%"
-      zIndex={999}
+      zIndex={99}
     >
-      <Image src={mainLogo} w={["3rem","3rem","4rem"]} h="80%" pt={"5px"}/>
+      <Image src={mainLogo} w={["3rem", "3rem", "4rem"]} h="80%" pt={"5px"} />
       <Flex
         color="white"
         alignItems="center"
@@ -217,7 +228,7 @@ const NavBar = () => {
                   bgColor: "#3d648f",
                   color: "white",
                   transitionDuration: ".8s",
-                  textDecor:"none"
+                  textDecor: "none",
                 }}
                 as={Link}
                 href="https://drive.google.com/file/d/1jxOwaUdQ_ZaaYn2k2D_huU59JZoHIVo4/view?usp=sharing"
@@ -232,7 +243,7 @@ const NavBar = () => {
                   bgColor: "#3d648f",
                   color: "white",
                   transitionDuration: ".8s",
-                  textDecor:"none"
+                  textDecor: "none",
                 }}
                 bgColor="#3d648f"
                 fontFamily={"Poppins"}
@@ -249,12 +260,77 @@ const NavBar = () => {
       </Flex>
       <Box justifySelf="flex-end" alignSelf="center">
         <HamburgerIcon
-          w="2rem"
+          w="2.5rem"
           h="2rem"
           color="white"
           cursor="pointer"
           display={["block", "block", "none"]}
+          onClick={openNav}
+          border="2px solid #3d648f"
+          borderRadius={"5px"}
         />
+      </Box>
+      <Box
+        id="mySidenav"
+        className="sidenav"
+        height={0}
+        width={0}
+        top={0}
+        right={0}
+        zIndex={999}
+        overflowX="hidden"
+        bgColor={"#141414"}
+        color="white"
+        position={"fixed"}
+        display="flex"
+        flexDir={"column"}
+        alignItems="center"
+        gap={"2rem"}
+        transition="0.5s"
+      >
+        <Link
+          as={mylink}
+          to={null}
+          alignSelf={"start"}
+          className="closebtn"
+          onClick={closeNav}
+        >
+          <CloseIcon w="1.5rem" h="1rem" />
+        </Link>
+        <Link as={mylink} to="home" smooth={true} onClick={closeNav}>
+          Home
+        </Link>
+        <Link as={mylink} to="about-section" smooth={true} onClick={closeNav}>
+          About
+        </Link>
+        <Link as={mylink} to="service-section" smooth={true} onClick={closeNav}>
+          Services
+        </Link>
+        <Link as={mylink} to="#" smooth={true} onClick={closeNav}>
+          Works
+        </Link>
+        <Link as={mylink} to="enquiry-section" smooth={true} onClick={closeNav}>
+          Hire Me
+        </Link>
+        <Button
+          bgColor="white"
+          color="#3d648f"
+          cursor="pointer"
+          padding=".5rem"
+          _hover={{
+            bgColor: "#3d648f",
+            color: "white",
+            transitionDuration: ".8s",
+          }}
+          minWidth="8.5rem"
+          pl="15px"
+          minW={"fit-content"}
+          className="font-link"
+          borderRadius={"3px"}
+          fontStyle="none"
+        >
+          Download Resume
+        </Button>
       </Box>
     </Flex>
   );
