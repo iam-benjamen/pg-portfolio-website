@@ -38,7 +38,7 @@ const NavBar = () => {
   function openNav() {
     let sideNav = document.getElementById("mySidenav");
     sideNav.style.width = "100%";
-    sideNav.style.height = "50%";
+    sideNav.style.height = "max-content";
   }
   function closeNav() {
     let sideNav = document.getElementById("mySidenav");
@@ -311,7 +311,7 @@ const NavBar = () => {
           className="closebtn"
           onClick={closeNav}
         >
-          <CloseIcon w="3rem" h="2rem" m=".5rem" />
+          <CloseIcon w="1.5rem" h="2rem" m=".5rem" />
         </Link>
         <Link
           as={mylink}
