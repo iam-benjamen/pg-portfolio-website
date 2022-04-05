@@ -15,6 +15,14 @@ import {
   PopoverArrow,
   PopoverCloseButton,
   PopoverAnchor,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  MenuItemOption,
+  MenuGroup,
+  MenuOptionGroup,
+  MenuDivider,
 } from "@chakra-ui/react";
 import mainLogo from "../assets/PGStudio Logo.jpg";
 import {
@@ -27,18 +35,17 @@ import {
 import { Link as mylink, animateScroll as scroll } from "react-scroll";
 
 const NavBar = () => {
-  
   function openNav() {
     let sideNav = document.getElementById("mySidenav");
-    sideNav.style.width = "50%";
-    sideNav.style.height = "100%";
+    sideNav.style.width = "100%";
+    sideNav.style.height = "50%";
   }
   function closeNav() {
     let sideNav = document.getElementById("mySidenav");
     sideNav.style.width = 0;
     sideNav.style.height = 0;
   }
-  
+
   return (
     <Flex
       bgColor="#141414"
@@ -49,7 +56,15 @@ const NavBar = () => {
       w="100%"
       zIndex={99}
     >
-      <Image src={mainLogo} w={["3rem", "3rem", "4rem"]} h="80%" pt={"5px"} />
+      <Box as={mylink} smooth={true} to={"home"}>
+        <Image
+          src={mainLogo}
+          w={["3rem", "3rem", "4rem"]}
+          h="100%"
+          pt={"5px"}
+        />
+      </Box>
+
       <Flex
         color="white"
         alignItems="center"
@@ -296,42 +311,103 @@ const NavBar = () => {
           className="closebtn"
           onClick={closeNav}
         >
-          <CloseIcon w="1.5rem" h="1rem" />
+          <CloseIcon w="3rem" h="2rem" m=".5rem" />
         </Link>
-        <Link as={mylink} to="home" smooth={true} onClick={closeNav}>
+        <Link
+          as={mylink}
+          to="home"
+          smooth={true}
+          onClick={closeNav}
+          fontSize="1.3rem"
+        >
           Home
         </Link>
-        <Link as={mylink} to="about-section" smooth={true} onClick={closeNav}>
+        <Link
+          as={mylink}
+          to="about-section"
+          smooth={true}
+          onClick={closeNav}
+          fontSize="1.3rem"
+        >
           About
         </Link>
-        <Link as={mylink} to="service-section" smooth={true} onClick={closeNav}>
+        <Link
+          as={mylink}
+          to="service-section"
+          smooth={true}
+          onClick={closeNav}
+          fontSize="1.3rem"
+        >
           Services
         </Link>
-        <Link as={mylink} to="#" smooth={true} onClick={closeNav}>
+        <Link
+          as={mylink}
+          to="#"
+          smooth={true}
+          onClick={closeNav}
+          fontSize="1.3rem"
+        >
           Works
         </Link>
-        <Link as={mylink} to="enquiry-section" smooth={true} onClick={closeNav}>
+        <Link
+          as={mylink}
+          to="enquiry-section"
+          smooth={true}
+          onClick={closeNav}
+          fontSize="1.3rem"
+        >
           Hire Me
         </Link>
-        <Button
-          bgColor="white"
-          color="#3d648f"
-          cursor="pointer"
-          padding=".5rem"
-          _hover={{
-            bgColor: "#3d648f",
-            color: "white",
-            transitionDuration: ".8s",
-          }}
-          minWidth="8.5rem"
-          pl="15px"
-          minW={"fit-content"}
-          className="font-link"
-          borderRadius={"3px"}
-          fontStyle="none"
-        >
-          Download Resume
-        </Button>
+        <Menu closeOnSelect={true}>
+          <MenuButton
+            bgColor="white"
+            color="#3d648f"
+            cursor="pointer"
+            padding=".5rem"
+            _hover={{
+              bgColor: "#3d648f",
+              color: "white",
+              transitionDuration: ".8s",
+            }}
+            minWidth="8.5rem"
+            pl="15px"
+            minW={"fit-content"}
+            className="font-link"
+            borderRadius={"3px"}
+            fontStyle="none"
+          >
+            Download Resume
+          </MenuButton>
+          <MenuList>
+            <MenuItem>
+              <Button
+                w="max-content"
+                bgColor="#3d648f"
+                fontFamily={"Poppins"}
+                as={Link}
+                href="https://drive.google.com/file/d/1sho2qI1bDzVqoe-osncRMB47-CR2eeUA/view?usp=sharing"
+                isExternal
+                fontSize={".8rem"}
+              >
+                Creative Design <ExternalLinkIcon mx="2px" />
+              </Button>
+            </MenuItem>
+            <MenuDivider />
+            <MenuItem>
+              <Button
+                w="max-content"
+                bgColor="#3d648f"
+                fontFamily={"Poppins"}
+                as={Link}
+                href="https://drive.google.com/file/d/1jxOwaUdQ_ZaaYn2k2D_huU59JZoHIVo4/view?usp=sharing"
+                isExternal
+                fontSize={".8rem"}
+              >
+                Architecture <ExternalLinkIcon mx="2px" />
+              </Button>
+            </MenuItem>
+          </MenuList>
+        </Menu>
       </Box>
     </Flex>
   );
