@@ -1,10 +1,8 @@
 import { Box, Image, VStack, Heading, Text } from "@chakra-ui/react";
 import mainPicture2 from "../assets/partners/ME(Compressed).png";
-import quote from "../assets/quote.svg"
+import quote from "../assets/quote.svg";
 import { useRef, useEffect } from "react";
 import Typed from "typed.js";
-
-
 
 const MainSection = () => {
   const el = useRef(null);
@@ -13,14 +11,14 @@ const MainSection = () => {
   useEffect(() => {
     const options = {
       strings: [
+        "Architectural Designer.",
         "Visual Designer.",
         "Graphics Designer.",
         "Content Creator.",
-        "Architectural Designer.",
       ],
-      typeSpeed: 40,
+      typeSpeed: 50,
       backSpeed: 50,
-      loop:true,
+      loop: true,
       loopCount: Infinity,
     };
 
@@ -38,14 +36,13 @@ const MainSection = () => {
       flexDirection={["column-reverse", "column-reverse", "row"]}
       justifyContent="center"
       bgColor="#141414"
-      height={["100vh","max-content","max-content"]}
+      height={["100vh", "max-content", "max-content"]}
       alignItems={"center"}
       pt="5rem"
     >
       <Box>
         <Image
           src={mainPicture2}
-
           width={["-webkit-fill-available", "-webkit-fill-available", "37rem"]}
         />
       </Box>
@@ -81,7 +78,7 @@ const MainSection = () => {
         </Text>
         <Text color="white" pr={"0.5rem"} textStyle="Quote">
           The public is more familiar with bad design than good design. It is,
-          in effect,conditioned to prefer bad design, because that is what it
+          in effect, conditioned to prefer bad design, because that is what it
           lives with.
         </Text>
       </VStack>

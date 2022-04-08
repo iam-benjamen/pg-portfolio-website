@@ -52,7 +52,8 @@ const ServiceSection = () => {
       gap="0.5rem"
       px={["1rem", "5rem", "8rem"]}
       mt="-1px"
-      py={"5rem"}
+      pt="1rem"
+      pb={"5rem"}
       zIndex={-80}
       className="font-link"
       id="service-section"

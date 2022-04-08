@@ -47,24 +47,6 @@ const EnquirySection = () => {
       duration: 10000,
       isClosable: true,
     });
-    // if (window.location.href.indexOf("success = true") > -1) {
-    //   toast({
-    //     title: "Success!",
-    //     description: "We've received your message and will respond shortly",
-    //     status: "success",
-    //     duration: 10000,
-    //     isClosable: true,
-    //   });
-    // } else {
-    //   // toast({
-    //   //   title: "Error!.",
-    //   //   description: "We didn't get your message!, please resend",
-    //   //   status: "error",
-    //   //   duration: 5000,
-    //   //   isClosable: true,
-    //   // });
-    //   console.log("some error");
-    // }
   };
   return (
     <Box
@@ -106,13 +88,13 @@ const EnquirySection = () => {
             <Text fontFamily={"Poppins"} color="whiteAlpha.700">
               Call Me Now
             </Text>
-            <Text
-              fontFamily={"Montserrat"}
+            <Heading
+              fontFamily={"Poppins"}
               fontSize={["1.5rem", "1.5rem", "1.5rem"]}
               color={"white"}
             >
               (+234) 903 066 1028.
-            </Text>
+            </Heading>
           </Box>
         </HStack>
         <HStack gap=".5rem">
@@ -123,13 +105,13 @@ const EnquirySection = () => {
             <Text fontFamily={"Poppins"} color="whiteAlpha.700">
               Chat With Me
             </Text>
-            <Text
-              fontFamily={"Montserrat"}
+            <Heading
+              fontFamily={"Poppins"}
               fontSize={["1.5rem", "1.5rem", "1.5rem"]}
               color={"white"}
             >
               pgstudios@gmail.com
-            </Text>
+            </Heading>
           </Box>
         </HStack>
         <HStack gap=".5rem">
@@ -140,13 +122,13 @@ const EnquirySection = () => {
             <Text fontFamily={"Poppins"} color="whiteAlpha.700">
               Get Me Here
             </Text>
-            <Text
-              fontFamily={"Montserrat"}
+            <Heading
+              fontFamily={"Poppins"}
               fontSize={["1.5rem", "1.5rem", "1.5rem"]}
               color={"white"}
             >
               Abuja, Nigeria.
-            </Text>
+            </Heading>
           </Box>
         </HStack>
         <HStack gap=".5rem">
@@ -157,13 +139,13 @@ const EnquirySection = () => {
             <Text fontFamily={"Poppins"} color="whiteAlpha.700">
               Check My Profile
             </Text>
-            <Text
-              fontFamily={"Montserrat"}
+            <Heading
+              fontFamily={"Poppins"}
               fontSize={["1.5rem", "1.5rem", "1.5rem"]}
               color={"white"}
             >
               linkedin.com/in/pgstudios
-            </Text>
+            </Heading>
           </Box>
         </HStack>
       </VStack>
