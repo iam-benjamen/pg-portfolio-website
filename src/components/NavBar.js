@@ -1,6 +1,5 @@
 import {
   Flex,
-  Square,
   Image,
   Text,
   Box,
@@ -11,24 +10,17 @@ import {
   PopoverContent,
   PopoverHeader,
   PopoverBody,
-  PopoverFooter,
   PopoverArrow,
   PopoverCloseButton,
-  PopoverAnchor,
   Menu,
   MenuButton,
   MenuList,
   MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
   MenuDivider,
 } from "@chakra-ui/react";
 import mainLogo from "../assets/PGStudio Logo.jpg";
 import {
-  DownloadIcon,
   HamburgerIcon,
-  LinkIcon,
   ExternalLinkIcon,
   CloseIcon,
 } from "@chakra-ui/icons";
@@ -37,8 +29,8 @@ import { Link as mylink, animateScroll as scroll } from "react-scroll";
 const NavBar = () => {
   function openNav() {
     let sideNav = document.getElementById("mySidenav");
-    sideNav.style.width = "100%";
-    sideNav.style.height = "max-content";
+    sideNav.style.width = "60%";
+    sideNav.style.height = "100%";
   }
   function closeNav() {
     let sideNav = document.getElementById("mySidenav");
@@ -296,7 +288,7 @@ const NavBar = () => {
         right={0}
         zIndex={999}
         overflowX="hidden"
-        bgColor={"#141414"}
+        bg="#141414"
         color="white"
         position={"fixed"}
         display="flex"
@@ -370,7 +362,6 @@ const NavBar = () => {
               transitionDuration: ".8s",
             }}
             minWidth="8.5rem"
-            pl="15px"
             minW={"fit-content"}
             className="font-link"
             borderRadius={"3px"}
