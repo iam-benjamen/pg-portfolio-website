@@ -16,7 +16,7 @@
     "react-scroll": "^1.8.6",
     "react-slick": "^0.28.1",
     "slick-carousel": "^1.8.1",
-    "swiper": "^8.0.7",
+    "swiper": "^8.1.0",
     "typed.js": "^2.0.12"
   },
   "scripts": {
