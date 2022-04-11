@@ -1,9 +1,11 @@
-import { Box, Image, VStack, Heading, Text } from "@chakra-ui/react";
+import { Box, Image, VStack, Heading, Text, Flex, HStack, Link } from "@chakra-ui/react";
 import mainPicture2 from "../assets/partners/ME(Compressed).png";
-import quote from "../assets/quote.svg";
 import { useRef, useEffect } from "react";
 import Typed from "typed.js";
-import { ReactComponent as Icon } from "../assets/partners/rotatingring.svg";
+import twitter from "../assets/twitter.svg";
+import linkedin from "../assets/linkedin.svg";
+import github from "../assets/github.svg";
+import mail from "../assets/mail.svg";
 
 const MainSection = () => {
   const el = useRef(null);
@@ -40,13 +42,52 @@ const MainSection = () => {
       height={["100vh", "max-content", "max-content"]}
       alignItems={"center"}
       pt="5rem"
+      gap="1rem"
     >
-      <Box position={"relative"}>
+      <Box display={"flex"} flexDir={["column","column","row-reverse"]} gap={["0","0","2rem"]}>
         <Image
           src={mainPicture2}
           width={["-webkit-fill-available", "-webkit-fill-available", "37rem"]}
         />
         {/* <Icon className="rotating-ring" position="absolute" /> */}
+        <Box display={"flex"} flexDir={["row","row","column"]} justifyContent={"center"} gap=".7rem" _before={{content:"''",height:"11rem", w:"1px", bgColor:"#3d648f", ml:"12px", mt:"5px"}}>
+          <Box as={Link} href="https://github.com/iam-benjamen" isExternal>
+            <Image
+              src={github}
+              cursor="pointer"
+              w="1.7rem"
+              transitionDuration={".2s"}
+              _hover={{ transform: "scale(1.2)" }}
+            />
+          </Box>
+          <Box as={Link} href="https://linkedin.com/in/iambenjamen" isExternal>
+            <Image
+              src={linkedin}
+              cursor="pointer"
+              w="1.5rem"
+              transitionDuration={".2s"}
+              _hover={{ transform: "scale(1.2)" }}
+            />
+          </Box>
+          <Box as={Link} href="https://github.com/iam-benjamen" isExternal>
+            <Image
+              src={twitter}
+              cursor="pointer"
+              w="1.5rem"
+              transitionDuration={".2s"}
+              _hover={{ transform: "scale(1.2)" }}
+            />
+          </Box>
+          <Box as={Link} href="https://github.com/iam-benjamen" isExternal>
+            <Image
+              src={mail}
+              cursor="pointer"
+              w="1.5rem"
+              transitionDuration={".2s"}
+              _hover={{ transform: "scale(1.2)" }}
+            />
+          </Box>
+        </Box>
       </Box>
       <VStack
         px={"1rem"}
@@ -59,12 +100,16 @@ const MainSection = () => {
           color="white"
           lineHeight={0.8}
           alignSelf="start"
-          bgGradient="linear(to-l, #FFFFFF, #3d648f)"
+          bgGradient="radial(#3d648f,white, #3d648f)"
           bgClip="text"
           transition={"1s"}
-          _hover={{bgGradient:"linear(to-l, red, blue)"}}
+          _hover={{ bgGradient: "linear(#3d648f,white, #3d648f)" }}
         >
-          <Text fontFamily={"Poppins"} fontSize={["3rem", "3rem", "4rem"]}>
+          <Text
+            fontFamily={"Poppins"}
+            fontSize={["3rem", "3rem", "4rem"]}
+            pt="3px"
+          >
             Adediran
           </Text>
           <Text fontFamily={"Poppins"} fontSize={["2rem", "2rem", "3rem"]}>

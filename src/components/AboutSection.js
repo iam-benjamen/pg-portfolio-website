@@ -3,6 +3,13 @@ import { extendTheme } from "@chakra-ui/react";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
 import Arrow from "../assets/right-arrow.svg";
 import { Link as mylink, animateScroll as scroll } from "react-scroll";
+const breakpoints = createBreakpoints({
+  sm: "400px",
+  md: "1000px",
+  lg: "1500px",
+});
+const theme = extendTheme({ breakpoints });
+
 
 const AboutSection = () => {
   return (
@@ -91,7 +98,7 @@ const AboutSection = () => {
           display={"flex"}
           gap="2rem"
           cursor={"pointer"}
-          _hover={{ gap: "3rem", transitionDuration: ".5s" }}
+          _hover={{ gap: "2.5rem", transitionDuration: ".5s" }}
         >
           <Text
             color="white"

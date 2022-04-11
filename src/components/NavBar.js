@@ -1,3 +1,5 @@
+import { extendTheme } from "@chakra-ui/react";
+import { createBreakpoints } from "@chakra-ui/theme-tools";
 import {
   Flex,
   Image,
@@ -19,12 +21,14 @@ import {
   MenuDivider,
 } from "@chakra-ui/react";
 import mainLogo from "../assets/PGStudio Logo.jpg";
-import {
-  HamburgerIcon,
-  ExternalLinkIcon,
-  CloseIcon,
-} from "@chakra-ui/icons";
+import { HamburgerIcon, ExternalLinkIcon, CloseIcon } from "@chakra-ui/icons";
 import { Link as mylink, animateScroll as scroll } from "react-scroll";
+const breakpoints = createBreakpoints({
+  sm: "400px",
+  md: "1000px",
+  lg: "1500px",
+});
+const theme = extendTheme({ breakpoints });
 
 const NavBar = () => {
   function openNav() {
@@ -42,8 +46,9 @@ const NavBar = () => {
     <Flex
       bgColor="#141414"
       justifyContent={["space-between", "space-between", "center"]}
-      px="1rem"
-      gap={["2rem", "3rem", "7rem"]}
+      pr="3rem"
+      pl="1rem"
+      gap={{base:"2rem", md:"3rem", lg:"6rem"}}
       position={"fixed"}
       w="100%"
       zIndex={99}
@@ -54,6 +59,7 @@ const NavBar = () => {
           w={["3rem", "3rem", "4rem"]}
           h="100%"
           pt={"5px"}
+          cursor="pointer"
         />
       </Box>
 
@@ -243,8 +249,9 @@ const NavBar = () => {
                 href="https://drive.google.com/file/d/1jxOwaUdQ_ZaaYn2k2D_huU59JZoHIVo4/view?usp=sharing"
                 isExternal
                 fontSize={".8rem"}
+                position="relative"
               >
-                Architecture <ExternalLinkIcon mx="2px" />
+                Architecture <ExternalLinkIcon position="absolute" right={0} top=".8rem"/>
               </Button>
               <Button
                 w="max-content"
@@ -260,8 +267,9 @@ const NavBar = () => {
                 href="https://drive.google.com/file/d/1sho2qI1bDzVqoe-osncRMB47-CR2eeUA/view?usp=sharing"
                 isExternal
                 fontSize={".8rem"}
+                position="relative"
               >
-                Creative Design <ExternalLinkIcon mx="2px" />
+                Creative Design <ExternalLinkIcon position="absolute" right={0} top=".8rem"/>
               </Button>
             </PopoverBody>
           </PopoverContent>
@@ -277,6 +285,7 @@ const NavBar = () => {
           onClick={openNav}
           border="2px solid #3d648f"
           borderRadius={"5px"}
+          mt=".5rem"
         />
       </Box>
       <Box
@@ -369,21 +378,7 @@ const NavBar = () => {
           >
             Download Resume
           </MenuButton>
-          <MenuList>
-            <MenuItem>
-              <Button
-                w="max-content"
-                bgColor="#3d648f"
-                fontFamily={"Poppins"}
-                as={Link}
-                href="https://drive.google.com/file/d/1sho2qI1bDzVqoe-osncRMB47-CR2eeUA/view?usp=sharing"
-                isExternal
-                fontSize={".8rem"}
-              >
-                Creative Design <ExternalLinkIcon mx="2px" />
-              </Button>
-            </MenuItem>
-            <MenuDivider />
+          <MenuList w={"80%"}>
             <MenuItem>
               <Button
                 w="max-content"
@@ -393,8 +388,25 @@ const NavBar = () => {
                 href="https://drive.google.com/file/d/1jxOwaUdQ_ZaaYn2k2D_huU59JZoHIVo4/view?usp=sharing"
                 isExternal
                 fontSize={".8rem"}
+                position="relative"
+                px="1.5rem"
               >
-                Architecture <ExternalLinkIcon mx="2px" />
+                Architecture <ExternalLinkIcon mx="2px" position={"absolute"} right={1} top={3}/>
+              </Button>
+            </MenuItem>
+            <MenuItem>
+              <Button
+                w="max-content"
+                bgColor="#3d648f"
+                fontFamily={"Poppins"}
+                as={Link}
+                href="https://drive.google.com/file/d/1sho2qI1bDzVqoe-osncRMB47-CR2eeUA/view?usp=sharing"
+                isExternal
+                fontSize={".8rem"}
+                position="relative"
+                px="1.5rem"
+              >
+                Creative Design <ExternalLinkIcon position={"absolute"} right={1} top={3}/>
               </Button>
             </MenuItem>
           </MenuList>

@@ -4,6 +4,7 @@ import EnquirySection from "./components/EnquirySection";
 import AboutSection from "./components/AboutSection";
 import PartnersSection from "./components/PartnersSection";
 import ServiceSection from "./components/ServiceSection";
+import Footer from "./components/Footer";
 import { extendTheme } from "@chakra-ui/react";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
 const breakpoints = createBreakpoints({
@@ -22,6 +23,7 @@ function App() {
       <ServiceSection />
       <PartnersSection/>
       <EnquirySection/>
+      <Footer/>
     </div>
   );
 }
