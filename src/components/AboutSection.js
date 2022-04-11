@@ -1,9 +1,8 @@
 import { Box, Text, Heading, Image } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
-import Arrow from "../assets/right-arrow.svg"
+import Arrow from "../assets/right-arrow.svg";
 import { Link as mylink, animateScroll as scroll } from "react-scroll";
-
 
 const AboutSection = () => {
   return (
@@ -53,17 +52,17 @@ const AboutSection = () => {
           engaging and thought-provoking contents through designs. It's going to
           be a lot of meaningful and fun-filled contents here.
         </Text>
-        <Box display={"flex"} alignItems="center" gap={".5rem"}> 
+        <Box display={"flex"} alignItems="center" gap={".5rem"}>
           <Heading
             fontFamily={"Poppins"}
-            fontSize={["4rem","4rem","5rem"]}
+            fontSize={["4rem", "4rem", "5rem"]}
             color={"#3d648f"}
           >
             05
           </Heading>
           <Text
             color={"white"}
-            fontSize={"1rem","1rem","1.5rem"}
+            fontSize={("1rem", "1rem", "1.5rem")}
             lineHeight={1.3}
             pb="5px"
           >
@@ -84,18 +83,26 @@ const AboutSection = () => {
           </Heading>
           <Text pt={"1rem"}>Let's talk with me</Text>
         </Box>
-        <Box as={mylink} offset={-20} to="enquiry-section" smooth={true} display={"flex"} gap="2rem" cursor={"pointer"} _hover={{gap:"3rem", transitionDuration:".5s"}}>
+        <Box
+          as={mylink}
+          offset={-20}
+          to="enquiry-section"
+          smooth={true}
+          display={"flex"}
+          gap="2rem"
+          cursor={"pointer"}
+          _hover={{ gap: "3rem", transitionDuration: ".5s" }}
+        >
           <Text
             color="white"
-            fontSize={"1.5rem"}
-            fontFamily="Montserrat"
+            fontSize={["1.2rem", "1.5rem", "1.5rem"]}
+            fontFamily="Poppins"
             pt="5px"
           >
             Send me a message
           </Text>
-          <Box
-          >
-            <Image src={Arrow} width={"3rem"}/>
+          <Box>
+            <Image src={Arrow} width={"3rem"} />
           </Box>
         </Box>
       </Box>

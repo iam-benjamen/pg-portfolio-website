@@ -3,6 +3,7 @@ import mainPicture2 from "../assets/partners/ME(Compressed).png";
 import quote from "../assets/quote.svg";
 import { useRef, useEffect } from "react";
 import Typed from "typed.js";
+import { ReactComponent as Icon } from "../assets/partners/rotatingring.svg";
 
 const MainSection = () => {
   const el = useRef(null);
@@ -40,11 +41,12 @@ const MainSection = () => {
       alignItems={"center"}
       pt="5rem"
     >
-      <Box>
+      <Box position={"relative"}>
         <Image
           src={mainPicture2}
           width={["-webkit-fill-available", "-webkit-fill-available", "37rem"]}
         />
+        {/* <Icon className="rotating-ring" position="absolute" /> */}
       </Box>
       <VStack
         px={"1rem"}
@@ -59,6 +61,8 @@ const MainSection = () => {
           alignSelf="start"
           bgGradient="linear(to-l, #FFFFFF, #3d648f)"
           bgClip="text"
+          transition={"1s"}
+          _hover={{bgGradient:"linear(to-l, red, blue)"}}
         >
           <Text fontFamily={"Poppins"} fontSize={["3rem", "3rem", "4rem"]}>
             Adediran

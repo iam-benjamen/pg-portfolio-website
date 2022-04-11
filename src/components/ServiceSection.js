@@ -2,9 +2,9 @@ import { Box, Text, Heading, Image } from "@chakra-ui/react";
 import Slider from "react-slick";
 import Design from "../assets/design.png";
 import Graphics from "../assets/graphic-design.svg";
-import Architecture from "../assets/architecture.svg"
-import Visual from "../assets/visual-design.svg"
-import Content from "../assets/content.svg"
+import Architecture from "../assets/architecture.svg";
+import Visual from "../assets/visual-design.svg";
+import Content from "../assets/content.svg";
 
 const ServiceSection = () => {
   const settings = {
@@ -58,10 +58,21 @@ const ServiceSection = () => {
       className="font-link"
       id="service-section"
     >
-      <Text fontFamily={"Poppins"} className="font-link" textAlign={"center"} color={"#3d648f"} textDecor="underline">
+      <Text
+        fontFamily={"Poppins"}
+        className="font-link"
+        textAlign={"center"}
+        color={"#3d648f"}
+        textDecor="underline"
+      >
         Services
       </Text>
-      <Heading fontFamily={"Poppins"} textAlign={"center"} color={"white"} pb="1rem">
+      <Heading
+        fontFamily={"Poppins"}
+        textAlign={"center"}
+        color={"white"}
+        pb="1rem"
+      >
         What We Do?
       </Heading>
 
@@ -75,9 +86,9 @@ const ServiceSection = () => {
           h={"20rem"}
           justifyContent="center"
           px={["0rem", "1rem", "1.5rem"]}
-          _hover={{cursor:"pointer"}}
+          _hover={{ cursor: "pointer" }}
         >
-          <Image src={Graphics}/>
+          <Image src={Graphics} />
           <Heading
             textAlign={"center"}
             color={"white"}
@@ -87,7 +98,12 @@ const ServiceSection = () => {
           >
             Graphics Design
           </Heading>
-          <Text fontFamily={"Poppins"} color={"white"} textAlign="center" w={"83%"}>
+          <Text
+            fontFamily={"Poppins"}
+            color={"white"}
+            textAlign="center"
+            w={"83%"}
+          >
             Design is not just what it looks like and feels like. Design is how
             it works. Good design is good business. Get Noticed!
           </Text>
@@ -101,13 +117,23 @@ const ServiceSection = () => {
           h={"20rem"}
           justifyContent="center"
           px={["0rem", "1rem", "2rem"]}
-          _hover={{cursor:"pointer"}}
+          _hover={{ cursor: "pointer" }}
         >
-          <Image src={Architecture}/>
-          <Heading fontFamily={"Poppins"} textAlign={"center"} color={"white"} fontSize="1.5rem">
-            Architectural <br/> Design
+          <Image src={Architecture} />
+          <Heading
+            fontFamily={"Poppins"}
+            textAlign={"center"}
+            color={"white"}
+            fontSize="1.5rem"
+          >
+            Architectural <br /> Design
           </Heading>
-          <Text fontFamily={"Poppins"} color={"white"} textAlign="center" w={"83%"}>
+          <Text
+            fontFamily={"Poppins"}
+            color={"white"}
+            textAlign="center"
+            w={"83%"}
+          >
             Architecture is an expression of values the way we build is a
             reflection of the way we live. Let's create value for your building
             projects.
@@ -122,13 +148,23 @@ const ServiceSection = () => {
           h={"20rem"}
           justifyContent="center"
           px={["0rem", "1rem", "1.5rem"]}
-          _hover={{cursor:"pointer"}}
+          _hover={{ cursor: "pointer" }}
         >
-          <Image src={Visual}/>
-          <Heading fontFamily={"Poppins"} textAlign={"center"} color={"white"} fontSize="1.5rem">
+          <Image src={Visual} />
+          <Heading
+            fontFamily={"Poppins"}
+            textAlign={"center"}
+            color={"white"}
+            fontSize="1.5rem"
+          >
             Visual Design
           </Heading>
-          <Text fontFamily={"Poppins"} color={"white"} textAlign="center" w={"83%"}>
+          <Text
+            fontFamily={"Poppins"}
+            color={"white"}
+            textAlign="center"
+            w={"83%"}
+          >
             Attractive Visuals creates effective communication of ideas, higher
             visibility, and enhanced credibility for your brand
           </Text>
@@ -142,13 +178,23 @@ const ServiceSection = () => {
           h={"20rem"}
           justifyContent="center"
           px={["0rem", "1rem", "1.5rem"]}
-          _hover={{cursor:"pointer"}}
+          _hover={{ cursor: "pointer" }}
         >
-          <Image src={Content}/>
-          <Heading fontFamily={"Poppins"} textAlign={"center"} color={"white"} fontSize="1.5rem">
+          <Image src={Content} />
+          <Heading
+            fontFamily={"Poppins"}
+            textAlign={"center"}
+            color={"white"}
+            fontSize="1.5rem"
+          >
             Content Writing
           </Heading>
-          <Text fontFamily={"Poppins"} color={"white"} textAlign="center" w={"83%"}>
+          <Text
+            fontFamily={"Poppins"}
+            color={"white"}
+            textAlign="center"
+            w={"83%"}
+          >
             Every great design begins with an even better story. Design in the
             absence of content is not design, it's decoration.
           </Text>

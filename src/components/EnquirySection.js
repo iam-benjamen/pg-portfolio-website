@@ -4,18 +4,15 @@ import {
   Box,
   Text,
   Heading,
-  Flex, 
   Input,
   InputRightElement,
   InputGroup,
   VStack,
-  Button,
   HStack,
   Image,
   Textarea,
 } from "@chakra-ui/react";
-import { CheckIcon, EmailIcon, EditIcon } from "@chakra-ui/icons";
-import { BsTelephone, FaPhone, FaCoffee, FaLinkedin } from "react-icons/fa";
+import {EmailIcon, EditIcon } from "@chakra-ui/icons";
 import { extendTheme } from "@chakra-ui/react";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
 import testIcon from "../assets/linkedin-svg.svg";
@@ -62,7 +59,7 @@ const EnquirySection = () => {
       pt="5rem"
       mt={"-1rem"}
     >
-      <VStack alignItems={"start"} gap="1.2rem" pt="1rem">
+      <VStack alignItems={"start"} gap="1.2rem" pt="1rem" px=".5rem">
         <Text
           color={"#3d648f"}
           textDecoration="underline"
@@ -144,7 +141,7 @@ const EnquirySection = () => {
               fontSize={["1.5rem", "1.5rem", "1.5rem"]}
               color={"white"}
             >
-              linkedin.com/in/pgstudios
+              linkedin.com/in/<br/>adediranilerioluwa
             </Heading>
           </Box>
         </HStack>
