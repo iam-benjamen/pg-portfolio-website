@@ -75,8 +75,10 @@ animation: spin 8s cubic-bezier(0.5, 0.5, 0.5, .5) infinite;
 }
 
 @media only screen and (max-width: 770px){
-  .css-h8bkb8::before{
-    display: none;
+  .css-1j167di::before{
+    width: 6rem !important;
+    height: 2px !important;
+    margin-top: 10px !important;
   }
 }
 

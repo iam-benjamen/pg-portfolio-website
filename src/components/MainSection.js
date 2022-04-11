@@ -1,4 +1,13 @@
-import { Box, Image, VStack, Heading, Text, Flex, HStack, Link } from "@chakra-ui/react";
+import {
+  Box,
+  Image,
+  VStack,
+  Heading,
+  Text,
+  Flex,
+  HStack,
+  Link,
+} from "@chakra-ui/react";
 import mainPicture2 from "../assets/partners/ME(Compressed).png";
 import { useRef, useEffect } from "react";
 import Typed from "typed.js";
@@ -19,8 +28,8 @@ const MainSection = () => {
         "Graphics Designer.",
         "Content Creator.",
       ],
-      typeSpeed: 50,
-      backSpeed: 50,
+      typeSpeed: 80,
+      backSpeed: 100,
       loop: true,
       loopCount: Infinity,
     };
@@ -39,18 +48,36 @@ const MainSection = () => {
       flexDirection={["column-reverse", "column-reverse", "row"]}
       justifyContent="center"
       bgColor="#141414"
-      height={["100vh", "max-content", "max-content"]}
+      height={["max-content", "max-content", "max-content"]}
       alignItems={"center"}
-      pt="5rem"
+      pt="4rem"
       gap="1rem"
     >
-      <Box display={"flex"} flexDir={["column","column","row-reverse"]} gap={["0","0","2rem"]}>
+      <Box
+        display={"flex"}
+        flexDir={["column", "column", "row-reverse"]}
+        gap={["0", "0", "2rem"]}
+      >
         <Image
           src={mainPicture2}
           width={["-webkit-fill-available", "-webkit-fill-available", "37rem"]}
         />
         {/* <Icon className="rotating-ring" position="absolute" /> */}
-        <Box display={"flex"} flexDir={["row","row","column"]} justifyContent={"center"} gap=".7rem" _before={{content:"''",height:"11rem", w:"1px", bgColor:"#3d648f", ml:"12px", mt:"5px"}}>
+        <Box
+          display={"flex"}
+          flexDir={["row", "row", "column"]}
+          justifyContent={"center"}
+          gap=".7rem"
+          _before={{
+            content: "''",
+            height: "11rem",
+            w: "1px",
+            bgColor: "#3d648f",
+            ml: "12px",
+            mt: "5px",
+          }}
+          mb="2rem"
+        >
           <Box as={Link} href="https://github.com/iam-benjamen" isExternal>
             <Image
               src={github}
