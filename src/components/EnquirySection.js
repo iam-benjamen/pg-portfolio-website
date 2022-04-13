@@ -141,7 +141,7 @@ const EnquirySection = () => {
               fontSize={["1.5rem", "1.5rem", "1.5rem"]}
               color={"white"}
             >
-              linkedin.com/in/<br/>adediranilerioluwa
+              linkedin.com/in/<br/>adediran-ilerioluwa
             </Heading>
           </Box>
         </HStack>
