@@ -11,14 +11,14 @@ const ReviewsSection = () => {
         w="80%"
         display={"flex"}
         m="auto"
-        border={"1px solid black"}
+        
         justifyContent="center"
         mt={"-1px"}
         flexDir={["column-reverse", "column-reverse", "row"]}
       >
         <Box
           w={["100%", "100%", "50%"]}
-          borderTop = "1px solid black"
+          border={"1px solid black"}
           padding={["1rem", "1.5rem", "3rem"]}
         >
           <Swiper
@@ -38,7 +38,7 @@ const ReviewsSection = () => {
               <Box
                 display={"flex"}
                 flexDir="column"
-                gap={"1rem"}
+                gap={"2.5rem"}
                 justifyContent="space-between"
               >
                 <Image src={commentIcon} w="4rem" />
@@ -67,7 +67,7 @@ const ReviewsSection = () => {
           </Swiper>
         </Box>
         <Box>
-          <Image src={mainPicture} w="100%" />
+          <Image src={mainPicture} w="25rem" border={"1px solid black"}/>
         </Box>
       </Box>
     </Box>
