@@ -9,48 +9,6 @@ body {
 }
 
 
-.slick-slide.slick-active.slick-center.slick-current{
-  background-color: #101010!important;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  transform: scale(1.1);
-  transition-duration: 0s;
-  border: 1px solid #3d648f;
-}
-.slick-slide.slick-active.slick-current{
-  background-color: #101010!important;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border: 2px solid #3d648f;
-}
-
-.slick-dots li button:before{
-  color:white !important;
-  /* opacity: 0.8 !important; */
-}
-
-.slick-dots{
-  bottom: -3rem !important;
-}
-
-.slick-slide{
-  overflow: hidden;
-}
-
-@media screen and (max-width : 585px) {
-  .slick-next {
-    display: none !important;
-  }
-  .slick-prev {
-    display: none !important;
-  }
-}
-
-.slick-next {
-  right: -15px !important;
-}
-.slick-prev {
-  left: -15px !important;
-}
-
 svg{
   width: 30rem;
   height: 30rem;
@@ -113,3 +71,5 @@ animation: spin 8s cubic-bezier(0.5, 0.5, 0.5, .5) infinite;
 .main-logo{
   animation: heartbeat 2s infinite;
 }
+
+.swiper-pagination { pointer-events: all !important; }

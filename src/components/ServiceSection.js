@@ -5,6 +5,7 @@ import Graphics from "../assets/graphic-design.svg";
 import Architecture from "../assets/architecture.svg";
 import Visual from "../assets/visual-design.svg";
 import Content from "../assets/content.svg";
+import "../my-slick.css"
 
 const ServiceSection = () => {
   const settings = {
@@ -87,6 +88,7 @@ const ServiceSection = () => {
           justifyContent="center"
           px={["0rem", "1rem", "1.5rem"]}
           _hover={{ cursor: "pointer" }}
+          borderX= "1px solid #3d648f"
         >
           <Image src={Graphics} />
           <Heading
@@ -118,6 +120,7 @@ const ServiceSection = () => {
           justifyContent="center"
           px={["0rem", "1rem", "2rem"]}
           _hover={{ cursor: "pointer" }}
+          borderX= "1px solid #3d648f"
         >
           <Image src={Architecture} />
           <Heading
@@ -149,6 +152,7 @@ const ServiceSection = () => {
           justifyContent="center"
           px={["0rem", "1rem", "1.5rem"]}
           _hover={{ cursor: "pointer" }}
+          borderX= "1px solid #3d648f"
         >
           <Image src={Visual} />
           <Heading
@@ -179,6 +183,7 @@ const ServiceSection = () => {
           justifyContent="center"
           px={["0rem", "1rem", "1.5rem"]}
           _hover={{ cursor: "pointer" }}
+          borderX= "1px solid #3d648f"
         >
           <Image src={Content} />
           <Heading

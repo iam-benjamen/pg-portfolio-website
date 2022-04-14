@@ -224,6 +224,7 @@ const EnquirySection = () => {
               pr="2rem"
             />
             <InputRightElement
+              top={"10px"}
               pt={"8px"}
               pr={"8px"}
               children={<EditIcon color="#3d648f" />}

@@ -28,8 +28,8 @@ const MainSection = () => {
         "Graphics Designer.",
         "Content Creator.",
       ],
-      typeSpeed: 80,
-      backSpeed: 100,
+      typeSpeed: 50,
+      backSpeed: 50,
       loop: true,
       loopCount: Infinity,
     };
