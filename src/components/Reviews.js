@@ -35,7 +35,7 @@ const ReviewsSection = () => {
       >
         <Box
           w={{ base: "100%", md: "27rem" }}
-          border={".5px solid black"}
+          // border={".5px solid black"}
           padding={["1rem", "1.5rem", "2rem"]}
           margin={("auto", "auto", 0)}
           alignSelf="center"
@@ -49,7 +49,11 @@ const ReviewsSection = () => {
                 justifyContent="space-between"
               >
                 <Image src={commentIcon} w="4rem" />
-                <Heading fontFamily={"Poppins"} lineHeight="1.3">
+                <Heading
+                  fontFamily={"Poppins"}
+                  lineHeight="1.5"
+                  fontSize={"2rem"}
+                >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Accusamus, ipsa.
                 </Heading>
@@ -76,9 +80,13 @@ const ReviewsSection = () => {
                 justifyContent="space-between"
               >
                 <Image src={commentIcon} w="4rem" />
-                <Heading fontFamily={"Poppins"} lineHeight="1.3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Accusamus, ipsa.
+                <Heading
+                  fontFamily={"Poppins"}
+                  lineHeight="1.5"
+                  fontSize={"2rem"}
+                >
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est,
+                  voluptates dolor!
                 </Heading>
                 <Box display={"flex"} alignItems="center" gap="1rem">
                   <Avatar
@@ -103,11 +111,15 @@ const ReviewsSection = () => {
                 justifyContent="space-between"
               >
                 <Image src={commentIcon} w="4rem" />
-                <Heading fontFamily={"Poppins"} lineHeight="1.3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Accusamus, ipsa.
+                <Heading
+                  fontFamily={"Poppins"}
+                  lineHeight="1.5"
+                  fontSize={"2rem"}
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                  modi.
                 </Heading>
-                <Box display={"flex"} alignItems="center" gap="1rem">
+                <Box display={"flex"} alignItems="center" gap="1rem" pb="3rem">
                   <Avatar
                     name="Dan Abrahmov"
                     src="https://bit.ly/dan-abramov"
@@ -130,9 +142,13 @@ const ReviewsSection = () => {
                 justifyContent="space-between"
               >
                 <Image src={commentIcon} w="4rem" />
-                <Heading fontFamily={"Poppins"} lineHeight="1.3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Accusamus, ipsa.
+                <Heading
+                  fontFamily={"Poppins"}
+                  lineHeight="1.5"
+                  fontSize={"2rem"}
+                >
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed,
+                  corporis?
                 </Heading>
                 <Box display={"flex"} alignItems="center" gap="1rem">
                   <Avatar

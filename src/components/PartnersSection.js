@@ -6,6 +6,7 @@ const PartnersSection = () => {
     <Box
       h="max-content"
       bgColor={"#101010"}
+      py="3rem"
     >
       <Image src={arranged} w={["100%","100%","80%"]} margin="auto" mt="-1px"/>
     </Box>

@@ -47,7 +47,7 @@ const NavBar = () => {
       bgColor="#141414"
       justifyContent={["space-between", "space-between", "center"]}
       pr="3rem"
-      pl="1rem"
+      pl={["1rem","2rem","8rem"]}
       gap={{base:"2rem", md:"3rem", lg:"6rem"}}
       position={"fixed"}
       w="100%"

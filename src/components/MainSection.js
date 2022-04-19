@@ -13,8 +13,9 @@ import { useRef, useEffect } from "react";
 import Typed from "typed.js";
 import twitter from "../assets/twitter.svg";
 import linkedin from "../assets/linkedin.svg";
-import github from "../assets/github.svg";
+import behance from "../assets/behance.svg";
 import mail from "../assets/mail.svg";
+import instagram from "../assets/instagram-logo.svg"
 
 const MainSection = () => {
   const el = useRef(null);
@@ -73,16 +74,16 @@ const MainSection = () => {
             height: "11rem",
             w: "1px",
             bgColor: "#3d648f",
-            ml: "12px",
+            ml: "15px",
             mt: "5px",
           }}
           mb="2rem"
         >
           <Box as={Link} href="https://github.com/iam-benjamen" isExternal>
             <Image
-              src={github}
+              src={behance}
               cursor="pointer"
-              w="1.7rem"
+              w="2rem"
               transitionDuration={".2s"}
               _hover={{ transform: "scale(1.2)" }}
             />
@@ -91,7 +92,7 @@ const MainSection = () => {
             <Image
               src={linkedin}
               cursor="pointer"
-              w="1.5rem"
+              w="1.7rem"
               transitionDuration={".2s"}
               _hover={{ transform: "scale(1.2)" }}
             />
@@ -99,6 +100,15 @@ const MainSection = () => {
           <Box as={Link} href="https://github.com/iam-benjamen" isExternal>
             <Image
               src={twitter}
+              cursor="pointer"
+              w="1.7rem"
+              transitionDuration={".2s"}
+              _hover={{ transform: "scale(1.2)" }}
+            />
+          </Box>
+          <Box as={Link} href="https://github.com/iam-benjamen" isExternal>
+            <Image
+              src={instagram}
               cursor="pointer"
               w="1.5rem"
               transitionDuration={".2s"}
