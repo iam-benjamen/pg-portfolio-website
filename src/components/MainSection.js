@@ -68,13 +68,14 @@ const MainSection = () => {
           display={"flex"}
           flexDir={["row", "row", "column"]}
           justifyContent={"center"}
+          alignItems="center"
           gap=".7rem"
           _before={{
             content: "''",
-            height: "11rem",
-            w: "1px",
+            height: {base:"1px", md:"10rem", lg:"10rem"},
+            w: {base:"8rem", md:"1px", lg:"1px"},
             bgColor: "#3d648f",
-            ml: "15px",
+            ml: "8px",
             mt: "5px",
           }}
           mb="2rem"
