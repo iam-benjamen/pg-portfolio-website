@@ -75,39 +75,39 @@ const MainSection = () => {
             height: {base:"1px", md:"10rem", lg:"10rem"},
             w: {base:"8rem", md:"1px", lg:"1px"},
             bgColor: "#3d648f",
-            ml: "8px",
+            ml: "5px",
             mt: "5px",
           }}
           mb="2rem"
         >
-          <Box as={Link} href="https://github.com/iam-benjamen" isExternal>
+          <Box as={Link} href="https://www.behance.net/promiseguy02" isExternal>
             <Image
               src={behance}
               cursor="pointer"
-              w="2rem"
+              w="1.8rem"
               transitionDuration={".2s"}
               _hover={{ transform: "scale(1.2)" }}
             />
           </Box>
-          <Box as={Link} href="https://linkedin.com/in/iambenjamen" isExternal>
+          <Box as={Link} href="http://www.linkedin.com/in/adediran-ilerioluwa" isExternal>
             <Image
               src={linkedin}
               cursor="pointer"
-              w="1.7rem"
+              w="1.5rem"
               transitionDuration={".2s"}
               _hover={{ transform: "scale(1.2)" }}
             />
           </Box>
-          <Box as={Link} href="https://github.com/iam-benjamen" isExternal>
+          <Box as={Link} href="https://twitter.com/promiseguy03" isExternal>
             <Image
               src={twitter}
               cursor="pointer"
-              w="1.7rem"
+              w="1.5rem"
               transitionDuration={".2s"}
               _hover={{ transform: "scale(1.2)" }}
             />
           </Box>
-          <Box as={Link} href="https://github.com/iam-benjamen" isExternal>
+          <Box as={Link} href="https://www.instagram.com/promiseguy02/" isExternal>
             <Image
               src={instagram}
               cursor="pointer"
@@ -116,7 +116,7 @@ const MainSection = () => {
               _hover={{ transform: "scale(1.2)" }}
             />
           </Box>
-          <Box as={Link} href="https://github.com/iam-benjamen" isExternal>
+          <Box as={Link} href="mailto:thepgstudeos@gmail.com" isExternal>
             <Image
               src={mail}
               cursor="pointer"

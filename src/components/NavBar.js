@@ -220,7 +220,7 @@ const NavBar = () => {
                 transitionDuration: ".8s",
               }}
               minWidth="8.5rem"
-              pl="15px"
+              px="1rem"
               minW={"fit-content"}
               className="font-link"
               borderRadius={"3px"}

@@ -16,9 +16,9 @@
     /* opacity: 0.8 !important; */
   }
   
-  .slick-dots{
-    bottom: -1rem !important;
-  }
+  /* .slick-dots{
+    bottom: 0rem !important;
+  } */
   
   .slick-slide{
     overflow: hidden;

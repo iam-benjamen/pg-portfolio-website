@@ -72,7 +72,7 @@ const EnquirySection = () => {
         <Heading
           fontSize={["1.5rem", "1.8rem", "2rem"]}
           color={"white"}
-          mt="0.4rem"
+          pt="1rem"
           fontFamily={"Poppins"}
         >
           Talk or Meet With Me
@@ -158,6 +158,7 @@ const EnquirySection = () => {
           fontSize={["1.5rem", "1.8rem", "2rem"]}
           color={"white"}
           pb="1rem"
+          pt=".5rem"
           fontFamily={"Poppins"}
         >
           Let Me Know Here
@@ -222,6 +223,7 @@ const EnquirySection = () => {
               required
               name="message"
               pr="2rem"
+              minHeight={["15rem","15rem","6rem"]}
             />
             <InputRightElement
               top={"10px"}

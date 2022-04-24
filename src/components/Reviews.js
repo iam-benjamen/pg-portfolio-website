@@ -2,12 +2,12 @@ import { Box, Image, Heading, Avatar, Text } from "@chakra-ui/react";
 import mainPicture from "../assets/sideView (1).png";
 import commentIcon from "../assets/comments-solid.svg";
 import jamesfarrell from "../assets/Clients/jamesfarrrell.jpeg";
-import adeleye from "../assets/Clients/adeleye.jpeg";
-import jackson from "../assets/Clients/jackson.jpeg";
+import adeleye from "../assets/Clients/adeleyecropped.jpeg";
+import jackson from "../assets/Clients/jacksoncropped.jpeg";
 import martin from "../assets/Clients/martin.jpeg";
 import oyelola from "../assets/Clients/oyelola.jpeg";
 import samson from "../assets/Clients/samson.jpeg";
-import sonia from "../assets/Clients/sonia.jpeg";
+import sonia from "../assets/Clients/soniacropped.jpeg";
 import Slider from "react-slick";
 
 
@@ -106,19 +106,19 @@ const ReviewsSection = () => {
                 <Heading
                   fontFamily={"Poppins"}
                   lineHeight="1.5"
-                  fontSize={"2rem"}
+                  fontSize={"1.5rem"}
                 >
                   Mr Promise is very creative and talented graphic designer, he
                   has mastered his craft making him one of the best
                   professionals I have worked with, I recommend him.
                 </Heading>
-                <Box display={"flex"} alignItems="center" gap="1rem" pb="3rem">
+                <Box display={"flex"} alignItems="center" gap="1rem">
                   <Avatar name="Jackson Jacobs" src={jackson} size={"md"} />
                   <Box>
                     <Heading fontFamily={"Poppins"} fontSize="1rem">
                       Jackson Jacobs
                     </Heading>
-                    <Text>CEO SoundTrip -USA</Text>
+                    <Text>CEO SoundTrip -USA & U.S. ARMY</Text>
                   </Box>
                 </Box>
               </Box>
@@ -166,8 +166,7 @@ const ReviewsSection = () => {
                   lineHeight="1.5"
                   fontSize={"1.5rem"}
                 >
-                  With the extraordinary high-quality work rendered, I am
-                  impressed by the professionalism Ilerioluwa Adediran put in
+                   I am impressed by the professionalism Ilerioluwa Adediran put in
                   what he does, attention to details and promptness to project
                   delivery.
                 </Heading>
@@ -198,11 +197,10 @@ const ReviewsSection = () => {
                   lineHeight="1.5"
                   fontSize={"1.5rem"}
                 >
-                  I am well impressed with Promise's services thus far and his
+                  I am impressed with Promise's services and his
                   quality of delivery with unique style of creativity he puts in
-                  to every of his job!!! I can go to sleep after giving him an
-                  illustration of what I want and I have always trust and
-                  believe his creativity for real.
+                  to every of his job! I have absolute trust and
+                  belief in his creativity.
                 </Heading>
                 <Box display={"flex"} alignItems="center" gap="1rem">
                   <Avatar name="Samson Okuro" src={samson} size={"md"} />

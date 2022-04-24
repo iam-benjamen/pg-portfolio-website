@@ -10,7 +10,7 @@ const PartnersSection = () => {
       mt="-1px"
       px="1rem"
     >
-      <Image src={arranged} w={["100%","100%","80%"]} margin="auto" mt="-5px"/>
+      <Image src={arranged} w={["100%","100%","60%"]} margin="auto" mt="-5px"/>
     </Box>
   );
 };
