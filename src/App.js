@@ -1,4 +1,4 @@
-import {useEffect,useState} from "react"
+import { useEffect, useState } from "react";
 import NavBar from "./components/NavBar";
 import MainSection from "./components/MainSection";
 import EnquirySection from "./components/EnquirySection";
@@ -7,39 +7,54 @@ import PartnersSection from "./components/PartnersSection";
 import ServiceSection from "./components/ServiceSection";
 import Animation from "./components/Animation";
 import ReviewsSection from "./components/Reviews";
+import WorksSection from "./components/WorksSection";
 import Footer from "./components/Footer";
-import { extendTheme } from "@chakra-ui/react";
-import { createBreakpoints } from "@chakra-ui/theme-tools";
-
-const breakpoints = createBreakpoints({
-  sm: "400px",
-  md: "1000px",
-  lg: "1500px",
-});
-const theme = extendTheme({ breakpoints });
+import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
   const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1000);
   }, []);
-  if(loading) return <Animation/>
+  if (loading) return <Animation />;
 
   return (
-    <div className="App" className="font-link">
-      <NavBar />
-      <MainSection />
-      <AboutSection />
-      <ServiceSection />
-      <ReviewsSection/>
-      <PartnersSection/>
-      <EnquirySection/>
-      <Footer/>
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="works" element={<Project />} />
+      </Routes>
     </div>
   );
 }
 
+const Home = () => {
+  return (
+    <>
+      <NavBar />
+      <MainSection />
+      <AboutSection />
+      <ServiceSection />
+      <WorksSection />
+      <ReviewsSection />
+      <PartnersSection />
+      <EnquirySection />
+      <Footer />
+    </>
+  );
+};
+
+const Project = () => {
+  return(
+    <>
+      <NavBar />
+      <MainSection />
+      <AboutSection />
+      <ServiceSection />
+      <Footer />
+    </>
+  )
+}
 export default App;

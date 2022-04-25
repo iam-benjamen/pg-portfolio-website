@@ -9,6 +9,7 @@ const PartnersSection = () => {
       py="3rem"
       mt="-1px"
       px="1rem"
+      
     >
       <Image src={arranged} w={["100%","100%","60%"]} margin="auto" mt="-5px"/>
     </Box>

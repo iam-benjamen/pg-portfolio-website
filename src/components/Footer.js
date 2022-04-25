@@ -3,6 +3,7 @@ import twitter from "../assets/twitter.svg";
 import linkedin from "../assets/linkedin.svg";
 import github from "../assets/github.svg";
 import mail from "../assets/mail.svg";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
@@ -16,10 +17,22 @@ const Footer = () => {
       bgColor={"#141414"}
       color="white"
       mt="-1px"
-    >       
-      <Text>Proudly made by Areo Benjamen.</Text>
+    >
+      <Text
+        as={motion.div}
+        initial={{ opacity: 0, y:-150 }}
+        whileInView={{ opacity: [0.1, 0.5, 0.7, 1], y:0 }}
+        transition={{ delay: 0.2, duration: 5 }}
+      >
+        Proudly made by Areo Benjamen.
+      </Text>
       <HStack gap=".7rem">
-        <Box as={Link} href="https://github.com/iam-benjamen" isExternal>
+        <Box
+          as = {Link}
+          href="https://github.com/iam-benjamen"
+          target="__blank"
+          isExternal
+        >
           <Image
             src={github}
             cursor="pointer"

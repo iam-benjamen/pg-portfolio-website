@@ -12,14 +12,14 @@ import {
   Image,
   Textarea,
 } from "@chakra-ui/react";
-import {EmailIcon, EditIcon } from "@chakra-ui/icons";
+import { EmailIcon, EditIcon } from "@chakra-ui/icons";
 import { extendTheme } from "@chakra-ui/react";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
 import testIcon from "../assets/linkedin-svg.svg";
 import handshake from "../assets/business-meeting.svg";
 import call from "../assets/phone-call.svg";
 import message from "../assets/chat-Icon.svg";
-
+import { motion } from "framer-motion";
 const breakpoints = createBreakpoints({
   sm: "400px",
   md: "1000px",
@@ -59,7 +59,16 @@ const EnquirySection = () => {
       pt="5rem"
       mt={"-1rem"}
     >
-      <VStack alignItems={"start"} gap="1.2rem" pt="1rem" px=".5rem">
+      <VStack
+        alignItems={"start"}
+        gap="1.2rem"
+        pt="1rem"
+        px=".5rem"
+        as={motion.div}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: [0.1, 0.3, 0.5, 0.7, 1] }}
+        transition={{ delay: 0.2, duration: 5 }}
+      >
         <Text
           color={"#3d648f"}
           textDecoration="underline"
@@ -141,12 +150,21 @@ const EnquirySection = () => {
               fontSize={["1.5rem", "1.5rem", "1.5rem"]}
               color={"white"}
             >
-              linkedin.com/in/<br/>adediran-ilerioluwa
+              linkedin.com/in/
+              <br />
+              adediran-ilerioluwa
             </Heading>
           </Box>
         </HStack>
       </VStack>
-      <VStack alignItems={"flex-start"} mx="1rem">
+      <VStack
+        alignItems={"flex-start"}
+        mx="1rem"
+        as={motion.div}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: [0.1, 0.3, 0.5, 0.7, 1] }}
+        transition={{ delay: 0.2, duration: 5 }}
+      >
         <Text
           fontFamily={"Poppins"}
           color={"#3d648f"}
@@ -223,7 +241,7 @@ const EnquirySection = () => {
               required
               name="message"
               pr="2rem"
-              minHeight={["15rem","15rem","6rem"]}
+              minHeight={["15rem", "15rem", "6rem"]}
             />
             <InputRightElement
               top={"10px"}

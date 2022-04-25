@@ -15,7 +15,8 @@ import twitter from "../assets/twitter.svg";
 import linkedin from "../assets/linkedin.svg";
 import behance from "../assets/behance.svg";
 import mail from "../assets/mail.svg";
-import instagram from "../assets/instagram-logo.svg"
+import instagram from "../assets/instagram-logo.svg";
+import { motion } from "framer-motion";
 
 const MainSection = () => {
   const el = useRef(null);
@@ -65,6 +66,15 @@ const MainSection = () => {
         />
         {/* <Icon className="rotating-ring" position="absolute" /> */}
         <Box
+          as={motion.div}
+          initial={{ x: -250 }}
+          animate={{ x: 0 }}
+          transition={{
+            duration: 3,
+            delay: 1.5,
+            type: "spring",
+            stiffness: 100,
+          }}
           display={"flex"}
           flexDir={["row", "row", "column"]}
           justifyContent={"center"}
@@ -72,15 +82,26 @@ const MainSection = () => {
           gap=".7rem"
           _before={{
             content: "''",
-            height: {base:"1px", md:"10rem", lg:"10rem"},
-            w: {base:"8rem", md:"1px", lg:"1px"},
+            height: { base: "1px", md: "10rem", lg: "10rem" },
+            w: { base: "8rem", md: "1px", lg: "1px" },
             bgColor: "#3d648f",
             ml: "5px",
             mt: "5px",
           }}
           mb="2rem"
         >
-          <Box as={Link} href="https://www.behance.net/promiseguy02" isExternal>
+          <Box
+            as={motion.a}
+            href="https://www.behance.net/promiseguy02"
+            initial={{ y: -250 }}
+            whileInView={{ y: 0 }}
+            transition={{
+              duration: 5,
+              type: "spring",
+              stiffness: 1005,
+            }}
+            target="__blank"
+          >
             <Image
               src={behance}
               cursor="pointer"
@@ -89,7 +110,18 @@ const MainSection = () => {
               _hover={{ transform: "scale(1.2)" }}
             />
           </Box>
-          <Box as={Link} href="http://www.linkedin.com/in/adediran-ilerioluwa" isExternal>
+          <Box
+            as={motion.a}
+            href="http://www.linkedin.com/in/adediran-ilerioluwa"
+            initial={{ y: -250 }}
+            whileInView={{ y: 0 }}
+            transition={{
+              duration: 5,
+              type: "spring",
+              stiffness: 1005,
+            }}
+            target="__blank"
+          >
             <Image
               src={linkedin}
               cursor="pointer"
@@ -98,7 +130,19 @@ const MainSection = () => {
               _hover={{ transform: "scale(1.2)" }}
             />
           </Box>
-          <Box as={Link} href="https://twitter.com/promiseguy03" isExternal>
+          <Box
+            as={motion.a}
+            href="https://twitter.com/promiseguy03"
+            initial={{ y: -250 }}
+            whileInView={{ y: 0 }}
+            transition={{
+              duration: 15,
+              delay: 10,
+              type: "spring",
+              stiffness: 1005,
+            }}
+            target="__blank"
+          >
             <Image
               src={twitter}
               cursor="pointer"
@@ -107,7 +151,19 @@ const MainSection = () => {
               _hover={{ transform: "scale(1.2)" }}
             />
           </Box>
-          <Box as={Link} href="https://www.instagram.com/promiseguy02/" isExternal>
+          <Box
+            as={motion.a}
+            href="https://www.instagram.com/promiseguy02/"
+            initial={{ y: -250 }}
+            whileInView={{ y: 0 }}
+            transition={{
+              duration: 15,
+              delay: 10,
+              type: "spring",
+              stiffness: 1005,
+            }}
+            target="__blank"
+          >
             <Image
               src={instagram}
               cursor="pointer"
@@ -116,7 +172,19 @@ const MainSection = () => {
               _hover={{ transform: "scale(1.2)" }}
             />
           </Box>
-          <Box as={Link} href="mailto:thepgstudeos@gmail.com" isExternal>
+          <Box
+            as={motion.a}
+            href="mailto:thepgstudeos@gmail.com"
+            initial={{ y: -250 }}
+            whileInView={{ y: 0 }}
+            transition={{
+              duration: 15,
+              delay: 5,
+              type: "spring",
+              stiffness: 1005,
+            }}
+            target="__blank"
+          >
             <Image
               src={mail}
               cursor="pointer"
@@ -128,6 +196,10 @@ const MainSection = () => {
         </Box>
       </Box>
       <VStack
+        as={motion.div}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: [0.1, 0.5, 0.7, 1] }}
+        transition={{ delay: 5, duration: 10 }}
         px={"1rem"}
         maxWidth="25rem"
         justifyContent={"center"}

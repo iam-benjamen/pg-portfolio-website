@@ -9,7 +9,7 @@ import oyelola from "../assets/Clients/oyelola.jpeg";
 import samson from "../assets/Clients/samson.jpeg";
 import sonia from "../assets/Clients/soniacropped.jpeg";
 import Slider from "react-slick";
-
+import { motion } from "framer-motion";
 
 const ReviewsSection = () => {
   const settings = {
@@ -20,6 +20,9 @@ const ReviewsSection = () => {
     autoplay: true,
     slidesToShow: 1,
     fade: true,
+    autoplaySpeed: 2000,
+    pauseOnDotsHover: true,
+    pauseOnHover: true,
   };
   return (
     <Box h="max-content" bgColor={"#101010"} color="white">
@@ -37,6 +40,10 @@ const ReviewsSection = () => {
           padding={["1rem", "1.5rem", "2rem"]}
           margin={("auto", "auto", 0)}
           alignSelf="center"
+          as={motion.div}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: [0.1, 0.5, 0.7, 1] }}
+          transition={{ delay: 0.2, duration: 5 }}
         >
           <Slider {...settings} zIndex={-23}>
             <Box>
@@ -166,9 +173,9 @@ const ReviewsSection = () => {
                   lineHeight="1.5"
                   fontSize={"1.5rem"}
                 >
-                   I am impressed by the professionalism Ilerioluwa Adediran put in
-                  what he does, attention to details and promptness to project
-                  delivery.
+                  I am impressed by the professionalism Ilerioluwa Adediran put
+                  in what he does, attention to details and promptness to
+                  project delivery.
                 </Heading>
                 <Box display={"flex"} alignItems="center" gap="1rem">
                   <Avatar name="Oyelola T.D." src={oyelola} size={"md"} />
@@ -197,10 +204,10 @@ const ReviewsSection = () => {
                   lineHeight="1.5"
                   fontSize={"1.5rem"}
                 >
-                  I am impressed with Promise's services and his
-                  quality of delivery with unique style of creativity he puts in
-                  to every of his job! I have absolute trust and
-                  belief in his creativity.
+                  I am impressed with Promise's services and his quality of
+                  delivery with unique style of creativity he puts in to every
+                  of his job! I have absolute trust and belief in his
+                  creativity.
                 </Heading>
                 <Box display={"flex"} alignItems="center" gap="1rem">
                   <Avatar name="Samson Okuro" src={samson} size={"md"} />
@@ -244,7 +251,12 @@ const ReviewsSection = () => {
             </Box>
           </Slider>
         </Box>
-        <Box>
+        <Box
+          as={motion.div}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: [0.1, 0.3, 0.5, 0.7, 1] }}
+          transition={{ delay: 0.2, duration: 50 }}
+        >
           <Image
             src={mainPicture}
             w={"27rem"}

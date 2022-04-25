@@ -157,7 +157,8 @@ const NavBar = () => {
         <Link
           as={mylink}
           smooth={true}
-          to="works"
+          to="work-section"
+          offset = {-50}
           cursor="pointer"
           _hover={{
             textDecoration: "none",
