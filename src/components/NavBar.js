@@ -252,8 +252,10 @@ const NavBar = () => {
                 isExternal
                 fontSize={".8rem"}
                 position="relative"
+                pr="1rem"
+                rightIcon={ <ExternalLinkIcon position="absolute" right={2} top=".8rem"/>}
               >
-                Architecture <ExternalLinkIcon position="absolute" right={0} top=".8rem"/>
+                Architecture 
               </Button>
               <Button
                 w="max-content"
@@ -270,8 +272,9 @@ const NavBar = () => {
                 isExternal
                 fontSize={".8rem"}
                 position="relative"
+                rightIcon={ <ExternalLinkIcon position="absolute" right={2} top=".8rem"/>}
               >
-                Creative Design <ExternalLinkIcon position="absolute" right={0} top=".8rem"/>
+                Creative Design
               </Button>
             </PopoverBody>
           </PopoverContent>
@@ -389,11 +392,11 @@ const NavBar = () => {
                 as={Link}
                 href="https://drive.google.com/file/d/1jxOwaUdQ_ZaaYn2k2D_huU59JZoHIVo4/view?usp=sharing"
                 isExternal
-                fontSize={".8rem"}
+                fontSize={"1rem"}
                 position="relative"
-                px="1.5rem"
+                rightIcon={ <ExternalLinkIcon top=".7rem" right={1}/>}
               >
-                Architecture <ExternalLinkIcon mx="2px" position={"absolute"} right={1} top={3}/>
+                Architecture 
               </Button>
             </MenuItem>
             <MenuItem>
@@ -404,11 +407,11 @@ const NavBar = () => {
                 as={Link}
                 href="https://drive.google.com/file/d/1sho2qI1bDzVqoe-osncRMB47-CR2eeUA/view?usp=sharing"
                 isExternal
-                fontSize={".8rem"}
+                fontSize={"1rem"}
                 position="relative"
-                px="1.5rem"
+                rightIcon={ <ExternalLinkIcon top=".7rem" right={1}/>}
               >
-                Creative Design <ExternalLinkIcon position={"absolute"} right={1} top={3}/>
+                Creative Design 
               </Button>
             </MenuItem>
           </MenuList>

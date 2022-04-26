@@ -12,12 +12,16 @@ import Footer from "./components/Footer";
 import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
+
   const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 1000);
   }, []);
+
+  
   if (loading) return <Animation />;
 
   return (

@@ -1,6 +1,6 @@
 import { Box, Image, Text, Heading, Button } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
 
 const WorksSection = () => {
   return (
@@ -49,7 +49,7 @@ const WorksSection = () => {
         alignItems="center"
         
       >
-        <Box overflow="hidden" borderRadius={"md"} borderWidth="1px" w="25%">
+        <Box overflow="hidden" borderRadius={"md"} borderWidth="1px" w={["85%","85%","25%"]}>
           <Image src={"https://bit.ly/2Z4KKcF"} w="100%" />
           <Box w="100%" bg={"white"} px="1rem">
             <Text color="black" fontFamily={"Montserrat"}>
@@ -57,7 +57,7 @@ const WorksSection = () => {
             </Text>
           </Box>
         </Box>
-        <Box overflow="hidden" borderRadius={"md"} borderWidth="1px" w="25%">
+        <Box overflow="hidden" borderRadius={"md"} borderWidth="1px" w={["85%","85%","25%"]}>
           <Image src={"https://bit.ly/2Z4KKcF"} w="100%" />
           <Box w="100%" bg={"white"} px="1rem">
             <Text fontFamily={"Montserrat"} color="black">
@@ -65,7 +65,7 @@ const WorksSection = () => {
             </Text>
           </Box>
         </Box>
-        <Box overflow="hidden" borderRadius={"md"} borderWidth="1px" w="25%">
+        <Box overflow="hidden" borderRadius={"md"} borderWidth="1px" w={["85%","85%","25%"]}>
           <Image src={"https://bit.ly/2Z4KKcF"} w="100%" />
           <Box w="100%" bg={"white"} px="1rem">
             <Text fontFamily={"Montserrat"} color="black">
