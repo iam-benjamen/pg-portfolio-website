@@ -52,6 +52,7 @@ const WorksSection = () => {
         gap="1rem"
         justifyContent={"center"}
         alignItems="center"
+        w={["100%","auto","auto"]}
       >
         <Box
           overflow="hidden"
