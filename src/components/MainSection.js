@@ -4,9 +4,6 @@ import {
   VStack,
   Heading,
   Text,
-  Flex,
-  HStack,
-  Link,
 } from "@chakra-ui/react";
 import mainPicture2 from "../assets/partners/ME(Compressed).png";
 import { useRef, useEffect } from "react";
@@ -64,7 +61,6 @@ const MainSection = () => {
           src={mainPicture2}
           width={["-webkit-fill-available", "-webkit-fill-available", "37rem"]}
         />
-        {/* <Icon className="rotating-ring" position="absolute" /> */}
         <Box
           as={motion.div}
           initial={{ x: -250 }}

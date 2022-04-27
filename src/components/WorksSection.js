@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import archishowcase from "../assets/works/Archi-showcase.jpg";
 import stillshowcase from "../assets/works/WIRELESS LOCKSMITH - Business Card.jpg";
 
-
 const WorksSection = () => {
   return (
     <Box
@@ -57,7 +56,7 @@ const WorksSection = () => {
         <Box
           overflow="hidden"
           borderRadius={"md"}
-          w={["100%", "100%", "30%"]}
+          w={["100%", "100%", "35%"]}
           cursor="pointer"
           height={"15rem"}
           as={Link}
@@ -81,18 +80,19 @@ const WorksSection = () => {
           cursor="pointer"
           height="15rem"
         >
-          <Image
-            src={"https://bit.ly/2Z4KKcF"}
-            w="100%"
-            h="100%"
-            loading="lazy"
-            objectFit={"cover"}
-          />
+          <iframe
+            src="https://player.vimeo.com/video/703856477?h=f4b326ca7a&color=3d648f&title=0&byline=0&portrait=0"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </Box>
         <Box
           overflow="hidden"
           borderRadius={"md"}
-          w={["100%", "100%", "30%"]}
+          w={["100%", "100%", "35%"]}
           cursor="pointer"
           height={"15rem"}
         >
