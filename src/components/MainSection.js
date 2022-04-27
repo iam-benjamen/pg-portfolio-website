@@ -93,14 +93,14 @@ const MainSection = () => {
           <Box
             as={motion.a}
             href="https://www.behance.net/promiseguy02"
-            initial={{ y: -250 }}
-            whileInView={{ y: 0 }}
+            whileInView={{ y: [-20, 0] }}
             transition={{
-              duration: 5,
+              duration: "0.1s",
               type: "spring",
-              stiffness: 1005,
+              stiffness: 100,
             }}
             target="__blank"
+            layout={true}
           >
             <Image
               src={behance}
@@ -113,14 +113,14 @@ const MainSection = () => {
           <Box
             as={motion.a}
             href="http://www.linkedin.com/in/adediran-ilerioluwa"
-            initial={{ y: -250 }}
-            whileInView={{ y: 0 }}
+            whileInView={{ y: [-20,0] }}
             transition={{
-              duration: 5,
+              duration: .3,
               type: "spring",
-              stiffness: 1005,
+              stiffness: 100,
             }}
             target="__blank"
+            layout= {true}
           >
             <Image
               src={linkedin}
@@ -133,14 +133,14 @@ const MainSection = () => {
           <Box
             as={motion.a}
             href="https://twitter.com/promiseguy03"
-            initial={{ y: -250 }}
-            whileInView={{ y: 0 }}
+            whileInView={{y: [-20,0] }}
             transition={{
-              duration: 15,
-              delay: 10,
+              duration: 0.6,
               type: "spring",
-              stiffness: 1005,
+              stiffness: 100,
+              
             }}
+            layout= {true}
             target="__blank"
           >
             <Image
@@ -154,15 +154,15 @@ const MainSection = () => {
           <Box
             as={motion.a}
             href="https://www.instagram.com/promiseguy02/"
-            initial={{ y: -250 }}
-            whileInView={{ y: 0 }}
+    
+            whileInView={{ y: [-20,0] }}
             transition={{
-              duration: 15,
-              delay: 10,
+              duration: 0.2,
               type: "spring",
-              stiffness: 1005,
+              stiffness: 100,
             }}
             target="__blank"
+            layout={true}
           >
             <Image
               src={instagram}
@@ -175,13 +175,11 @@ const MainSection = () => {
           <Box
             as={motion.a}
             href="mailto:thepgstudeos@gmail.com"
-            initial={{ y: -250 }}
-            whileInView={{ y: 0 }}
+            whileInView={{ y: [-20,0] }}
             transition={{
-              duration: 15,
-              delay: 5,
+              duration: 0.1,
               type: "spring",
-              stiffness: 1005,
+              stiffness: 100,
             }}
             target="__blank"
           >

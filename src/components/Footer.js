@@ -20,9 +20,8 @@ const Footer = () => {
     >
       <Text
         as={motion.div}
-        initial={{ opacity: 0, y:-150 }}
-        whileInView={{ opacity: [0.1, 0.5, 0.7, 1], y:0 }}
-        transition={{ delay: 0.2, duration: 5 }}
+        whileInView={{ opacity: [0.1, 0.5, 0.7, 1], y:[-10,0] }}
+        transition={{ duration: 1 }}
       >
         Proudly made by Areo Benjamen.
       </Text>

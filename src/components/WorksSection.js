@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import archishowcase from "../assets/works/Archi-showcase.jpg";
 import stillshowcase from "../assets/works/WIRELESS LOCKSMITH - Business Card.jpg";
 
+
 const WorksSection = () => {
   return (
     <Box
@@ -44,6 +45,9 @@ const WorksSection = () => {
         </Heading>
       </Box>
       <Box
+        as={motion.div}
+        whileInView={{ y: [30, 0] }}
+        transition={{ duration: 0.5 }}
         display={"flex"}
         flexDir={["column", "column", "row"]}
         gap="1rem"
@@ -53,40 +57,55 @@ const WorksSection = () => {
         <Box
           overflow="hidden"
           borderRadius={"md"}
-          borderWidth="2px"
-          w={["85%", "85%", "30%"]}
+          w={["100%", "100%", "30%"]}
           cursor="pointer"
-          height={"80%"}
+          height={"15rem"}
           as={Link}
-          to = "/works"
+          to="/works"
         >
           <Image
             src={archishowcase}
             w="100%"
+            h="100%"
             _hover={{ transform: "scale(1.1)" }}
             transition="ease-in-out"
             transitionDuration={".4s"}
             loading="lazy"
+            objectFit={"cover"}
           />
         </Box>
         <Box
           overflow="hidden"
           borderRadius={"md"}
-          borderWidth="1px"
-          w={["85%", "85%", "30%"]}
+          w={["100%", "100%", "30%"]}
           cursor="pointer"
-          
+          height="15rem"
         >
-          <Image src={"https://bit.ly/2Z4KKcF"} w="100%" loading="lazy"/>
+          <Image
+            src={"https://bit.ly/2Z4KKcF"}
+            w="100%"
+            h="100%"
+            loading="lazy"
+            objectFit={"cover"}
+          />
         </Box>
         <Box
           overflow="hidden"
           borderRadius={"md"}
-          borderWidth="2px"
-          w={["85%", "85%", "30%"]}
+          w={["100%", "100%", "30%"]}
           cursor="pointer"
+          height={"15rem"}
         >
-          <Image src={stillshowcase} w="100%" loading="lazy"/>
+          <Image
+            src={stillshowcase}
+            w="100%"
+            h="100%"
+            loading="lazy"
+            objectFit={"cover"}
+            _hover={{ transform: "scale(1.1)" }}
+            transition="ease-in-out"
+            transitionDuration={".4s"}
+          />
         </Box>
       </Box>
       <Button
