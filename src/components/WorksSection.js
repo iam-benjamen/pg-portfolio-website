@@ -1,6 +1,8 @@
 import { Box, Image, Text, Heading, Button } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import archishowcase from "../assets/works/Archi-showcase.jpg";
+import stillshowcase from "../assets/works/WIRELESS LOCKSMITH - Business Card.jpg";
 
 const WorksSection = () => {
   return (
@@ -38,7 +40,7 @@ const WorksSection = () => {
           whileInView={{ opacity: [0.1, 0.5, 0.7, 1] }}
           transition={{ delay: 0.2, duration: 5 }}
         >
-          View some recent works.
+          View some recent Projects.
         </Heading>
       </Box>
       <Box
@@ -47,34 +49,57 @@ const WorksSection = () => {
         gap="1rem"
         justifyContent={"center"}
         alignItems="center"
-        
       >
-        <Box overflow="hidden" borderRadius={"md"} borderWidth="1px" w={["85%","85%","25%"]}>
-          <Image src={"https://bit.ly/2Z4KKcF"} w="100%" />
-          <Box w="100%" bg={"white"} px="1rem">
-            <Text color="black" fontFamily={"Montserrat"}>
-              Just a sample of what I can get done soon.
-            </Text>
-          </Box>
+        <Box
+          overflow="hidden"
+          borderRadius={"md"}
+          borderWidth="2px"
+          w={["85%", "85%", "30%"]}
+          cursor="pointer"
+          height={"80%"}
+          as={Link}
+          to = "/works"
+        >
+          <Image
+            src={archishowcase}
+            w="100%"
+            _hover={{ transform: "scale(1.1)" }}
+            transition="ease-in-out"
+            transitionDuration={".4s"}
+            loading="lazy"
+          />
         </Box>
-        <Box overflow="hidden" borderRadius={"md"} borderWidth="1px" w={["85%","85%","25%"]}>
-          <Image src={"https://bit.ly/2Z4KKcF"} w="100%" />
-          <Box w="100%" bg={"white"} px="1rem">
-            <Text fontFamily={"Montserrat"} color="black">
-              Just a sample of what I can get done soon.
-            </Text>
-          </Box>
+        <Box
+          overflow="hidden"
+          borderRadius={"md"}
+          borderWidth="1px"
+          w={["85%", "85%", "30%"]}
+          cursor="pointer"
+          
+        >
+          <Image src={"https://bit.ly/2Z4KKcF"} w="100%" loading="lazy"/>
         </Box>
-        <Box overflow="hidden" borderRadius={"md"} borderWidth="1px" w={["85%","85%","25%"]}>
-          <Image src={"https://bit.ly/2Z4KKcF"} w="100%" />
-          <Box w="100%" bg={"white"} px="1rem">
-            <Text fontFamily={"Montserrat"} color="black">
-              Just a sample of what I can get done soon.
-            </Text>
-          </Box>
+        <Box
+          overflow="hidden"
+          borderRadius={"md"}
+          borderWidth="2px"
+          w={["85%", "85%", "30%"]}
+          cursor="pointer"
+        >
+          <Image src={stillshowcase} w="100%" loading="lazy"/>
         </Box>
       </Box>
-      <Button as={Link} to="/works">View More</Button>
+      <Button
+        as={Link}
+        to="/works"
+        _hover={{
+          bgColor: "#3d648f",
+          color: "white",
+          transitionDuration: ".8s",
+        }}
+      >
+        View More
+      </Button>
     </Box>
   );
 };

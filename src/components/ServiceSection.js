@@ -83,7 +83,7 @@ const ServiceSection = () => {
         whileInView={{ opacity: [0.1, 0.5, 0.7, 1] }}
         transition={{ delay: 0.2, duration: 5 }}
       >
-        What We Do?
+        What I Do?
       </Heading>
 
       <Slider {...settings} zIndex={-23}>

@@ -10,6 +10,7 @@ import ReviewsSection from "./components/Reviews";
 import WorksSection from "./components/WorksSection";
 import Footer from "./components/Footer";
 import { Routes, Route, Link } from "react-router-dom";
+import PortfolioProjects from "./components/WorksPage";
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
     }, 1000);
   }, []);
 
-  
+
   if (loading) return <Animation />;
 
   return (
@@ -53,11 +54,7 @@ const Home = () => {
 const Project = () => {
   return(
     <>
-      <NavBar />
-      <MainSection />
-      <AboutSection />
-      <ServiceSection />
-      <Footer />
+      <PortfolioProjects />
     </>
   )
 }
