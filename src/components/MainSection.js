@@ -93,12 +93,11 @@ const MainSection = () => {
           <Box
             as={motion.a}
             href="https://www.behance.net/promiseguy02"
-            whileInView={{ y: [-20, 0] }}
-            transition={{
-              duration: "0.1s",
+            whileInView={{ y: [-30,0], transition:{
+              duration: 0.5,
               type: "spring",
-              stiffness: 100,
-            }}
+              stiffness: 10,
+            } }}
             target="__blank"
             layout={true}
           >
@@ -113,12 +112,11 @@ const MainSection = () => {
           <Box
             as={motion.a}
             href="http://www.linkedin.com/in/adediran-ilerioluwa"
-            whileInView={{ y: [-20,0] }}
-            transition={{
-              duration: .3,
+            whileInView={{ y: [-30,0], transition:{
+              duration: 0.4,
               type: "spring",
-              stiffness: 100,
-            }}
+              stiffness: 10,
+            } }}
             target="__blank"
             layout= {true}
           >
@@ -133,13 +131,11 @@ const MainSection = () => {
           <Box
             as={motion.a}
             href="https://twitter.com/promiseguy03"
-            whileInView={{y: [-20,0] }}
-            transition={{
-              duration: 0.6,
+            whileInView={{ y: [-30,0], transition:{
+              duration: 0.3,
               type: "spring",
-              stiffness: 100,
-              
-            }}
+              stiffness: 10,
+            } }}
             layout= {true}
             target="__blank"
           >
@@ -155,12 +151,11 @@ const MainSection = () => {
             as={motion.a}
             href="https://www.instagram.com/promiseguy02/"
     
-            whileInView={{ y: [-20,0] }}
-            transition={{
+            whileInView={{ y: [-30,0], transition:{
               duration: 0.2,
               type: "spring",
-              stiffness: 100,
-            }}
+              stiffness: 10,
+            } }}
             target="__blank"
             layout={true}
           >
@@ -175,12 +170,12 @@ const MainSection = () => {
           <Box
             as={motion.a}
             href="mailto:thepgstudeos@gmail.com"
-            whileInView={{ y: [-20,0] }}
-            transition={{
+            whileInView={{ y: [-30,0], transition:{
               duration: 0.1,
               type: "spring",
-              stiffness: 100,
-            }}
+              stiffness: 10,
+            } }}
+            
             target="__blank"
           >
             <Image
@@ -195,8 +190,8 @@ const MainSection = () => {
       </Box>
       <VStack
         as={motion.div}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: [0.1, 0.5, 0.7, 1] }}
+        // initial={{ opacity: 0 }}
+        whileInView={{ opacity: [0.5, 0.7, 1] }}
         transition={{ delay: 5, duration: 10 }}
         px={"1rem"}
         maxWidth="25rem"

@@ -65,9 +65,8 @@ const EnquirySection = () => {
         pt="1rem"
         px=".5rem"
         as={motion.div}
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: [0.1, 0.3, 0.5, 0.7, 1] }}
-        transition={{ delay: 0.2, duration: 5 }}
+        whileInView={{ y: [30, 0] }}
+        transition={{ delay: 2 }}
       >
         <Text
           color={"#3d648f"}
@@ -161,9 +160,8 @@ const EnquirySection = () => {
         alignItems={"flex-start"}
         mx="1rem"
         as={motion.div}
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: [0.1, 0.3, 0.5, 0.7, 1] }}
-        transition={{ delay: 0.2, duration: 5 }}
+        whileInView={{ y: [30, 0] }}
+        transition={{ duration: 0.5 }}
       >
         <Text
           fontFamily={"Poppins"}

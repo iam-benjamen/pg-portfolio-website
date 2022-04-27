@@ -32,9 +32,8 @@ const AboutSection = () => {
         gap=".5rem"
         maxW={{ base: "80%", md: "80%", lg: "32%" }}
         as={motion.div}
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: [0.1, 0.5, 0.7, 1] }}
-        transition={{ delay: 0.2, duration: 5 }}
+        whileInView={{ x: [-30, 0] }}
+        transition={{ duration: 0.5 }}
       >
         <Text
           textDecoration={"underline"}
@@ -53,15 +52,7 @@ const AboutSection = () => {
         >
           About me
         </Text>
-        <Text
-          fontSize="1.9rem"
-          fontWeight="bold"
-          lineHeight={1.3}
-          as={motion.h1}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: [0.1, 0.5, 0.7, 1] }}
-          transition={{ delay: 0.2, duration: 5 }}
-        >
+        <Text fontSize="1.9rem" fontWeight="bold" lineHeight={1.3}>
           Design is not just what it looks like and feels like. Design is how it
           works.
         </Text>
@@ -90,10 +81,9 @@ const AboutSection = () => {
         </Box>
       </Box>
       <Box
-       as={motion.h1}
-       initial={{ opacity: 0 }}
-       whileInView={{ opacity: [0.1, 0.5, 0.7, 1] }}
-       transition={{ delay: 0.2, duration: 5 }}
+        as={motion.div}
+        whileInView={{ x: [30, 0] }}
+        transition={{ duration: 0.5 }}
         pt={"2rem"}
         display="flex"
         flexDir={"column"}
