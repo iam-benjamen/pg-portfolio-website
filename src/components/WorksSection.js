@@ -56,7 +56,7 @@ const WorksSection = () => {
         <Box
           overflow="hidden"
           borderRadius={"md"}
-          w={["100%", "100%", "35%"]}
+          w={["100%", "100%", "30%"]}
           cursor="pointer"
           height={"15rem"}
           as={Link}
@@ -81,9 +81,9 @@ const WorksSection = () => {
           height="15rem"
         >
           <iframe
-            src="https://player.vimeo.com/video/703856477?h=f4b326ca7a&color=3d648f&title=0&byline=0&portrait=0"
-            width="100%"
-            height="100%"
+            src="https://player.vimeo.com/video/703856477?h=f4b326ca7a&autoplay=0&color=3d648f&title=0&byline=0&portrait=0"
+            width="421"
+            height="240"
             frameborder="0"
             allow="autoplay; fullscreen; picture-in-picture"
             allowfullscreen
@@ -92,7 +92,7 @@ const WorksSection = () => {
         <Box
           overflow="hidden"
           borderRadius={"md"}
-          w={["100%", "100%", "35%"]}
+          w={["100%", "100%", "30%"]}
           cursor="pointer"
           height={"15rem"}
         >
