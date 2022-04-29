@@ -13,43 +13,9 @@ import {
 import { Link } from "react-router-dom";
 import image from "../assets/ecaef.jpg";
 import { motion } from "framer-motion";
-import { ArrowLeftIcon } from "@chakra-ui/icons";
 
-const Archi = [
-  [
-    "https://images2.imgbox.com/59/58/t6HnIsis_o.jpg",
-    "https://images2.imgbox.com/85/fe/u7AkVLas_o.jpg",
-    "https://images2.imgbox.com/14/bf/VuflmFQ1_o.jpg",
-    "https://images2.imgbox.com/90/db/s2IzwSYv_o.jpg",
-    "https://images2.imgbox.com/d1/1a/1hCRhjVG_o.jpg",
-    "https://images2.imgbox.com/37/85/CbzacOpL_o.jpg",
-    "https://images2.imgbox.com/20/e9/6pHopXFh_o.jpg",
-    "https://images2.imgbox.com/96/0d/h1FJ1KVZ_o.jpg",
-  ],
-];
+import { Archi, Graphics, videoLinks } from "../utils/links";
 
-const Graphics = [
-  [
-    "https://images2.imgbox.com/b4/9f/VNwxM8v3_o.jpg",
-    "https://images2.imgbox.com/d2/d8/dfWMthAl_o.jpg",
-    "https://images2.imgbox.com/99/ea/JUGSNSR0_o.jpg",
-    "https://images2.imgbox.com/01/c8/bMI7aduS_o.jpg",
-    "https://images2.imgbox.com/c0/9e/r4INwXZA_o.jpg",
-    "https://images2.imgbox.com/e4/e7/l4SxEcSV_o.jpg",
-    "https://images2.imgbox.com/ad/40/PtA8KGTb_o.jpg",
-    "https://images2.imgbox.com/8a/2f/S3HXFsMI_o.jpg",
-  ],
-];
-
-const videoLinks = [
-  "https://player.vimeo.com/video/703856477?h=f4b326ca7a&title=0&byline=0&portrait=0",
-  "https://player.vimeo.com/video/703948978?h=0b87330533&title=0&byline=0&portrait=0",
-  "https://player.vimeo.com/video/703950716?h=29eb05a0e5&title=0&byline=0&portrait=0",
-  "https://player.vimeo.com/video/703950446?h=1ad37ec745&title=0&byline=0&portrait=0",
-  "https://player.vimeo.com/video/703950237?h=96806d6af8&title=0&byline=0&portrait=0",
-  "https://player.vimeo.com/video/703950901?h=822129ba2b&title=0&byline=0&portrait=0",
-  "https://player.vimeo.com/video/703948729?h=ca121e4c7b&title=0&byline=0&portrait=0",
-];
 const PortfolioProjects = () => {
   return (
     <Box
@@ -131,28 +97,30 @@ const PortfolioProjects = () => {
                 alignItems="center"
                 flexWrap={"wrap"}
               >
-                {Archi[0].map(function (archi, index) {
-                  return (
-                    <Box
-                      key={index}
-                      overflow="hidden"
-                      borderRadius={"md"}
-                      borderWidth="1px"
-                      w={["45%", "45%", "20%"]}
-                      cursor="pointer"
-                    >
-                      <Image
-                        src={archi}
-                        w="100%"
-                        h="100%"
-                        _hover={{ transform: "scale(1.1)" }}
-                        transition="ease-in-out"
-                        transitionDuration={".4s"}
-                        loading="lazy"
-                        objectFit={"cover"}
-                      />
-                    </Box>
-                  );
+                {Object.keys(Archi).map((keyOuter) => {
+                  return Object.keys(Archi[keyOuter]).map((keyInner) => {
+                    return (
+                      <Box
+                        key={`${keyInner}-${keyOuter}`}
+                        overflow="hidden"
+                        borderRadius={"md"}
+                        borderWidth="1px"
+                        w={["45%", "45%", "20%"]}
+                        cursor="pointer"
+                      >
+                        <Image
+                          src={Archi[keyOuter][keyInner]}
+                          w="100%"
+                          h="100%"
+                          _hover={{ transform: "scale(1.1)" }}
+                          transition="ease-in-out"
+                          transitionDuration={".4s"}
+                          loading="lazy"
+                          objectFit={"cover"}
+                        />
+                      </Box>
+                    );
+                  });
                 })}
               </Box>
             </TabPanel>
@@ -204,28 +172,30 @@ const PortfolioProjects = () => {
                 alignItems="center"
                 flexWrap={"wrap"}
               >
-                {Graphics[0].map(function (archi, index) {
-                  return (
-                    <Box
-                      key={index}
-                      overflow="hidden"
-                      borderRadius={"md"}
-                      borderWidth="1px"
-                      w={["45%", "45%", "20%"]}
-                      cursor="pointer"
-                    >
-                      <Image
-                        src={archi}
-                        w="100%"
-                        h="100%"
-                        _hover={{ transform: "scale(1.1)" }}
-                        transition="ease-in-out"
-                        transitionDuration={".4s"}
-                        loading="lazy"
-                        objectFit={"cover"}
-                      />
-                    </Box>
-                  );
+                 {Object.keys(Graphics).map((Outer) => {
+                  return Object.keys(Archi[Outer]).map((Inner) => {
+                    return (
+                      <Box
+                        key={`${Inner}-${Outer}`}
+                        overflow="hidden"
+                        borderRadius={"md"}
+                        borderWidth="1px"
+                        w={["45%", "45%", "20%"]}
+                        cursor="pointer"
+                      >
+                        <Image
+                          src={Graphics[Outer][Inner]}
+                          w="100%"
+                          h="100%"
+                          _hover={{ transform: "scale(1.1)" }}
+                          transition="ease-in-out"
+                          transitionDuration={".4s"}
+                          loading="lazy"
+                          objectFit={"cover"}
+                        />
+                      </Box>
+                    );
+                  });
                 })}
               </Box>
             </TabPanel>

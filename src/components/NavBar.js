@@ -57,9 +57,9 @@ const NavBar = () => {
         <Image
           src={mainLogo}
           w={["3rem", "3rem", "4rem"]}
-          minW="4rem"
+          minW="3rem"
           h="100%"
-          pt={"5px"}
+          py={"5px"}
           cursor="pointer"
         />
       </Box>

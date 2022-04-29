@@ -56,7 +56,7 @@ const EnquirySection = () => {
       height="max-content"
       alignItems={"center"}
       pb="5rem"
-      pt="5rem"
+      pt={["2rem","3rem","5rem"]}
       mt={"-1rem"}
     >
       <VStack

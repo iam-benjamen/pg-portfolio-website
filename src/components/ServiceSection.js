@@ -55,7 +55,7 @@ const ServiceSection = () => {
       px={["1rem", "5rem", "8rem"]}
       mt="-1px"
       pt="1rem"
-      pb={"5rem"}
+      pb={["2rem","3rem","5rem"]}
       zIndex={-80}
       className="font-link"
       id="service-section"
