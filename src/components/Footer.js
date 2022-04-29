@@ -22,7 +22,10 @@ const Footer = () => {
         as={motion.div}
         whileInView={{ opacity: [0.1, 0.5, 0.7, 1], y:[-10,0] }}
         transition={{ duration: 1 }}
+        textAlign="center"
+        fontWeight={"medium"}
       >
+        &copy; 2022 PGStudios <br/>
         Proudly made by Areo Benjamen.
       </Text>
       <HStack gap=".7rem">

@@ -251,15 +251,16 @@ const EnquirySection = () => {
           <Input
             width={"max-content"}
             bgColor="#3d648f"
-            color="white"
-            paddingX={"2.5rem"}
-            paddingY="1rem"
+            color={"white"}
+            paddingX={"2rem"}
+            paddingY=".6rem"
             padding
             borderRadius="3px"
             cursor={"pointer"}
-            type="submit"
+            type="submit" 
             value={"Get A Quote"}
             variant="unstyled"
+            _hover={{transform:"scale(1.05)"}}
           />
         </form>
       </VStack>

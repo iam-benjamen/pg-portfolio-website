@@ -83,8 +83,9 @@ const WorksSection = () => {
         >
           <iframe
             src="https://player.vimeo.com/video/703856477?h=f4b326ca7a&autoplay=0&color=3d648f&title=0&byline=0&portrait=0"
-            width="421"
+            width="100%"
             height="240"
+            objectFit="cover"
             frameborder="0"
             allow="autoplay; fullscreen; picture-in-picture"
             allowfullscreen
