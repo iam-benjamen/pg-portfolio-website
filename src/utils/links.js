@@ -16,6 +16,8 @@ export const Archi = [
     "https://images2.imgbox.com/8c/a2/vBeqti8a_o.jpg",
     "https://images2.imgbox.com/ab/84/NkTiCgzW_o.jpg",
     "https://images2.imgbox.com/ce/50/c1vUoi1g_o.jpg",
+    "https://images2.imgbox.com/2d/9a/SkWeYGYQ_o.jpg",
+    "https://images2.imgbox.com/23/03/TFZtTVkH_o.jpg"
   ],
   [
     "https://images2.imgbox.com/0d/db/gxk9WzZz_o.jpg",
@@ -57,8 +59,8 @@ export const Graphics = [
     "https://images2.imgbox.com/27/88/NFDyLECd_o.jpg",
     "https://images2.imgbox.com/9b/11/68sSrdPC_o.jpg",
     "https://images2.imgbox.com/f8/8f/A4cEhinP_o.jpg",
-    "https://images2.imgbox.com/8c/94/RcihhxdU_o.jpg",
-    "https://images2.imgbox.com/27/00/vvF6Gk8C_o.jpg",
+    "https://images2.imgbox.com/dd/4f/WSsj5CUc_o.jpg",
+    "https://images2.imgbox.com/11/10/jFLXA1gI_o.jpg",
   ],
   [
     "https://images2.imgbox.com/8b/2a/3xnR6OZj_o.jpg",

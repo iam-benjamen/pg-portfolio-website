@@ -52,14 +52,14 @@ const WorksSection = () => {
         gap="1rem"
         justifyContent={"center"}
         alignItems="center"
-        w={["100%","auto","auto"]}
+        w={["100%", "auto", "auto"]}
       >
         <Box
           overflow="hidden"
           borderRadius={"md"}
-          w={["100%", "100%", "30%"]}
+          w={["100%", "100%", "35%"]}
           cursor="pointer"
-          height={"15rem"}
+          height={"13rem"}
           as={Link}
           to="/works"
         >
@@ -77,11 +77,11 @@ const WorksSection = () => {
         <Box
           overflow="hidden"
           borderRadius={"md"}
-          w={["100%", "100%", "30%"]}
+          w={["100%", "100%", "35%"]}
           cursor="pointer"
           height="15rem"
         >
-          <iframe
+          {/* <iframe
             src="https://player.vimeo.com/video/703856477?h=f4b326ca7a&autoplay=0&color=3d648f&title=0&byline=0&portrait=0"
             width="100%"
             height="240"
@@ -89,14 +89,24 @@ const WorksSection = () => {
             frameborder="0"
             allow="autoplay; fullscreen; picture-in-picture"
             allowfullscreen
-          ></iframe>
+          ></iframe> */}
+          
+            <iframe
+              src="https://player.vimeo.com/video/703856477?h=f4b326ca7a&title=0&byline=0&portrait=0"
+              height={"100%"}
+              width= "100%"
+              frameborder="0"
+              objectFit = "cover"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen
+            ></iframe>
         </Box>
         <Box
           overflow="hidden"
           borderRadius={"md"}
-          w={["100%", "100%", "30%"]}
+          w={["100%", "100%", "35%"]}
           cursor="pointer"
-          height={"15rem"}
+          height={"13rem"}
         >
           <Image
             src={stillshowcase}

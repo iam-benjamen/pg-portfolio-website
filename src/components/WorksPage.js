@@ -9,22 +9,16 @@ import {
   TabPanels,
   Tab,
   TabPanel,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter,
-  ModalBody,
-  ModalCloseButton,
+ 
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import image from "../assets/ecaef.jpg";
 import { motion } from "framer-motion";
-import { useDisclosure } from "@chakra-ui/react";
+
 import { Archi, Graphics, videoLinks } from "../utils/links";
 
 const PortfolioProjects = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  
 
   return (
     <Box
@@ -60,7 +54,7 @@ const PortfolioProjects = () => {
         />
       </Box>
 
-      <Box bgColor="white" mb="-1px" mt="4rem">
+      <Box bgColor="white" mb="-1px" mt="4rem" pt="1rem">
         <Heading textAlign={"center"} fontFamily="Montserrat">
           Adediran Ilerioluwa.
         </Heading>
@@ -128,7 +122,7 @@ const PortfolioProjects = () => {
                             transitionDuration={".4s"}
                             loading="lazy"
                             objectFit={"cover"}
-                            onClick={onOpen}
+                            // onClick={onOpen}
                           />
                         </Box>
                         {/* <Modal isOpen={isOpen} onClose={onClose}> */}
