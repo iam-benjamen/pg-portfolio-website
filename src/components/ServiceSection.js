@@ -88,7 +88,6 @@ const ServiceSection = () => {
 
       <Slider {...settings} zIndex={-23}>
         <Box
-          // bgColor={"#3d648f"}
           display={"flex !important"}
           gap="1rem"
           flexDir="column"
@@ -120,7 +119,6 @@ const ServiceSection = () => {
           </Text>
         </Box>
         <Box
-          // bgColor={"#3d648f"}
           display={"flex !important"}
           gap="1rem"
           flexDir="column"
@@ -152,7 +150,6 @@ const ServiceSection = () => {
           </Text>
         </Box>
         <Box
-          // bgColor={"#3d648f"}
           display={"flex !important"}
           gap="1rem"
           flexDir="column"
@@ -183,7 +180,6 @@ const ServiceSection = () => {
           </Text>
         </Box>
         <Box
-          // bgColor={"#3d648f"}
           display={"flex !important"}
           gap="1rem"
           flexDir="column"

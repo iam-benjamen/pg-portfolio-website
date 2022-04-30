@@ -91,4 +91,3 @@ export const videoLinks = [
   "https://player.vimeo.com/video/703950901?h=822129ba2b&title=0&byline=0&portrait=0",
   "https://player.vimeo.com/video/703948729?h=ca121e4c7b&title=0&byline=0&portrait=0",
 ];
-

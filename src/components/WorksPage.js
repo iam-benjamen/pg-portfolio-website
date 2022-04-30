@@ -9,14 +9,23 @@ import {
   TabPanels,
   Tab,
   TabPanel,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import image from "../assets/ecaef.jpg";
 import { motion } from "framer-motion";
-
+import { useDisclosure } from "@chakra-ui/react";
 import { Archi, Graphics, videoLinks } from "../utils/links";
 
 const PortfolioProjects = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
     <Box
       bgColor={"white"}
@@ -100,25 +109,38 @@ const PortfolioProjects = () => {
                 {Object.keys(Archi).map((keyOuter) => {
                   return Object.keys(Archi[keyOuter]).map((keyInner) => {
                     return (
-                      <Box
-                        key={`${keyInner}-${keyOuter}`}
-                        overflow="hidden"
-                        borderRadius={"md"}
-                        borderWidth="1px"
-                        w={["45%", "45%", "20%"]}
-                        cursor="pointer"
-                      >
-                        <Image
-                          src={Archi[keyOuter][keyInner]}
-                          w="100%"
-                          h="100%"
-                          _hover={{ transform: "scale(1.1)" }}
-                          transition="ease-in-out"
-                          transitionDuration={".4s"}
-                          loading="lazy"
-                          objectFit={"cover"}
-                        />
-                      </Box>
+                      <>
+                        {" "}
+                        <Box
+                          key={`${keyInner}-${keyOuter}`}
+                          overflow="hidden"
+                          borderRadius={"md"}
+                          borderWidth="1px"
+                          w={["45%", "45%", "20%"]}
+                          cursor="pointer"
+                        >
+                          <Image
+                            src={Archi[keyOuter][keyInner]}
+                            w="100%"
+                            h={["8rem","9rem","12rem"]}
+                            _hover={{ transform: "scale(1.1)" }}
+                            transition="ease-in-out"
+                            transitionDuration={".4s"}
+                            loading="lazy"
+                            objectFit={"cover"}
+                            onClick={onOpen}
+                          />
+                        </Box>
+                        {/* <Modal isOpen={isOpen} onClose={onClose}> */}
+                          {/* <ModalOverlay /> */}
+                          {/* <ModalContent>
+                            <ModalCloseButton /> */}
+                            {/* <ModalBody>
+                              <Image src={Archi[keyOuter][keyInner]} />
+                            </ModalBody>
+                          </ModalContent>
+                        // </Modal> */}
+                      </>
                     );
                   });
                 })}
@@ -135,7 +157,7 @@ const PortfolioProjects = () => {
                 alignItems="center"
                 flexWrap={"wrap"}
                 px="1rem"
-                gap="1rem"
+                gap={["0rem","0rem","1rem"]}
               >
                 {videoLinks.map(function (imageLink, index) {
                   return (
@@ -172,7 +194,7 @@ const PortfolioProjects = () => {
                 alignItems="center"
                 flexWrap={"wrap"}
               >
-                 {Object.keys(Graphics).map((Outer) => {
+                {Object.keys(Graphics).map((Outer) => {
                   return Object.keys(Archi[Outer]).map((Inner) => {
                     return (
                       <Box
@@ -186,7 +208,7 @@ const PortfolioProjects = () => {
                         <Image
                           src={Graphics[Outer][Inner]}
                           w="100%"
-                          h="100%"
+                          h={["8rem","10rem","12rem"]}
                           _hover={{ transform: "scale(1.1)" }}
                           transition="ease-in-out"
                           transitionDuration={".4s"}
