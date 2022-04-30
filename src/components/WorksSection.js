@@ -62,6 +62,7 @@ const WorksSection = () => {
           height={"13rem"}
           as={Link}
           to="/works"
+          flex={1}
         >
           <Image
             src={archishowcase}
@@ -80,26 +81,17 @@ const WorksSection = () => {
           w={["100%", "100%", "35%"]}
           cursor="pointer"
           height="15rem"
+          flex={1}
         >
-          {/* <iframe
-            src="https://player.vimeo.com/video/703856477?h=f4b326ca7a&autoplay=0&color=3d648f&title=0&byline=0&portrait=0"
+          <iframe
+            src="https://player.vimeo.com/video/703856477?h=f4b326ca7a&title=0&byline=0&portrait=0"
+            height={"100%"}
             width="100%"
-            height="240"
-            objectFit="cover"
             frameborder="0"
+            objectFit="cover"
             allow="autoplay; fullscreen; picture-in-picture"
             allowfullscreen
-          ></iframe> */}
-          
-            <iframe
-              src="https://player.vimeo.com/video/703856477?h=f4b326ca7a&title=0&byline=0&portrait=0"
-              height={"100%"}
-              width= "100%"
-              frameborder="0"
-              objectFit = "cover"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+          ></iframe>
         </Box>
         <Box
           overflow="hidden"
@@ -107,6 +99,7 @@ const WorksSection = () => {
           w={["100%", "100%", "35%"]}
           cursor="pointer"
           height={"13rem"}
+          flex={1}
         >
           <Image
             src={stillshowcase}

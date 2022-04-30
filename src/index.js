@@ -8,11 +8,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "swiper/css";
 import "swiper/css/bundle";
+import SimpleReactLightbox from "simple-react-lightbox";
 
 ReactDOM.render(
   <ChakraProvider>
     <BrowserRouter>
-      <App />
+      <SimpleReactLightbox>
+        <App />
+      </SimpleReactLightbox>
     </BrowserRouter>
   </ChakraProvider>,
   document.getElementById("root")
