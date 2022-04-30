@@ -348,7 +348,7 @@ const NavBar = () => {
         </Link>
         <Link
           as={mylink}
-          to="#"
+          to="work-section"
           smooth={true}
           onClick={closeNav}
           fontSize="1.3rem"

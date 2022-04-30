@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Box, Image } from "@chakra-ui/react";
-import { Archi } from "../utils/links";
+import { Archi } from "../utils/linksdiversion";
 
 const ArchiWorks = () => {
   return (

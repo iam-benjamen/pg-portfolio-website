@@ -25,7 +25,7 @@ const Footer = () => {
         textAlign="center"
         fontWeight={"medium"}
       >
-        &copy; 2022 PGStudios <br/>
+        &copy;2022 PGStudio <br/>
         Proudly made by Areo Benjamen.
       </Text>
       <HStack gap=".7rem">

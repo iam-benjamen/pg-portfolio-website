@@ -17,12 +17,16 @@ import { SRLWrapper } from "simple-react-lightbox";
 import { videoLinks } from "../utils/links";
 import StillWorks from "./StillWorks";
 import ArchiWorks from "./ArchiWorks";
+import { useEffect } from "react";
 
 const options = {
   buttons: { showDownloadButton: false, showThumbnailsButton: false },
   progressBar: {},
 };
 const PortfolioProjects = () => {
+  useEffect(() =>{
+    window.scrollTo(0,0)
+  })
   return (
     <Box
       bgColor={"white"}
@@ -30,6 +34,7 @@ const PortfolioProjects = () => {
       display={"flex"}
       flexDir="column"
       gap="1rem"
+      id="top"
     >
       <Box height={["21vh", "30vh", "30vh"]} bgColor="#3d648f" zIndex={12}>
         <Button
@@ -132,7 +137,9 @@ const PortfolioProjects = () => {
               </Box>
             </TabPanel>
             <TabPanel>
-              <StillWorks />
+              {/* <SRLWrapper> */}
+                <StillWorks />
+              {/* </SRLWrapper> */}
             </TabPanel>
           </TabPanels>
         </Tabs>

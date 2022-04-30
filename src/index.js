@@ -11,12 +11,12 @@ import "swiper/css/bundle";
 import SimpleReactLightbox from "simple-react-lightbox";
 
 ReactDOM.render(
-  <ChakraProvider>
+  <SimpleReactLightbox>
     <BrowserRouter>
-      <SimpleReactLightbox>
+      <ChakraProvider>
         <App />
-      </SimpleReactLightbox>
+      </ChakraProvider>
     </BrowserRouter>
-  </ChakraProvider>,
+  </SimpleReactLightbox>,
   document.getElementById("root")
 );
