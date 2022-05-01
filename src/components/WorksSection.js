@@ -49,7 +49,7 @@ const WorksSection = () => {
         transition={{ duration: 0.5 }}
         display={"flex"}
         flexDir={["column", "column", "row"]}
-        gap="1rem"
+        gap={["0rem","0rem","1rem"]}
         justifyContent={"center"}
         alignItems="center"
         w={["100%", "auto", "auto"]}
@@ -87,7 +87,7 @@ const WorksSection = () => {
             src="https://player.vimeo.com/video/703856477?h=f4b326ca7a&title=0&byline=0&portrait=0"
             height={240}
             width="100%"
-            frameborder="0"
+            frameBorder="0"
             objectfit="cover"
             allow="autoplay; fullscreen; picture-in-picture"
             allowFullScreen
@@ -99,6 +99,8 @@ const WorksSection = () => {
           w={["100%", "100%", "35%"]}
           cursor="pointer"
           height={"13rem"}
+          as={Link}
+          to="/works"
           flex={1}
         >
           <Image
