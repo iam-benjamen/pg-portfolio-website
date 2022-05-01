@@ -9,6 +9,7 @@ import {
   InputGroup,
   VStack,
   HStack,
+  Link,
   Image,
   Textarea,
 } from "@chakra-ui/react";
@@ -98,7 +99,7 @@ const EnquirySection = () => {
               fontSize={["1.5rem", "1.5rem", "1.5rem"]}
               color={"white"}
             >
-              (+234) 903 066 1028.
+              (+234) 813 748 8193.
             </Heading>
           </Box>
         </HStack>
@@ -114,8 +115,11 @@ const EnquirySection = () => {
               fontFamily={"Poppins"}
               fontSize={["1.5rem", "1.5rem", "1.5rem"]}
               color={"white"}
+              as={Link}
+              href={"mailto:thepgstudeos@gmail.com"}
+              isExternal
             >
-              pgstudios@gmail.com
+              thepgstudeos<br/>@gmail.com
             </Heading>
           </Box>
         </HStack>
@@ -148,6 +152,10 @@ const EnquirySection = () => {
               fontFamily={"Poppins"}
               fontSize={["1.5rem", "1.5rem", "1.5rem"]}
               color={"white"}
+              as={Link}
+              href="https://linkedin.com/in/
+              adediran-ilerioluwa"
+              isExternal
             >
               linkedin.com/in/
               <br />
