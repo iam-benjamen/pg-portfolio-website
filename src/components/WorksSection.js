@@ -28,7 +28,7 @@ const WorksSection = () => {
           whileInView={{ opacity: [0.1, 0.5, 0.7, 1] }}
           transition={{ delay: 0.2, duration: 5 }}
         >
-          Previous Works
+          Portfolio
         </Text>
         <Heading
           fontFamily={"Poppins"}
@@ -40,7 +40,7 @@ const WorksSection = () => {
           whileInView={{ opacity: [0.1, 0.5, 0.7, 1] }}
           transition={{ delay: 0.2, duration: 5 }}
         >
-          View some recent Projects.
+          Creative Works
         </Heading>
       </Box>
       <Box

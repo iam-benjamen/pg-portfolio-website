@@ -87,8 +87,8 @@ const ReviewsSection = () => {
                   lineHeight="1.5"
                   fontSize={"1.5rem"}
                 >
-                  Promiseguy is extremely professional he went beyond my
-                  expections each time I had a project . He was always on time
+                  Promiseguy is extremely professional, he went beyond my
+                  expections each time I had a project. He was always on time
                   and super creative. I highly recommend him.
                 </Heading>
                 <Box display={"flex"} alignItems="center" gap="1rem">
@@ -115,9 +115,9 @@ const ReviewsSection = () => {
                   lineHeight="1.5"
                   fontSize={"1.5rem"}
                 >
-                  Mr Promise is very creative and talented graphic designer, he
-                  has mastered his craft making him one of the best
-                  professionals I have worked with, I recommend him.
+                  Mr Promise is a very creative and talented graphic designer. He
+                  has mastered his craft, making him one of the best
+                  professionals I have worked with. I recommend him.
                 </Heading>
                 <Box display={"flex"} alignItems="center" gap="1rem">
                   <Avatar name="Jackson Jacobs" src={jackson} size={"md"} />
@@ -125,7 +125,7 @@ const ReviewsSection = () => {
                     <Heading fontFamily={"Poppins"} fontSize="1rem">
                       Jackson Jacobs
                     </Heading>
-                    <Text>CEO SoundTrip -USA & U.S. ARMY</Text>
+                    <Text>CEO SoundTrip - USA & U.S. ARMY</Text>
                   </Box>
                 </Box>
               </Box>
@@ -205,7 +205,7 @@ const ReviewsSection = () => {
                   fontSize={"1.5rem"}
                 >
                   I am impressed with Promise's services and his quality of
-                  delivery with unique style of creativity he puts in to every
+                  delivery with unique style of creativity he puts into every
                   of his job! I have absolute trust and belief in his
                   creativity.
                 </Heading>
