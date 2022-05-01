@@ -85,12 +85,12 @@ const WorksSection = () => {
         >
           <iframe
             src="https://player.vimeo.com/video/703856477?h=f4b326ca7a&title=0&byline=0&portrait=0"
-            height={"100%"}
+            height={240}
             width="100%"
             frameborder="0"
-            objectFit="cover"
+            objectfit="cover"
             allow="autoplay; fullscreen; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </Box>
         <Box

@@ -18,15 +18,16 @@ import { videoLinks } from "../utils/links";
 import StillWorks from "./StillWorks";
 import ArchiWorks from "./ArchiWorks";
 import { useEffect } from "react";
+import SimpleReactLightbox from "simple-react-lightbox";
 
 const options = {
   buttons: { showDownloadButton: false, showThumbnailsButton: false },
   progressBar: {},
 };
 const PortfolioProjects = () => {
-  useEffect(() =>{
-    window.scrollTo(0,0)
-  })
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <Box
       bgColor={"white"}
@@ -96,9 +97,11 @@ const PortfolioProjects = () => {
           </TabList>
           <TabPanels>
             <TabPanel>
-              <SRLWrapper options={options}>
-                <ArchiWorks />
-              </SRLWrapper>
+              <SimpleReactLightbox>
+                <SRLWrapper options={options}>
+                  <ArchiWorks />
+                </SRLWrapper>
+              </SimpleReactLightbox>
             </TabPanel>
             <TabPanel>
               <Box
@@ -137,9 +140,11 @@ const PortfolioProjects = () => {
               </Box>
             </TabPanel>
             <TabPanel>
-              {/* <SRLWrapper> */}
-                <StillWorks />
-              {/* </SRLWrapper> */}
+              <SimpleReactLightbox>
+                <SRLWrapper options={options}>
+                  <StillWorks />
+                </SRLWrapper>
+              </SimpleReactLightbox>
             </TabPanel>
           </TabPanels>
         </Tabs>
