@@ -57,7 +57,7 @@ const EnquirySection = () => {
       height="max-content"
       alignItems={"center"}
       pb="5rem"
-      pt={["2rem","3rem","5rem"]}
+      pt={["2rem", "3rem", "5rem"]}
       mt={"-1rem"}
     >
       <VStack
@@ -119,7 +119,9 @@ const EnquirySection = () => {
               href={"mailto:thepgstudeos@gmail.com"}
               isExternal
             >
-              thepgstudeos<br/>@gmail.com
+              thepgstudeos
+              <br />
+              @gmail.com
             </Heading>
           </Box>
         </HStack>
@@ -153,8 +155,7 @@ const EnquirySection = () => {
               fontSize={["1.5rem", "1.5rem", "1.5rem"]}
               color={"white"}
               as={Link}
-              href="https://linkedin.com/in/
-              adediran-ilerioluwa"
+              href="https://linkedin.com/in/adediran-ilerioluwa"
               isExternal
             >
               linkedin.com/in/
@@ -265,10 +266,10 @@ const EnquirySection = () => {
             padding
             borderRadius="3px"
             cursor={"pointer"}
-            type="submit" 
+            type="submit"
             value={"Get A Quote"}
             variant="unstyled"
-            _hover={{transform:"scale(1.05)"}}
+            _hover={{ transform: "scale(1.05)" }}
           />
         </form>
       </VStack>
