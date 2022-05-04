@@ -12,7 +12,7 @@ const Footer = () => {
       h="5rem"
       display={"flex"}
       flexDir="column"
-      justifyContent={"center"}
+      justifyContent={"center"} 
       alignItems="center"
       bgColor={"#141414"}
       color="white"
@@ -26,7 +26,7 @@ const Footer = () => {
         fontWeight={"medium"}
       >
         &copy;2022 PGStudio <br/>
-        Proudly made by Areo Benjamen.
+        Made with &#128512; by Areo Benjamen.
       </Text>
       <HStack gap=".7rem">
         <Box
