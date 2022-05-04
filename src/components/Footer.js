@@ -26,7 +26,7 @@ const Footer = () => {
         fontWeight={"medium"}
       >
         &copy;2022 PGStudio <br/>
-        Made with &#128512; by Areo Benjamen.
+        Made with &#128151; by Areo Benjamen.
       </Text>
       <HStack gap=".7rem">
         <Box
