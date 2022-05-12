@@ -138,7 +138,7 @@ const EnquirySection = () => {
               fontSize={["1.5rem", "1.5rem", "1.5rem"]}
               color={"white"}
             >
-              Suite C4, Tripple H Plaza,<br/> Wuye District,Auja, Nigeria.
+              Suite C4, Tripple H Plaza,<br/> Wuye District,Abuja, Nigeria.
             </Heading>
           </Box>
         </HStack>
