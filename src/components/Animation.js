@@ -8,5 +8,5 @@ const Animation = () => {
         </Box>
     );
 }
- 
+
 export default Animation;

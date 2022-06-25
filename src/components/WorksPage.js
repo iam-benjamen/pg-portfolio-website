@@ -3,7 +3,6 @@ import {
   Image,
   Button,
   Heading,
-  Text,
   Tabs,
   TabList,
   TabPanels,
@@ -28,6 +27,7 @@ const PortfolioProjects = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   });
+
   return (
     <Box
       bgColor={"white"}

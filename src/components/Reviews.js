@@ -36,7 +36,6 @@ const ReviewsSection = () => {
       >
         <Box
           w={{ base: "100%", md: "27rem" }}
-          // border={".5px solid black"}
           padding={["1rem", "1.5rem", "2rem"]}
           margin={("auto", "auto", 0)}
           alignSelf="center"

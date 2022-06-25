@@ -220,7 +220,7 @@ const MainSection = () => {
           fontWeight={"bold"}
           fontSize="2xl"
           alignSelf="start"
-          color="InactiveBorder"
+          color="white"
         >
           <span ref={el} />
         </Text>
