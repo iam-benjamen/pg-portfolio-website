@@ -46,6 +46,7 @@ const EnquirySection = () => {
       isClosable: true,
     });
   };
+
   return (
     <Box
       id="enquiry-section"
@@ -119,7 +120,7 @@ const EnquirySection = () => {
               href={"mailto:thepgstudeos@gmail.com"}
               isExternal
             >
-              thepgstudeos
+              promiseguy02
               <br />
               @gmail.com
             </Heading>
