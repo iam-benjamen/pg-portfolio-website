@@ -139,7 +139,8 @@ const EnquirySection = () => {
               fontSize={["1.5rem", "1.5rem", "1.5rem"]}
               color={"white"}
             >
-              Suite C4, Tripple H Plaza,<br/> Wuye District,Abuja, Nigeria.
+              Suite C4, Tripple H Plaza,
+              <br /> Wuye District,Abuja, Nigeria.
             </Heading>
           </Box>
         </HStack>
@@ -272,6 +273,7 @@ const EnquirySection = () => {
             variant="unstyled"
             _hover={{ transform: "scale(1.05)" }}
           />
+          {/* dsfkdjfs */}
         </form>
       </VStack>
     </Box>
