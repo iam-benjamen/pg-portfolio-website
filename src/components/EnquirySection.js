@@ -117,7 +117,7 @@ const EnquirySection = () => {
               fontSize={["1.5rem", "1.5rem", "1.5rem"]}
               color={"white"}
               as={Link}
-              href={"mailto:thepgstudeos@gmail.com"}
+              href={"mailto:promiseguy02@gmail.com"}
               isExternal
             >
               promiseguy02
@@ -273,7 +273,7 @@ const EnquirySection = () => {
             variant="unstyled"
             _hover={{ transform: "scale(1.05)" }}
           />
-          {/* dsfkdjfs */}
+   
         </form>
       </VStack>
     </Box>
