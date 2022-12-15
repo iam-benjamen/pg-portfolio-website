@@ -38,13 +38,14 @@ const EnquirySection = () => {
   }, []);
 
   const handleClick = () => {
-    toast({
-      title: "Success!",
-      description: "We've received your message and will respond shortly",
-      status: "success",
-      duration: 10000,
-      isClosable: true,
-    });
+    if (success === true) {
+      toast({
+        status: "success",
+        duration: 5000,
+        isClosable: true,
+        title: "We've received your message and will respond shortly",
+      });
+    }
   };
 
   return (
@@ -273,7 +274,6 @@ const EnquirySection = () => {
             variant="unstyled"
             _hover={{ transform: "scale(1.05)" }}
           />
-   
         </form>
       </VStack>
     </Box>

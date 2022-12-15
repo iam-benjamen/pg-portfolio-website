@@ -165,7 +165,7 @@ const MainSection = () => {
           </Box>
           <Box
             as={motion.a}
-            href="mailto:thepgstudeos@gmail.com"
+            href="mailto:promiseguy02@gmail.com"
             whileInView={{ y: [-30,0], transition:{
               duration: 0.1,
               type: "spring",
