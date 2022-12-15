@@ -43,7 +43,7 @@ const Footer = () => {
             _hover={{ transform: "scale(1.2)" }}
           />
         </Box>
-        <Box as={Link} href="https://linkedin.com/in/iambenjamen" isExternal>
+        <Box as={Link} href="https://linkedin.com/in/areo-benjamen" isExternal>
           <Image
             src={linkedin}
             cursor="pointer"
