@@ -10,13 +10,13 @@ import {
   TabPanel,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import image from "../assets/ecaef.jpg";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { SRLWrapper } from "simple-react-lightbox";
 import { videoLinks } from "../utils/links";
 import StillWorks from "./StillWorks";
 import ArchiWorks from "./ArchiWorks";
-import { useEffect } from "react";
+import image from "../assets/ecaef.jpg";
 import SimpleReactLightbox from "simple-react-lightbox";
 
 const options = {

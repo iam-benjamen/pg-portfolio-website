@@ -1,3 +1,8 @@
+import image1 from "../assets/New folder/1.jpg"
+import image2 from "../assets/New folder/2.jpg"
+import image3 from "../assets/New folder/3.jpg"
+import image4 from "../assets/New folder/4.jpg"
+
 export const Archi = [
   [
     "https://images2.imgbox.com/d1/1a/1hCRhjVG_o.jpg",
@@ -10,6 +15,7 @@ export const Archi = [
     "https://images2.imgbox.com/94/9d/KqFrEkAY_o.jpg",
   ],
   [
+    image1, image2, image3, image4,
     "https://images2.imgbox.com/55/04/V4ugt2pg_o.jpg",
     "https://images2.imgbox.com/35/f7/QpXXYTms_o.jpg",
     "https://images2.imgbox.com/40/af/PJ3IXH4S_o.jpg",
@@ -39,7 +45,7 @@ export const Archi = [
     "https://images2.imgbox.com/53/e1/EICedt2u_o.jpg",
     "https://images2.imgbox.com/1d/9c/Tv2D33IF_o.jpg",
 
-    
+
     "https://images2.imgbox.com/87/dc/wPlSTi1s_o.jpg",
     "https://images2.imgbox.com/86/24/gNl4qmJl_o.jpg",
     "https://images2.imgbox.com/12/23/kIvxtHCS_o.jpg",
