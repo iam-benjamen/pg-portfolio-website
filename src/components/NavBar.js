@@ -386,11 +386,11 @@ const NavBar = () => {
           <MenuList w={"80%"}>
             <MenuItem>
               <Button
+                href="https://drive.google.com/file/d/1jxOwaUdQ_ZaaYn2k2D_huU59JZoHIVo4/view?usp=sharing"
                 w="max-content"
                 bgColor="#3d648f"
                 fontFamily={"Poppins"}
                 as={Link}
-                href="https://drive.google.com/file/d/1jxOwaUdQ_ZaaYn2k2D_huU59JZoHIVo4/view?usp=sharing"
                 isExternal
                 fontSize={"1rem"}
                 position="relative"
@@ -401,11 +401,11 @@ const NavBar = () => {
             </MenuItem>
             <MenuItem>
               <Button
+                href="https://drive.google.com/file/d/1sho2qI1bDzVqoe-osncRMB47-CR2eeUA/view?usp=sharing"
+                fontFamily={"Poppins"}
                 w="max-content"
                 bgColor="#3d648f"
-                fontFamily={"Poppins"}
                 as={Link}
-                href="https://drive.google.com/file/d/1sho2qI1bDzVqoe-osncRMB47-CR2eeUA/view?usp=sharing"
                 isExternal
                 fontSize={"1rem"}
                 position="relative"

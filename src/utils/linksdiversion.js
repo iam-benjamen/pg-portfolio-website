@@ -1,10 +1,29 @@
-import image1 from "../assets/New folder/1.jpg"
-import image2 from "../assets/New folder/2.jpg"
-import image3 from "../assets/New folder/3.jpg"
-import image4 from "../assets/New folder/4.jpg"
+import image1 from "../assets/New folder/1.jpg";
+import image2 from "../assets/New folder/2.jpg";
+import image3 from "../assets/New folder/3.jpg";
+import image4 from "../assets/New folder/4.jpg";
+
+import newimage1 from "../assets/New folder/Portfolio IMAGES - Update/1.jpg";
+import newimage2 from "../assets/New folder/Portfolio IMAGES - Update/2.jpg";
+import newimage3 from "../assets/New folder/Portfolio IMAGES - Update/3.jpg";
+import newimage4 from "../assets/New folder/Portfolio IMAGES - Update/4.jpg";
+import newimage5 from "../assets/New folder/Portfolio IMAGES - Update/5.jpg";
+import newimage6 from "../assets/New folder/Portfolio IMAGES - Update/6.jpg";
+import newimage7 from "../assets/New folder/Portfolio IMAGES - Update/7.jpg";
+import newimage8 from "../assets/New folder/Portfolio IMAGES - Update/8.jpg";
+import newimage9 from "../assets/New folder/Portfolio IMAGES - Update/9.jpg";
+import newimage10 from "../assets/New folder/Portfolio IMAGES - Update/10.jpg";
 
 export const Archi = [
   [
+    newimage1,
+    newimage2,
+    newimage3,
+    newimage4,
+    newimage5,
+    newimage6,
+    newimage7,
+    newimage8,
     "https://images2.imgbox.com/d1/1a/1hCRhjVG_o.jpg",
     "https://images2.imgbox.com/37/85/CbzacOpL_o.jpg",
     "https://images2.imgbox.com/20/e9/6pHopXFh_o.jpg",
@@ -15,7 +34,10 @@ export const Archi = [
     "https://images2.imgbox.com/94/9d/KqFrEkAY_o.jpg",
   ],
   [
-    image1, image2, image3, image4,
+    image1,
+    image2,
+    image3,
+    image4,
     "https://images2.imgbox.com/55/04/V4ugt2pg_o.jpg",
     "https://images2.imgbox.com/35/f7/QpXXYTms_o.jpg",
     "https://images2.imgbox.com/40/af/PJ3IXH4S_o.jpg",
@@ -45,21 +67,9 @@ export const Archi = [
     "https://images2.imgbox.com/53/e1/EICedt2u_o.jpg",
     "https://images2.imgbox.com/1d/9c/Tv2D33IF_o.jpg",
 
-
     "https://images2.imgbox.com/87/dc/wPlSTi1s_o.jpg",
     "https://images2.imgbox.com/86/24/gNl4qmJl_o.jpg",
-    "https://images2.imgbox.com/12/23/kIvxtHCS_o.jpg",
-    "https://images2.imgbox.com/7a/c1/jOhIIRVo_o.jpg",
+    newimage9,
+    newimage10,
   ],
 ];
-
-// "https://images2.imgbox.com/59/58/t6HnIsis_o.jpg",
-//     "https://images2.imgbox.com/14/bf/VuflmFQ1_o.jpg",
-// "https://images2.imgbox.com/e9/c8/unmH3XHF_o.jpg",
-// "https://images2.imgbox.com/d4/9b/9woOMQ66_o.jpg",
-
-// "https://images2.imgbox.com/ea/41/wcPEtE6b_o.jpg",
-// "https://images2.imgbox.com/d8/6c/cbyD5WK2_o.jpg",
-// "https://images2.imgbox.com/b7/d8/fm2CSe5g_o.jpg",
-
-// "https://images2.imgbox.com/c7/a0/nFIvq3xT_o.jpg",
