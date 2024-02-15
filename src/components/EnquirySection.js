@@ -101,7 +101,8 @@ const EnquirySection = () => {
               fontSize={["1.5rem", "1.5rem", "1.5rem"]}
               color={"white"}
             >
-              (+234) 813 748 8193.
+              +1 (806) 805 2658, <br />
+              +234 (813) 748 8193.
             </Heading>
           </Box>
         </HStack>
@@ -133,15 +134,14 @@ const EnquirySection = () => {
           </Box>
           <Box pt={".5rem"}>
             <Text fontFamily={"Poppins"} color="whiteAlpha.700">
-              Get Me Here
+              Location
             </Text>
             <Heading
               fontFamily={"Poppins"}
               fontSize={["1.5rem", "1.5rem", "1.5rem"]}
               color={"white"}
             >
-              Suite C4, Tripple H Plaza,
-              <br /> Wuye District,Abuja, Nigeria.
+              Texas, USA.
             </Heading>
           </Box>
         </HStack>
