@@ -12,7 +12,7 @@ const Footer = () => {
       h="5rem"
       display={"flex"}
       flexDir="column"
-      justifyContent={"center"} 
+      justifyContent={"center"}
       alignItems="center"
       bgColor={"#141414"}
       color="white"
@@ -20,17 +20,17 @@ const Footer = () => {
     >
       <Text
         as={motion.div}
-        whileInView={{ opacity: [0.1, 0.5, 0.7, 1], y:[-10,0] }}
+        whileInView={{ opacity: [0.1, 0.5, 0.7, 1], y: [-10, 0] }}
         transition={{ duration: 1 }}
         textAlign="center"
         fontWeight={"medium"}
       >
-        &copy;2022 PGStudio <br/>
+        &copy; {`${new Date().getFullYear()}`} PGStudio <br />
         Made with &#128151; by Areo Benjamen.
       </Text>
       <HStack gap=".7rem">
         <Box
-          as = {Link}
+          as={Link}
           href="https://github.com/iam-benjamen"
           target="__blank"
           isExternal
@@ -52,7 +52,7 @@ const Footer = () => {
             _hover={{ transform: "scale(1.2)" }}
           />
         </Box>
-        <Box as={Link} href="https://twitter.com/iambenjamen" isExternal>
+        <Box as={Link} href="https://twitter.com/areobenjamen" isExternal>
           <Image
             src={twitter}
             cursor="pointer"
