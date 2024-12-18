@@ -1,5 +1,13 @@
 export const Graphics = [
   [
+    "https://images2.imgbox.com/ce/48/0tlqXlhQ_o.png",
+    "https://images2.imgbox.com/be/8a/iMaKKunJ_o.png",
+    "https://images2.imgbox.com/13/59/YsKKeIz9_o.jpg",
+    "https://images2.imgbox.com/ca/ba/rw7tmVGE_o.png",
+    "https://images2.imgbox.com/98/7f/mR3DScis_o.png",
+    "https://images2.imgbox.com/6a/6c/c4UeCwDV_o.jpg",
+  ],
+  [
     "https://images2.imgbox.com/b4/9f/VNwxM8v3_o.jpg",
     "https://images2.imgbox.com/d2/d8/dfWMthAl_o.jpg",
     "https://images2.imgbox.com/99/ea/JUGSNSR0_o.jpg",
